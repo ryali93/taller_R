@@ -1,0 +1,82 @@
+code.r{
+  font-size: 20px;
+}
+pre {
+  font-size: 20px;
+  margin-bottom: -10px;
+}
+
+code.no-highlight {
+  margin-top: -50px;
+  line-height: 1em;
+}
+
+code.r.innerCode {
+  margin-top: -51px;
+}
+
+slide.smallcode pre {
+  font-size: 11px;
+}
+
+img[alt="rlogo"] { 
+  padding: 20px;
+  height:  140px; 
+  border: 0px!important;
+  box-shadow: none!important;
+  background; none!important;
+}
+
+img[alt="rstudiologo"] { 
+  padding: 20px;
+  height:  140px; 
+  border: 0px!important;
+  box-shadow: none!important;
+  background; none!important;
+}
+
+img[alt="gdallogo"] { 
+  padding: 20px;
+  height:  200px; 
+  border: 0px!important;
+  box-shadow: none!important;
+  background; none!important;
+}
+
+.reveal section img {
+    background: none;
+}
+
+.columns {
+  display: flex; 
+}
+
+.columns.column {
+  font-size: smaller;
+}
+
+.reveal section .leaflet-popup-content {
+    font: 20px;
+}
+
+.reveal section .leaflet-control {
+  font: 24px;
+}
+
+.sourceCode pre {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+div.sourceCode {
+  margin: 0px;
+}
+
+#cb6 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.reveal p {
+  margin-top: 0px;
+}

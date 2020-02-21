@@ -1,0 +1,58 @@
+install.packages("revealjs", type = "source")
+
+
+# remove.packages("yaml") 
+install.packages("yaml")
+install.packages("rmarkdown")
+
+install.packages("devtools")
+
+remotes::install_github("hadley/emo")
+
+
+library(leaflet)
+popup = c("Roy", "Marysol", "Alex", "Carolina")
+leaflet() %>%
+  addProviderTiles("NASAGIBS.ViirsEarthAtNight2012") %>%
+  addMarkers(lng = c(-77, -74.5, -74, -70.7),
+             lat = c(-12, -8.5, 4, -33.5), 
+             popup = popup)
+
+
+
+
+library(raster)
+plot(raster("E:/2019/UNMSM/PROGRAMACION/data/raster/LC08_L1TP_042034_20130605_20170310_01_T1_B4_120x120.tiff"))
+
+
+
+cat("1 + 3","f")
+
+ter = read.csv("data/earthquakes.csv")
+boxplot(ter$Magnitude)
+
+
+
+history()
+
+
+a = c(1, 3, "f")
+b = c(4, 6, 7)
+d = c(4, 6)
+
+df = data.frame(a, b)
+rbind(df, d)
+
+
+
+library(ggplot2)
+shp = shapefile("data/paises.shp")
+head(fortify(shp))
+head(shp@data)
+
+
+sd(ter$Magnitude)
+mean(ter$Magnitude) + sd(ter$Magnitude)*2.5
+
+
+

@@ -1,0 +1,1876 @@
+UBIGEO;DEPARTAMENTO;PROVINCIA;DISTRITO;Incidencia
+10101;Amazonas;Chachapoyas;Chachapoyas;1.4
+10102;Amazonas;Chachapoyas;Asunción;15.7
+10103;Amazonas;Chachapoyas;Balsas;15.4
+10104;Amazonas;Chachapoyas;Cheto;23.7
+10105;Amazonas;Chachapoyas;Chiliquín;36.4
+10106;Amazonas;Chachapoyas;Chuquibamba;43.8
+10107;Amazonas;Chachapoyas;Granada;5.9
+10108;Amazonas;Chachapoyas;Huancas;12.5
+10109;Amazonas;Chachapoyas;La Jalca;28.4
+10110;Amazonas;Chachapoyas;Leimebamba;15.2
+10111;Amazonas;Chachapoyas;Levanto;24.4
+10112;Amazonas;Chachapoyas;Magdalena;20.6
+10113;Amazonas;Chachapoyas;Mariscal Castilla;18.9
+10114;Amazonas;Chachapoyas;Molinopampa;25.5
+10115;Amazonas;Chachapoyas;Montevideo;10.1
+10116;Amazonas;Chachapoyas;Olleros;2.6
+10117;Amazonas;Chachapoyas;Quinjalca;19.3
+10118;Amazonas;Chachapoyas;San Francisco de Daguas;7.7
+10119;Amazonas;Chachapoyas;San Isidro de Maino;27.9
+10120;Amazonas;Chachapoyas;Soloco;21.2
+10121;Amazonas;Chachapoyas;Sonche;52.8
+10201;Amazonas;Bagua;Bagua;4.5
+10202;Amazonas;Bagua;Aramango;19.3
+10203;Amazonas;Bagua;Copallín;11.2
+10204;Amazonas;Bagua;El Parco;12.2
+10205;Amazonas;Bagua;Imaza;48.9
+10206;Amazonas;Bagua;La Peca;21.8
+10301;Amazonas;Bongara;Jumbilla;5.1
+10302;Amazonas;Bongara;Chisquilla;22.6
+10303;Amazonas;Bongara;Churuja;1.9
+10304;Amazonas;Bongara;Corosha;24.6
+10305;Amazonas;Bongara;Cuispes;12.8
+10306;Amazonas;Bongara;Florida;6.3
+10307;Amazonas;Bongara;Jazán;13.7
+10308;Amazonas;Bongara;Recta;15.6
+10309;Amazonas;Bongara;San Carlos;4.7
+10310;Amazonas;Bongara;Shipasbamba;13.4
+10311;Amazonas;Bongara;Valera;8.5
+10312;Amazonas;Bongara;Yambrasbamba;10.9
+10401;Amazonas;Condorcanqui;Nieva;34.9
+10402;Amazonas;Condorcanqui;El Cenepa;60
+10403;Amazonas;Condorcanqui;Río Santiago;31.4
+10501;Amazonas;Luya;Lamud;5.6
+10502;Amazonas;Luya;Camporredondo;11
+10503;Amazonas;Luya;Cocabamba;35.5
+10504;Amazonas;Luya;Colcamar;29.2
+10505;Amazonas;Luya;Conila;35.1
+10506;Amazonas;Luya;Inguilpata;16.6
+10507;Amazonas;Luya;Longuita;39.7
+10508;Amazonas;Luya;Lonya Chico;39.4
+10509;Amazonas;Luya;Luya;10
+10510;Amazonas;Luya;Luya Viejo;32.8
+10511;Amazonas;Luya;María;22.6
+10512;Amazonas;Luya;Ocalli;3.8
+10513;Amazonas;Luya;Ocumal;16.9
+10514;Amazonas;Luya;Pisuquia;54.7
+10515;Amazonas;Luya;Providencia;29.4
+10516;Amazonas;Luya;San Cristóbal;33
+10517;Amazonas;Luya;San Francisco del Yeso;19.3
+10518;Amazonas;Luya;San Jerónimo;46.6
+10519;Amazonas;Luya;San Juan de Lopecancha;11.3
+10520;Amazonas;Luya;Santa Catalina;50.4
+10521;Amazonas;Luya;Santo Tomás;33.6
+10522;Amazonas;Luya;Tingo;11.2
+10523;Amazonas;Luya;Trita;16.4
+10601;Amazonas;Rodriguez De Mendoza;San Nicolás;3
+10602;Amazonas;Rodriguez De Mendoza;Chirimoto;12.3
+10603;Amazonas;Rodriguez De Mendoza;Cochamal;7.1
+10604;Amazonas;Rodriguez De Mendoza;Huambo;7.4
+10605;Amazonas;Rodriguez De Mendoza;Limabamba;11.2
+10606;Amazonas;Rodriguez De Mendoza;Longar;5.7
+10607;Amazonas;Rodriguez De Mendoza;Mariscal Benavides;3.4
+10608;Amazonas;Rodriguez De Mendoza;Milpuc;5.6
+10609;Amazonas;Rodriguez De Mendoza;Omia;23.2
+10610;Amazonas;Rodriguez De Mendoza;Santa Rosa;9.3
+10611;Amazonas;Rodriguez De Mendoza;Totora;6.6
+10612;Amazonas;Rodriguez De Mendoza;Vista Alegre;18.7
+10701;Amazonas;Utcubamba;Bagua Grande;9.4
+10702;Amazonas;Utcubamba;Cajaruro;18.8
+10703;Amazonas;Utcubamba;Cumba;14.4
+10704;Amazonas;Utcubamba;El Milagro;7.6
+10705;Amazonas;Utcubamba;Jamalca;12.5
+10706;Amazonas;Utcubamba;Lonya Grande;11.6
+10707;Amazonas;Utcubamba;Yamón;4.7
+20101;Ancash;Huaraz;Huaraz;0.6
+20102;Ancash;Huaraz;Cochabamba;25.3
+20103;Ancash;Huaraz;Colcabamba;6.1
+20104;Ancash;Huaraz;Huanchay;22.4
+20105;Ancash;Huaraz;Independencia;0.6
+20106;Ancash;Huaraz;Jangas;8.5
+20107;Ancash;Huaraz;La Libertad;15.8
+20108;Ancash;Huaraz;Olleros;8.9
+20109;Ancash;Huaraz;Pampas Grande;8.4
+20110;Ancash;Huaraz;Pariacoto;10
+20111;Ancash;Huaraz;Pira;40.5
+20112;Ancash;Huaraz;Tarica;8.3
+20201;Ancash;Aija;Aija;4.8
+20202;Ancash;Aija;Coris;16.7
+20203;Ancash;Aija;Huacllan;11.9
+20204;Ancash;Aija;La Merced;16.2
+20205;Ancash;Aija;Succha;11.7
+20301;Ancash;Antonio Raymondi;Llamellín;12.7
+20302;Ancash;Antonio Raymondi;Aczo;30.1
+20303;Ancash;Antonio Raymondi;Chaccho;16.6
+20304;Ancash;Antonio Raymondi;Chingas;21.9
+20305;Ancash;Antonio Raymondi;Mirgas;21.7
+20306;Ancash;Antonio Raymondi;San Juan de Rontoy;31.5
+20401;Ancash;Asuncion;Chacas;5.9
+20402;Ancash;Asuncion;Acochaca;11.2
+20501;Ancash;Bolognesi;Chiquián;1.9
+20502;Ancash;Bolognesi;Abelardo Pardo Lezameta;0.4
+20503;Ancash;Bolognesi;Antonio Raymondi;17.8
+20504;Ancash;Bolognesi;Aquia;2.9
+20505;Ancash;Bolognesi;Cajacay;5.1
+20506;Ancash;Bolognesi;Canis;7.2
+20507;Ancash;Bolognesi;Colquioc;0.8
+20508;Ancash;Bolognesi;Huallanca;3.7
+20509;Ancash;Bolognesi;Huasta;6.6
+20510;Ancash;Bolognesi;Huayllacayán;13.1
+20511;Ancash;Bolognesi;La Primavera;14.5
+20512;Ancash;Bolognesi;Mangas;4.6
+20513;Ancash;Bolognesi;Pacllón;3.2
+20514;Ancash;Bolognesi;San Miguel de Corpanqui;2.4
+20515;Ancash;Bolognesi;Ticllos;14.1
+20601;Ancash;Carhuaz;Carhuaz;11.1
+20602;Ancash;Carhuaz;Acopampa;4.6
+20603;Ancash;Carhuaz;Amashca;9
+20604;Ancash;Carhuaz;Anta;14.2
+20605;Ancash;Carhuaz;Ataquero;17.1
+20606;Ancash;Carhuaz;Marcará;12
+20607;Ancash;Carhuaz;Pariahuanca;14.7
+20608;Ancash;Carhuaz;San Miguel de Aco;9.6
+20609;Ancash;Carhuaz;Shilla;10.5
+20610;Ancash;Carhuaz;Tinco;7.4
+20611;Ancash;Carhuaz;Yungar;10.4
+20701;Ancash;Carlos Fermin Fitzcarrald;San Luis;16
+20702;Ancash;Carlos Fermin Fitzcarrald;San Nicolas;17.6
+20703;Ancash;Carlos Fermin Fitzcarrald;Yauya;19.5
+20801;Ancash;Casma;Casma;1.8
+20802;Ancash;Casma;Buena Vista Alta;4.3
+20803;Ancash;Casma;Comandante Noél;6.1
+20804;Ancash;Casma;Yaután;6
+20901;Ancash;Corongo;Corongo;6.8
+20902;Ancash;Corongo;Aco;9.1
+20903;Ancash;Corongo;Bambas;12.8
+20904;Ancash;Corongo;Cusca;8.5
+20905;Ancash;Corongo;La Pampa;2.5
+20906;Ancash;Corongo;Yánac;14.3
+20907;Ancash;Corongo;Yupán;6.5
+21001;Ancash;Huari;Huari;5.3
+21002;Ancash;Huari;Anra;10.8
+21003;Ancash;Huari;Cajay;15.2
+21004;Ancash;Huari;Chavín de Huántar;11.9
+21005;Ancash;Huari;Huacachi;7.9
+21006;Ancash;Huari;Huacchis;5.7
+21007;Ancash;Huari;Huachis;10.7
+21008;Ancash;Huari;Huántar;8.7
+21009;Ancash;Huari;Masín;11.3
+21010;Ancash;Huari;Paucas;6.8
+21011;Ancash;Huari;Ponto;8.9
+21012;Ancash;Huari;Rahuapampa;2.3
+21013;Ancash;Huari;Rapayan;3.7
+21014;Ancash;Huari;San Marcos;5.5
+21015;Ancash;Huari;San Pedro de Chana;7.4
+21016;Ancash;Huari;Uco;8.2
+21101;Ancash;Huarmey;Huarmey;1.1
+21102;Ancash;Huarmey;Cochapeti;19.6
+21103;Ancash;Huarmey;Culebras;6.1
+21104;Ancash;Huarmey;Huayán;16.7
+21105;Ancash;Huarmey;Malvas;9.3
+21201;Ancash;Huaylas;Caraz;7.7
+21202;Ancash;Huaylas;Huallanca;3
+21203;Ancash;Huaylas;Huata;21.3
+21204;Ancash;Huaylas;Huaylas;11.1
+21205;Ancash;Huaylas;Mato;17.5
+21206;Ancash;Huaylas;Pamparomás;41.1
+21207;Ancash;Huaylas;Pueblo Libre;24
+21208;Ancash;Huaylas;Santa Cruz;21.5
+21209;Ancash;Huaylas;Santo Toribio;15.2
+21210;Ancash;Huaylas;Yuracmarca;16.7
+21301;Ancash;Mariscal Luzuriaga;Piscobamba;5.2
+21302;Ancash;Mariscal Luzuriaga;Casca;18.9
+21303;Ancash;Mariscal Luzuriaga;Eleazar Guzmán Barrón;31.1
+21304;Ancash;Mariscal Luzuriaga;Fidel Olivas Escudero;22
+21305;Ancash;Mariscal Luzuriaga;Llama;9.9
+21306;Ancash;Mariscal Luzuriaga;Llumpa;19.4
+21307;Ancash;Mariscal Luzuriaga;Lucma;17.8
+21308;Ancash;Mariscal Luzuriaga;Musga;7.3
+21401;Ancash;Ocros;Ocros;7.5
+21402;Ancash;Ocros;Acas;7.6
+21403;Ancash;Ocros;Cajamarquilla;4.4
+21404;Ancash;Ocros;Carhuapampa;8.2
+21405;Ancash;Ocros;Cochas;7.6
+21406;Ancash;Ocros;Congas;12.6
+21407;Ancash;Ocros;Llipa;5.8
+21408;Ancash;Ocros;San Cristóbal de Raján;2.7
+21409;Ancash;Ocros;San Pedro;5.9
+21410;Ancash;Ocros;Santiago de Chilcas;17.9
+21501;Ancash;Pallasca;Cabana;5.7
+21502;Ancash;Pallasca;Bolognesi;4.7
+21503;Ancash;Pallasca;Conchucos;16.9
+21504;Ancash;Pallasca;Huacaschuque;0.9
+21505;Ancash;Pallasca;Huandoval;5.1
+21506;Ancash;Pallasca;Lacabamba;9.4
+21507;Ancash;Pallasca;Llapo;1.7
+21508;Ancash;Pallasca;Pallasca;9.5
+21509;Ancash;Pallasca;Pampas;15.3
+21510;Ancash;Pallasca;Santa Rosa;4.3
+21511;Ancash;Pallasca;Tauca;8.8
+21601;Ancash;Pomabamba;Pomabamba;11.4
+21602;Ancash;Pomabamba;Huayllán;18.4
+21603;Ancash;Pomabamba;Parobamba;25.3
+21604;Ancash;Pomabamba;Quinuabamba;27
+21701;Ancash;Recuay;Recuay;5
+21702;Ancash;Recuay;Cátac;5.6
+21703;Ancash;Recuay;Cotaparaco;8
+21704;Ancash;Recuay;Huayllapampa;21.1
+21705;Ancash;Recuay;Llacllin;26
+21706;Ancash;Recuay;Marca;1.9
+21707;Ancash;Recuay;Pampas Chico;6.1
+21708;Ancash;Recuay;Pararín;53.9
+21709;Ancash;Recuay;Tapacocha;14.6
+21710;Ancash;Recuay;Ticapampa;1.6
+21801;Ancash;Santa;Chimbote;0.8
+21802;Ancash;Santa;Cáceres del Perú;4.8
+21803;Ancash;Santa;Coishco;1.7
+21804;Ancash;Santa;Macate;16.6
+21805;Ancash;Santa;Moro;4.3
+21806;Ancash;Santa;Nepeña;3.3
+21807;Ancash;Santa;Samanco;5
+21808;Ancash;Santa;Santa;3.1
+21809;Ancash;Santa;Nuevo Chimbote;0.2
+21901;Ancash;Sihuas;Sihuas;3.3
+21902;Ancash;Sihuas;Acobamba;8.7
+21903;Ancash;Sihuas;Alfonso Ugarte;3.4
+21904;Ancash;Sihuas;Cashapampa;7.2
+21905;Ancash;Sihuas;Chingalpo;8.5
+21906;Ancash;Sihuas;Huayllabamba;14.9
+21907;Ancash;Sihuas;Quiches;7
+21908;Ancash;Sihuas;Ragash;6
+21909;Ancash;Sihuas;San Juan;11.7
+21910;Ancash;Sihuas;Sicsibamba;13
+22001;Ancash;Yungay;Yungay;7.9
+22002;Ancash;Yungay;Cascapara;17.1
+22003;Ancash;Yungay;Mancos;6.7
+22004;Ancash;Yungay;Matacoto;11.1
+22005;Ancash;Yungay;Quillo;15.6
+22006;Ancash;Yungay;Ranrahirca;17
+22007;Ancash;Yungay;Shupluy;20.2
+22008;Ancash;Yungay;Yanama;17.8
+30101;Apurímac;Abancay;Abancay;2.4
+30102;Apurímac;Abancay;Chacoche;9.9
+30103;Apurímac;Abancay;Circa;8.5
+30104;Apurímac;Abancay;Curahuasi;15.3
+30105;Apurímac;Abancay;Huanipaca;17.5
+30106;Apurímac;Abancay;Lambrama;25.7
+30107;Apurímac;Abancay;Pichirhua;20.6
+30108;Apurímac;Abancay;San Pedro de Cachora;10.3
+30109;Apurímac;Abancay;Tamburco;3
+30201;Apurímac;Andahuaylas;Andahuaylas;7.5
+30202;Apurímac;Andahuaylas;Andarapa;25.2
+30203;Apurímac;Andahuaylas;Chiara;14.1
+30204;Apurímac;Andahuaylas;Huancarama;12.8
+30205;Apurímac;Andahuaylas;Huancaray;23.3
+30206;Apurímac;Andahuaylas;Huayana;52.3
+30207;Apurímac;Andahuaylas;Kishuara;23.1
+30208;Apurímac;Andahuaylas;Pacobamba;18
+30209;Apurímac;Andahuaylas;Pacucha;11.4
+30210;Apurímac;Andahuaylas;Pampachiri;39.6
+30211;Apurímac;Andahuaylas;Pomacocha;11.4
+30212;Apurímac;Andahuaylas;San Antonio de Cachi;20.8
+30213;Apurímac;Andahuaylas;San Jerónimo;10
+30214;Apurímac;Andahuaylas;San Miguel de Chaccrampa;30.5
+30215;Apurímac;Andahuaylas;Santa María de Chicmo;13
+30216;Apurímac;Andahuaylas;Talavera;6
+30217;Apurímac;Andahuaylas;Tumay Huaraca;45.4
+30218;Apurímac;Andahuaylas;Turpo;19.2
+30219;Apurímac;Andahuaylas;Kaquiabamba;11.5
+30220;Apurímac;Andahuaylas;Jose Maria Arguedas 6/;40.1
+30301;Apurímac;Antabamba;Antabamba;34.1
+30302;Apurímac;Antabamba;El Oro;8.9
+30303;Apurímac;Antabamba;Huaquirca;39.6
+30304;Apurímac;Antabamba;Juan Espinoza Medrano;20.8
+30305;Apurímac;Antabamba;Oropesa;28.9
+30306;Apurímac;Antabamba;Pachaconas;15.4
+30307;Apurímac;Antabamba;Sabaino;29.9
+30401;Apurímac;Aymaraes;Chalhuanca;3.4
+30402;Apurímac;Aymaraes;Capaya;7.4
+30403;Apurímac;Aymaraes;Caraybamba;9.5
+30404;Apurímac;Aymaraes;Chapimarca;26
+30405;Apurímac;Aymaraes;Colcabamba;9.9
+30406;Apurímac;Aymaraes;Cotaruse;6.9
+30407;Apurímac;Aymaraes;Huayllo;9.5
+30408;Apurímac;Aymaraes;Justo Apu Sahuaraura;29.1
+30409;Apurímac;Aymaraes;Lucre;37.8
+30410;Apurímac;Aymaraes;Pocohuanca;35.1
+30411;Apurímac;Aymaraes;San Juan de Chacña;11.2
+30412;Apurímac;Aymaraes;Sañayca;34.2
+30413;Apurímac;Aymaraes;Soraya;11.6
+30414;Apurímac;Aymaraes;Tapairihua;17.3
+30415;Apurímac;Aymaraes;Tintay;20.8
+30416;Apurímac;Aymaraes;Toraya;15.9
+30417;Apurímac;Aymaraes;Yanaca;15.2
+30501;Apurímac;Cotabambas;Tambobamba;27.7
+30502;Apurímac;Cotabambas;Cotabambas;11.7
+30503;Apurímac;Cotabambas;Coyllurqui;35.1
+30504;Apurímac;Cotabambas;Haquira;41.8
+30505;Apurímac;Cotabambas;Mara;33.8
+30506;Apurímac;Cotabambas;Challhuahuacho;42.6
+30601;Apurímac;Chincheros;Chincheros;11.9
+30602;Apurímac;Chincheros;Anco-Huallo;20.2
+30603;Apurímac;Chincheros;Cocharcas;25.1
+30604;Apurímac;Chincheros;Huaccana;22.6
+30605;Apurímac;Chincheros;Ocobamba;18.3
+30606;Apurímac;Chincheros;Ongoy;24.9
+30607;Apurímac;Chincheros;Uranmarca;21.8
+30608;Apurímac;Chincheros;Ranracancha;28.9
+30609;Apurímac;Chincheros;Rocchacc 20/;24.9
+30610;Apurímac;Chincheros;El Porvenir 21/;24.9
+30611;Apurímac;Chincheros;Los Chankas 24/;22.6
+30701;Apurímac;Grau;Chuquibambilla;17.3
+30702;Apurímac;Grau;Curpahuasi;19.2
+30703;Apurímac;Grau;Gamarra;25.1
+30704;Apurímac;Grau;Huayllati;24.6
+30705;Apurímac;Grau;Mamara;13.5
+30706;Apurímac;Grau;Micaela Bastidas;19.8
+30707;Apurímac;Grau;Pataypampa;39.2
+30708;Apurímac;Grau;Progreso;24.1
+30709;Apurímac;Grau;San Antonio;14.4
+30710;Apurímac;Grau;Santa Rosa;9.1
+30711;Apurímac;Grau;Turpay;12.4
+30712;Apurímac;Grau;Vilcabamba;2.9
+30713;Apurímac;Grau;Virundo;16.1
+30714;Apurímac;Grau;Curasco;41
+40101;Arequipa;Arequipa;Arequipa;0
+40102;Arequipa;Arequipa;Alto Selva Alegre;0.5
+40103;Arequipa;Arequipa;Cayma;0.5
+40104;Arequipa;Arequipa;Cerro Colorado;1
+40105;Arequipa;Arequipa;Characato;1.3
+40106;Arequipa;Arequipa;Chiguata;6.4
+40107;Arequipa;Arequipa;Jacobo Hunter;1.1
+40108;Arequipa;Arequipa;La Joya;1.9
+40109;Arequipa;Arequipa;Maríano Melgar;0.7
+40110;Arequipa;Arequipa;Miraflores;0.5
+40111;Arequipa;Arequipa;Mollebaya;7.1
+40112;Arequipa;Arequipa;Paucarpata;0.7
+40113;Arequipa;Arequipa;Pocsi;8.1
+40114;Arequipa;Arequipa;Polobaya;6.9
+40115;Arequipa;Arequipa;Quequeña;4.4
+40116;Arequipa;Arequipa;Sabandia;1.4
+40117;Arequipa;Arequipa;Sachaca;1
+40118;Arequipa;Arequipa;San Juan de Siguas;3.1
+40119;Arequipa;Arequipa;San Juan de Tarucani;43.9
+40120;Arequipa;Arequipa;Santa Isabel de Siguas;4.6
+40121;Arequipa;Arequipa;Santa Rita de Siguas;1.6
+40122;Arequipa;Arequipa;Socabaya;0.8
+40123;Arequipa;Arequipa;Tiabaya;0.9
+40124;Arequipa;Arequipa;Uchumayo;1.3
+40125;Arequipa;Arequipa;Vitor;2.9
+40126;Arequipa;Arequipa;Yanahuara;0.1
+40127;Arequipa;Arequipa;Yarabamba;2.5
+40128;Arequipa;Arequipa;Yura;2.2
+40129;Arequipa;Arequipa;José Luis Bustamante y Rivero;0.2
+40201;Arequipa;Camana;Camaná;0.6
+40202;Arequipa;Camana;José María Quimper;3.1
+40203;Arequipa;Camana;Mariano Nicolás Valcárcel;0.3
+40204;Arequipa;Camana;Mariscal Cáceres;2
+40205;Arequipa;Camana;Nicolás de Piérola;1.5
+40206;Arequipa;Camana;Ocoña;1.6
+40207;Arequipa;Camana;Quilca;0.5
+40208;Arequipa;Camana;Samuel Pastor;1.5
+40301;Arequipa;Caraveli;Caravelí;6.2
+40302;Arequipa;Caraveli;Acari;1.4
+40303;Arequipa;Caraveli;Atico;0.3
+40304;Arequipa;Caraveli;Atiquipa;2
+40305;Arequipa;Caraveli;Bella Unión;1.9
+40306;Arequipa;Caraveli;Cahuacho;13.3
+40307;Arequipa;Caraveli;Chala;0.5
+40308;Arequipa;Caraveli;Chaparra;0.6
+40309;Arequipa;Caraveli;Huanuhuanu;4.7
+40310;Arequipa;Caraveli;Jaqui;1.1
+40311;Arequipa;Caraveli;Lomas;0.1
+40312;Arequipa;Caraveli;Quicacha;4.9
+40313;Arequipa;Caraveli;Yauca;0.2
+40401;Arequipa;Castilla;Aplao;3.6
+40402;Arequipa;Castilla;Andagua;13.6
+40403;Arequipa;Castilla;Ayo;1.5
+40404;Arequipa;Castilla;Chachas;54.3
+40405;Arequipa;Castilla;Chilcaymarca;9
+40406;Arequipa;Castilla;Choco;40.7
+40407;Arequipa;Castilla;Huancarqui;0.5
+40408;Arequipa;Castilla;Machaguay;9.3
+40409;Arequipa;Castilla;Orcopampa;3.3
+40410;Arequipa;Castilla;Pampacolca;7.4
+40411;Arequipa;Castilla;Tipán;4
+40412;Arequipa;Castilla;Uñón;21.2
+40413;Arequipa;Castilla;Uraca;1.1
+40414;Arequipa;Castilla;Viraco;8.6
+40501;Arequipa;Caylloma;Chivay;3.1
+40502;Arequipa;Caylloma;Achoma;9.3
+40503;Arequipa;Caylloma;Cabanaconde;4.2
+40504;Arequipa;Caylloma;Callalli;16.9
+40505;Arequipa;Caylloma;Caylloma;17.9
+40506;Arequipa;Caylloma;Coporaque;8.6
+40507;Arequipa;Caylloma;Huambo;12.7
+40508;Arequipa;Caylloma;Huanca;5.3
+40509;Arequipa;Caylloma;Ichupampa;6.5
+40510;Arequipa;Caylloma;Lari;7.5
+40511;Arequipa;Caylloma;Lluta;12.2
+40512;Arequipa;Caylloma;Maca;4.7
+40513;Arequipa;Caylloma;Madrigal;10
+40514;Arequipa;Caylloma;San Antonio de Chuca;30.9
+40515;Arequipa;Caylloma;Sibayo;12.8
+40516;Arequipa;Caylloma;Tapay;27.6
+40517;Arequipa;Caylloma;Tisco;21.9
+40518;Arequipa;Caylloma;Tuti;4.6
+40519;Arequipa;Caylloma;Yanque;10
+40520;Arequipa;Caylloma;Majes;4.2
+40601;Arequipa;Condesuyos;Chuquibamba;5.8
+40602;Arequipa;Condesuyos;Andaray;13
+40603;Arequipa;Condesuyos;Cayarani;41.8
+40604;Arequipa;Condesuyos;Chichas;36.8
+40605;Arequipa;Condesuyos;Iray;11.9
+40606;Arequipa;Condesuyos;Río Grande;2.9
+40607;Arequipa;Condesuyos;Salamanca;23.8
+40608;Arequipa;Condesuyos;Yanaquihua;5.3
+40701;Arequipa;Islay;Mollendo;0.6
+40702;Arequipa;Islay;Cocachacra;1.1
+40703;Arequipa;Islay;Dean Valdivia;2.1
+40704;Arequipa;Islay;Islay;0.6
+40705;Arequipa;Islay;Mejia;2.3
+40706;Arequipa;Islay;Punta de Bombón;2
+40801;Arequipa;La Union;Cotahuasi;8.4
+40802;Arequipa;La Union;Alca;15.2
+40803;Arequipa;La Union;Charcana;27.2
+40804;Arequipa;La Union;Huaynacotas;27
+40805;Arequipa;La Union;Pampamarca;31.8
+40806;Arequipa;La Union;Puyca;37.7
+40807;Arequipa;La Union;Quechualla;51.7
+40808;Arequipa;La Union;Sayla;20.3
+40809;Arequipa;La Union;Tauria;27
+40810;Arequipa;La Union;Tomepampa;8.1
+40811;Arequipa;La Union;Toro;39.7
+50101;Ayacucho;Huamanga;Ayacucho;3.1
+50102;Ayacucho;Huamanga;Acocro;32.4
+50103;Ayacucho;Huamanga;Acos Vinchos;38.4
+50104;Ayacucho;Huamanga;Carmen Alto;7.4
+50105;Ayacucho;Huamanga;Chiara;24.6
+50106;Ayacucho;Huamanga;Ocros;24.1
+50107;Ayacucho;Huamanga;Pacaycasa;24.9
+50108;Ayacucho;Huamanga;Quinua;21.6
+50109;Ayacucho;Huamanga;San José de Ticllas;60.6
+50110;Ayacucho;Huamanga;San Juan Bautista;4.1
+50111;Ayacucho;Huamanga;Santiago de Pischa;24.3
+50112;Ayacucho;Huamanga;Socos;48.1
+50113;Ayacucho;Huamanga;Tambillo;27.8
+50114;Ayacucho;Huamanga;Vinchos;41
+50115;Ayacucho;Huamanga;Jesús Nazareno;1.7
+50116;Ayacucho;Huamanga;Andrés Avelino Cáceres Dorregaray;4
+50201;Ayacucho;Cangallo;Cangallo;19.6
+50202;Ayacucho;Cangallo;Chuschi;45.2
+50203;Ayacucho;Cangallo;Los Morochucos;18.6
+50204;Ayacucho;Cangallo;María Parado de Bellido;31.2
+50205;Ayacucho;Cangallo;Paras;46.4
+50206;Ayacucho;Cangallo;Totos;44.5
+50301;Ayacucho;Huanca Sancos;Sancos;9.4
+50302;Ayacucho;Huanca Sancos;Carapo;38.1
+50303;Ayacucho;Huanca Sancos;Sacsamarca;20.5
+50304;Ayacucho;Huanca Sancos;Santiago de Lucanamarca;41.7
+50401;Ayacucho;Huanta;Huanta;15.5
+50402;Ayacucho;Huanta;Ayahuanco;36.8
+50403;Ayacucho;Huanta;Huamanguilla;33.5
+50404;Ayacucho;Huanta;Iguain;36
+50405;Ayacucho;Huanta;Luricocha;34.8
+50406;Ayacucho;Huanta;Santillana;53.5
+50407;Ayacucho;Huanta;Sivia;21
+50408;Ayacucho;Huanta;Llochegua;14.3
+50409;Ayacucho;Huanta;Canayre;19.8
+50410;Ayacucho;Huanta;Uchuraccay;45.9
+50411;Ayacucho;Huanta;Pucacolpa 8/;57.9
+50412;Ayacucho;Huanta;Chaca 17/;53.5
+50501;Ayacucho;La Mar;San Miguel;27.6
+50502;Ayacucho;La Mar;Anco;25.3
+50503;Ayacucho;La Mar;Ayna;15.6
+50504;Ayacucho;La Mar;Chilcas;36
+50505;Ayacucho;La Mar;Chungui;45.3
+50506;Ayacucho;La Mar;Luis Carranza;27.3
+50507;Ayacucho;La Mar;Santa Rosa;11.8
+50508;Ayacucho;La Mar;Tambo;37.2
+50509;Ayacucho;La Mar;Samugari;13.3
+50510;Ayacucho;La Mar;Anchihuay;25.6
+50511;Ayacucho;La Mar;Oroncoy  25/;45.3
+50601;Ayacucho;Lucanas;Puquio;8.3
+50602;Ayacucho;Lucanas;Aucara;28.2
+50603;Ayacucho;Lucanas;Cabana;11.7
+50604;Ayacucho;Lucanas;Carmen Salcedo;9.7
+50605;Ayacucho;Lucanas;Chaviña;35.3
+50606;Ayacucho;Lucanas;Chipao;39.3
+50607;Ayacucho;Lucanas;Huac-Huas;15.2
+50608;Ayacucho;Lucanas;Laramate;13.6
+50609;Ayacucho;Lucanas;Leoncio Prado;9.1
+50610;Ayacucho;Lucanas;Llauta;16.6
+50611;Ayacucho;Lucanas;Lucanas;25.7
+50612;Ayacucho;Lucanas;Ocaña;27.5
+50613;Ayacucho;Lucanas;Otoca;22
+50614;Ayacucho;Lucanas;Saisa;11.5
+50615;Ayacucho;Lucanas;San Cristóbal;31.5
+50616;Ayacucho;Lucanas;San Juan;14.5
+50617;Ayacucho;Lucanas;San Pedro;36
+50618;Ayacucho;Lucanas;San Pedro de Palco;22.9
+50619;Ayacucho;Lucanas;Sancos;15.1
+50620;Ayacucho;Lucanas;Santa Ana de Huaycahuacho;30
+50621;Ayacucho;Lucanas;Santa Lucía;14
+50701;Ayacucho;Parinacochas;Coracora;15.6
+50702;Ayacucho;Parinacochas;Chumpi;30.3
+50703;Ayacucho;Parinacochas;Coronel Castañeda;49
+50704;Ayacucho;Parinacochas;Pacapausa;20.8
+50705;Ayacucho;Parinacochas;Pullo;18.7
+50706;Ayacucho;Parinacochas;Puyusca;27.1
+50707;Ayacucho;Parinacochas;San Francisco de Ravacayco;36.6
+50708;Ayacucho;Parinacochas;Upahuacho;31.7
+50801;Ayacucho;Paucar Del Sara Sara;Pausa;7.9
+50802;Ayacucho;Paucar Del Sara Sara;Colta;27.1
+50803;Ayacucho;Paucar Del Sara Sara;Corculla;24
+50804;Ayacucho;Paucar Del Sara Sara;Lampa;17.7
+50805;Ayacucho;Paucar Del Sara Sara;Marcabamba;7.9
+50806;Ayacucho;Paucar Del Sara Sara;Oyolo;39.8
+50807;Ayacucho;Paucar Del Sara Sara;Pararca;19.4
+50808;Ayacucho;Paucar Del Sara Sara;San Javier de Alpabamba;18.3
+50809;Ayacucho;Paucar Del Sara Sara;San José de Ushua;27.9
+50810;Ayacucho;Paucar Del Sara Sara;Sara Sara;25.8
+50901;Ayacucho;Sucre;Querobamba;20.2
+50902;Ayacucho;Sucre;Belén;18.5
+50903;Ayacucho;Sucre;Chalcos;25.9
+50904;Ayacucho;Sucre;Chilcayoc;33.1
+50905;Ayacucho;Sucre;Huacaña;24
+50906;Ayacucho;Sucre;Morcolla;32.5
+50907;Ayacucho;Sucre;Paico;28.4
+50908;Ayacucho;Sucre;San Pedro de Larcay;50.4
+50909;Ayacucho;Sucre;San Salvador de Quije;37
+50910;Ayacucho;Sucre;Santiago de Paucaray;33
+50911;Ayacucho;Sucre;Soras;41.1
+51001;Ayacucho;Victor Fajardo;Huancapi;18.1
+51002;Ayacucho;Victor Fajardo;Alcamenca;33
+51003;Ayacucho;Victor Fajardo;Apongo;17.2
+51004;Ayacucho;Victor Fajardo;Asquipata;21.3
+51005;Ayacucho;Victor Fajardo;Canaria;19.5
+51006;Ayacucho;Victor Fajardo;Cayara;29.2
+51007;Ayacucho;Victor Fajardo;Colca;34.6
+51008;Ayacucho;Victor Fajardo;Huamanquiquia;28.7
+51009;Ayacucho;Victor Fajardo;Huancaraylla;21.2
+51010;Ayacucho;Victor Fajardo;Huaya;46.3
+51011;Ayacucho;Victor Fajardo;Sarhua;44.5
+51012;Ayacucho;Victor Fajardo;Vilcanchos;47.1
+51101;Ayacucho;Vilcas Huaman;Vilcas Huamán;25.8
+51102;Ayacucho;Vilcas Huaman;Accomarca;43.2
+51103;Ayacucho;Vilcas Huaman;Carhuanca;28.5
+51104;Ayacucho;Vilcas Huaman;Concepción;36
+51105;Ayacucho;Vilcas Huaman;Huambalpa;25.6
+51106;Ayacucho;Vilcas Huaman;Independencia;31
+51107;Ayacucho;Vilcas Huaman;Saurama;31.6
+51108;Ayacucho;Vilcas Huaman;Vischongo;28.9
+60101;Cajamarca;Cajamarca;Cajamarca;4.9
+60102;Cajamarca;Cajamarca;Asunción;46.2
+60103;Cajamarca;Cajamarca;Chetilla;70.6
+60104;Cajamarca;Cajamarca;Cospán;51.6
+60105;Cajamarca;Cajamarca;Encañada;42.7
+60106;Cajamarca;Cajamarca;Jesús;43.5
+60107;Cajamarca;Cajamarca;Llacanora;25.3
+60108;Cajamarca;Cajamarca;Los Baños del Inca;16.8
+60109;Cajamarca;Cajamarca;Magdalena;27.2
+60110;Cajamarca;Cajamarca;Matara;35.1
+60111;Cajamarca;Cajamarca;Namora;35.9
+60112;Cajamarca;Cajamarca;San Juan;60.4
+60201;Cajamarca;Cajabamba;Cajabamba;36.5
+60202;Cajamarca;Cajabamba;Cachachi;54
+60203;Cajamarca;Cajabamba;Condebamba;32.4
+60204;Cajamarca;Cajabamba;Sitacocha;47.4
+60301;Cajamarca;Celendin;Celendín;23.9
+60302;Cajamarca;Celendin;Chumuch;57.9
+60303;Cajamarca;Celendin;Cortegana;50.5
+60304;Cajamarca;Celendin;Huasmín;53.2
+60305;Cajamarca;Celendin;Jorge Chávez;23.9
+60306;Cajamarca;Celendin;José Gálvez;16.9
+60307;Cajamarca;Celendin;Miguel Iglesias;40.2
+60308;Cajamarca;Celendin;Oxamarca;36.5
+60309;Cajamarca;Celendin;Sorochuco;56.7
+60310;Cajamarca;Celendin;Sucre;28
+60311;Cajamarca;Celendin;Utco;35.4
+60312;Cajamarca;Celendin;La Libertad de Pallán;64.5
+60401;Cajamarca;Chota;Chota;12.1
+60402;Cajamarca;Chota;Anguia;44.4
+60403;Cajamarca;Chota;Chadin;27.1
+60404;Cajamarca;Chota;Chiguirip;52
+60405;Cajamarca;Chota;Chimbán;48.7
+60406;Cajamarca;Chota;Choropampa;61
+60407;Cajamarca;Chota;Cochabamba;47.6
+60408;Cajamarca;Chota;Conchán;35.1
+60409;Cajamarca;Chota;Huambos;32.8
+60410;Cajamarca;Chota;Lajas;28.9
+60411;Cajamarca;Chota;Llama;32.3
+60412;Cajamarca;Chota;Miracosta;69.7
+60413;Cajamarca;Chota;Paccha;41.7
+60414;Cajamarca;Chota;Pión;40.4
+60415;Cajamarca;Chota;Querocoto;19.8
+60416;Cajamarca;Chota;San Juan de Licupis;51.5
+60417;Cajamarca;Chota;Tacabamba;34.8
+60418;Cajamarca;Chota;Tocmoche;32.2
+60419;Cajamarca;Chota;Chalamarca;32.5
+60501;Cajamarca;Contumaza;Contumazá;31.3
+60502;Cajamarca;Contumaza;Chilete;17.4
+60503;Cajamarca;Contumaza;Cupisnique;47.4
+60504;Cajamarca;Contumaza;Guzmango;41.9
+60505;Cajamarca;Contumaza;San Benito;18.7
+60506;Cajamarca;Contumaza;Santa Cruz de Toled;54.4
+60507;Cajamarca;Contumaza;Tantarica;35.4
+60508;Cajamarca;Contumaza;Yonán;7.2
+60601;Cajamarca;Cutervo;Cutervo;23.3
+60602;Cajamarca;Cutervo;Callayuc;35.6
+60603;Cajamarca;Cutervo;Choros;45.7
+60604;Cajamarca;Cutervo;Cujillo;47.4
+60605;Cajamarca;Cutervo;La Ramada;59.5
+60606;Cajamarca;Cutervo;Pimpingos;41.7
+60607;Cajamarca;Cutervo;Querocotillo;56.4
+60608;Cajamarca;Cutervo;San Andres de Cutervo;36.6
+60609;Cajamarca;Cutervo;San Juan de Cutervo;34.7
+60610;Cajamarca;Cutervo;San Luis de Lucma;46.4
+60611;Cajamarca;Cutervo;Santa Cruz;49.8
+60612;Cajamarca;Cutervo;Santo Domingo de la Capilla;47.6
+60613;Cajamarca;Cutervo;Santo Tomás;57.3
+60614;Cajamarca;Cutervo;Socota;38.7
+60615;Cajamarca;Cutervo;Toribio Casanova;37.6
+60701;Cajamarca;Hualgayoc;Bambamarca;24.5
+60702;Cajamarca;Hualgayoc;Chugur;24.4
+60703;Cajamarca;Hualgayoc;Hualgayoc;29.6
+60801;Cajamarca;Jaen;Jaén;4.4
+60802;Cajamarca;Jaen;Bellavista;13.5
+60803;Cajamarca;Jaen;Chontali;14
+60804;Cajamarca;Jaen;Colasay;38.1
+60805;Cajamarca;Jaen;Huabal;37.1
+60806;Cajamarca;Jaen;Las Pirias;44.3
+60807;Cajamarca;Jaen;Pomahuaca;46.6
+60808;Cajamarca;Jaen;Pucará;12.6
+60809;Cajamarca;Jaen;Sallique;42.4
+60810;Cajamarca;Jaen;San Felipe;52.3
+60811;Cajamarca;Jaen;San José del Alto;15.4
+60812;Cajamarca;Jaen;Santa Rosa;18.3
+60901;Cajamarca;San Ignacio;San Ignacio;24.2
+60902;Cajamarca;San Ignacio;Chirinos;30.9
+60903;Cajamarca;San Ignacio;Huarango;24.9
+60904;Cajamarca;San Ignacio;La Coipa;23.8
+60905;Cajamarca;San Ignacio;Namballe;48
+60906;Cajamarca;San Ignacio;San José de Lourdes;23.1
+60907;Cajamarca;San Ignacio;Tabaconas;53.1
+61001;Cajamarca;San Marcos;Pedro Gálvez;16.8
+61002;Cajamarca;San Marcos;Chancay;39
+61003;Cajamarca;San Marcos;Eduardo Villanueva;18.9
+61004;Cajamarca;San Marcos;Gregorio Pita;35.9
+61005;Cajamarca;San Marcos;Ichocan;26.4
+61006;Cajamarca;San Marcos;José Manuel Quiroz;59.9
+61007;Cajamarca;San Marcos;José Sabogal;72.3
+61101;Cajamarca;San Miguel;San Miguel;26
+61102;Cajamarca;San Miguel;Bolívar;32.9
+61103;Cajamarca;San Miguel;Calquis;37.6
+61104;Cajamarca;San Miguel;Catilluc;56.7
+61105;Cajamarca;San Miguel;El Prado;35.5
+61106;Cajamarca;San Miguel;La Florida;45.2
+61107;Cajamarca;San Miguel;Llapa;26.5
+61108;Cajamarca;San Miguel;Nanchoc;25.7
+61109;Cajamarca;San Miguel;Niepos;37.1
+61110;Cajamarca;San Miguel;San Gregorio;21.3
+61111;Cajamarca;San Miguel;San Silvestre de Cochán;22.7
+61112;Cajamarca;San Miguel;Tongod;60.6
+61113;Cajamarca;San Miguel;Unión Agua Blanca;46.5
+61201;Cajamarca;San Pablo;San Pablo;41.5
+61202;Cajamarca;San Pablo;San Bernardino;23.8
+61203;Cajamarca;San Pablo;San Luis;20.3
+61204;Cajamarca;San Pablo;Tumbadén;36.6
+61301;Cajamarca;Santa Cruz;Santa Cruz;20.2
+61302;Cajamarca;Santa Cruz;Andabamba;49.7
+61303;Cajamarca;Santa Cruz;Catache;31.6
+61304;Cajamarca;Santa Cruz;Chancaybaños;35.6
+61305;Cajamarca;Santa Cruz;La Esperanza;26.9
+61306;Cajamarca;Santa Cruz;Ninabamba;41.5
+61307;Cajamarca;Santa Cruz;Pulán;45.5
+61308;Cajamarca;Santa Cruz;Saucepampa;46.6
+61309;Cajamarca;Santa Cruz;Sexi;22.8
+61310;Cajamarca;Santa Cruz;Uticyacu;47.6
+61311;Cajamarca;Santa Cruz;Yauyucán;28.8
+70101;Prov. Const. Del Callao;-;Callao;0.8
+70102;Prov. Const. Del Callao;-;Bellavista;0.1
+70103;Prov. Const. Del Callao;-;Carmen de la Legua Reynoso;0.3
+70104;Prov. Const. Del Callao;-;La Perla;0
+70105;Prov. Const. Del Callao;-;La Punta;0
+70106;Prov. Const. Del Callao;-;Ventanilla;2
+70107;Prov. Const. Del Callao;-;Mi Perú;1.2
+80101;Cusco;Cusco;Cusco;0.2
+80102;Cusco;Cusco;Ccorca;17.4
+80103;Cusco;Cusco;Poroy;2.5
+80104;Cusco;Cusco;San Jerónimo;0.4
+80105;Cusco;Cusco;San Sebastián;0.3
+80106;Cusco;Cusco;Santiago;0.3
+80107;Cusco;Cusco;Saylla;0.9
+80108;Cusco;Cusco;Wanchaq;0
+80201;Cusco;Acomayo;Acomayo;14.1
+80202;Cusco;Acomayo;Acopia;11.9
+80203;Cusco;Acomayo;Acos;22.6
+80204;Cusco;Acomayo;Mosoc Llacta;6.2
+80205;Cusco;Acomayo;Pomacanchi;12.2
+80206;Cusco;Acomayo;Rondocán;18.9
+80207;Cusco;Acomayo;Sangarara;15.8
+80301;Cusco;Anta;Anta;5.2
+80302;Cusco;Anta;Ancahuasi;5.9
+80303;Cusco;Anta;Cachimayo;5
+80304;Cusco;Anta;Chinchaypujio;9.2
+80305;Cusco;Anta;Huarocondo;7.1
+80306;Cusco;Anta;Limatambo;6.9
+80307;Cusco;Anta;Mollepata;5.5
+80308;Cusco;Anta;Pucyura;3.7
+80309;Cusco;Anta;Zurite;3.5
+80401;Cusco;Calca;Calca;4
+80402;Cusco;Calca;Coya;10.7
+80403;Cusco;Calca;Lamay;8.1
+80404;Cusco;Calca;Lares;15
+80405;Cusco;Calca;Pisac;8.3
+80406;Cusco;Calca;San Salvador;17.3
+80407;Cusco;Calca;Taray;4.6
+80408;Cusco;Calca;Yanatile;3.7
+80501;Cusco;Canas;Yanaoca;13.6
+80502;Cusco;Canas;Checca;10.4
+80503;Cusco;Canas;Kunturkanki;10.6
+80504;Cusco;Canas;Langui;4.8
+80505;Cusco;Canas;Layo;7.7
+80506;Cusco;Canas;Pampamarca;8
+80507;Cusco;Canas;Quehue;18.5
+80508;Cusco;Canas;Túpac Amaru;17.8
+80601;Cusco;Canchis;Sicuani;3
+80602;Cusco;Canchis;Checacupe;4.6
+80603;Cusco;Canchis;Combapata;8
+80604;Cusco;Canchis;Marangani;4.1
+80605;Cusco;Canchis;Pitumarca;15.6
+80606;Cusco;Canchis;San Pablo;7.9
+80607;Cusco;Canchis;San Pedro;1.5
+80608;Cusco;Canchis;Tinta;3.4
+80701;Cusco;Chumbivilcas;Santo Tomás;8
+80702;Cusco;Chumbivilcas;Capacmarca;30
+80703;Cusco;Chumbivilcas;Chamaca;16.9
+80704;Cusco;Chumbivilcas;Colquemarca;10.4
+80705;Cusco;Chumbivilcas;Livitaca;15.5
+80706;Cusco;Chumbivilcas;Llusco;22.6
+80707;Cusco;Chumbivilcas;Quiñota;22.7
+80708;Cusco;Chumbivilcas;Velille;8.1
+80801;Cusco;Espinar;Espinar;2.5
+80802;Cusco;Espinar;Condoroma;12.4
+80803;Cusco;Espinar;Coporaque;4.3
+80804;Cusco;Espinar;Ocoruro;10
+80805;Cusco;Espinar;Pallpata;13
+80806;Cusco;Espinar;Pichigua;13.4
+80807;Cusco;Espinar;Suyckutambo;9.7
+80808;Cusco;Espinar;Alto Pichigua;5.9
+80901;Cusco;La Convencion;Santa Ana;0.4
+80902;Cusco;La Convencion;Echarate;3.7
+80903;Cusco;La Convencion;Huayopata;4.8
+80904;Cusco;La Convencion;Maranura;1.4
+80905;Cusco;La Convencion;Ocobamba;2.6
+80906;Cusco;La Convencion;Quellouno;2.4
+80907;Cusco;La Convencion;Kimbiri;5.5
+80908;Cusco;La Convencion;Santa Teresa;1.6
+80909;Cusco;La Convencion;Vilcabamba;4.1
+80910;Cusco;La Convencion;Pichari;6.2
+80911;Cusco;La Convencion;Inkawasi 2/;2.4
+80912;Cusco;La Convencion;Villa Virgen 4/;5
+80913;Cusco;La Convencion;Villa Kintiarina 10/;5.5
+80914;Cusco;La Convencion;Megantoni 26/;5.5
+81001;Cusco;Paruro;Paruro;16.5
+81002;Cusco;Paruro;Accha;12.2
+81003;Cusco;Paruro;Ccapi;11
+81004;Cusco;Paruro;Colcha;5.9
+81005;Cusco;Paruro;Huanoquite;20.7
+81006;Cusco;Paruro;Omacha;12.2
+81007;Cusco;Paruro;Paccaritambo;16.1
+81008;Cusco;Paruro;Pillpinto;4.2
+81009;Cusco;Paruro;Yaurisque;9.5
+81101;Cusco;Paucartambo;Paucartambo;25.1
+81102;Cusco;Paucartambo;Caicay;18
+81103;Cusco;Paucartambo;Challabamba;25.5
+81104;Cusco;Paucartambo;Colquepata;21.1
+81105;Cusco;Paucartambo;Huancarani;17.8
+81106;Cusco;Paucartambo;Kosñipata;5.5
+81201;Cusco;Quispicanchi;Urcos;4.2
+81202;Cusco;Quispicanchi;Andahuaylillas;4.9
+81203;Cusco;Quispicanchi;Camanti;3.2
+81204;Cusco;Quispicanchi;Ccarhuayo;21.5
+81205;Cusco;Quispicanchi;Ccatca;24.1
+81206;Cusco;Quispicanchi;Cusipata;12.4
+81207;Cusco;Quispicanchi;Huaro;12.8
+81208;Cusco;Quispicanchi;Lucre;5.1
+81209;Cusco;Quispicanchi;Marcapata;30.9
+81210;Cusco;Quispicanchi;Ocongate;12.3
+81211;Cusco;Quispicanchi;Oropesa;2
+81212;Cusco;Quispicanchi;Quiquijana;23.5
+81301;Cusco;Urubamba;Urubamba;1.9
+81302;Cusco;Urubamba;Chinchero;2.7
+81303;Cusco;Urubamba;Huayllabamba;1.9
+81304;Cusco;Urubamba;Machupicchu;1.6
+81305;Cusco;Urubamba;Maras;3.5
+81306;Cusco;Urubamba;Ollantaytambo;5.3
+81307;Cusco;Urubamba;Yucay;1.4
+90101;Huancavelica;Huancavelica;Huancavelica;1.4
+90102;Huancavelica;Huancavelica;Acobambilla;9.2
+90103;Huancavelica;Huancavelica;Acoria;19.2
+90104;Huancavelica;Huancavelica;Conayca;10.3
+90105;Huancavelica;Huancavelica;Cuenca;29.5
+90106;Huancavelica;Huancavelica;Huachocolpa;16.4
+90107;Huancavelica;Huancavelica;Huayllahuara;5.1
+90108;Huancavelica;Huancavelica;Izcuchaca;3.3
+90109;Huancavelica;Huancavelica;Laria;15.4
+90110;Huancavelica;Huancavelica;Manta;15
+90111;Huancavelica;Huancavelica;Mariscal Cáceres;5
+90112;Huancavelica;Huancavelica;Moya;23
+90113;Huancavelica;Huancavelica;Nuevo Occoro;12.9
+90114;Huancavelica;Huancavelica;Palca;13.8
+90115;Huancavelica;Huancavelica;Pilchaca;17.9
+90116;Huancavelica;Huancavelica;Vilca;10.2
+90117;Huancavelica;Huancavelica;Yauli;11.1
+90118;Huancavelica;Huancavelica;Ascensión;2.3
+90119;Huancavelica;Huancavelica;Huando;15.3
+90201;Huancavelica;Acobamba;Acobamba;9.2
+90202;Huancavelica;Acobamba;Andabamba;22.2
+90203;Huancavelica;Acobamba;Anta;23.7
+90204;Huancavelica;Acobamba;Caja;5.3
+90205;Huancavelica;Acobamba;Marcas;16.8
+90206;Huancavelica;Acobamba;Paucara;15.9
+90207;Huancavelica;Acobamba;Pomacocha;7.8
+90208;Huancavelica;Acobamba;Rosario;16.2
+90301;Huancavelica;Angaraes;Lircay;16.8
+90302;Huancavelica;Angaraes;Anchonga;20
+90303;Huancavelica;Angaraes;Callanmarca;16.9
+90304;Huancavelica;Angaraes;Ccochaccasa;4.8
+90305;Huancavelica;Angaraes;Chincho;12.3
+90306;Huancavelica;Angaraes;Congalla;25.5
+90307;Huancavelica;Angaraes;Huanca-Huanca;33.3
+90308;Huancavelica;Angaraes;Huayllay Grande;15.3
+90309;Huancavelica;Angaraes;Julcamarca;8.2
+90310;Huancavelica;Angaraes;San Antonio de Antaparco;9.2
+90311;Huancavelica;Angaraes;Santo Tomás de Pata;20.5
+90312;Huancavelica;Angaraes;Secclla;19.8
+90401;Huancavelica;Castrovirreyna;Castrovirreyna;12
+90402;Huancavelica;Castrovirreyna;Arma;14.8
+90403;Huancavelica;Castrovirreyna;Aurahua;12.2
+90404;Huancavelica;Castrovirreyna;Capillas;10.7
+90405;Huancavelica;Castrovirreyna;Chupamarca;14.6
+90406;Huancavelica;Castrovirreyna;Cocas;14.4
+90407;Huancavelica;Castrovirreyna;Huachos;23
+90408;Huancavelica;Castrovirreyna;Huamatambo;10.5
+90409;Huancavelica;Castrovirreyna;Mollepampa;19.6
+90410;Huancavelica;Castrovirreyna;San Juan;10.5
+90411;Huancavelica;Castrovirreyna;Santa Ana;16.6
+90412;Huancavelica;Castrovirreyna;Tantara;16.7
+90413;Huancavelica;Castrovirreyna;Ticrapo;7.1
+90501;Huancavelica;Churcampa;Churcampa;13.9
+90502;Huancavelica;Churcampa;Anco;29.5
+90503;Huancavelica;Churcampa;Chinchihuasi;31.4
+90504;Huancavelica;Churcampa;El Carmen;22.5
+90505;Huancavelica;Churcampa;La Merced;10.5
+90506;Huancavelica;Churcampa;Locroja;25.1
+90507;Huancavelica;Churcampa;Paucarbamba;22.4
+90508;Huancavelica;Churcampa;San Miguel de Mayocc;7.4
+90509;Huancavelica;Churcampa;San Pedro de Coris;14.7
+90510;Huancavelica;Churcampa;Pachamarca;28.7
+90511;Huancavelica;Churcampa;Cosme;18.9
+90601;Huancavelica;Huaytara;Huaytará;2.6
+90602;Huancavelica;Huaytara;Ayavi;12.9
+90603;Huancavelica;Huaytara;Córdova;10.4
+90604;Huancavelica;Huaytara;Huayacundo Arma;11.4
+90605;Huancavelica;Huaytara;Laramarca;13.1
+90606;Huancavelica;Huaytara;Ocoyo;21.4
+90607;Huancavelica;Huaytara;Pilpichaca;30
+90608;Huancavelica;Huaytara;Querco;12.3
+90609;Huancavelica;Huaytara;Quito-Arma;58.2
+90610;Huancavelica;Huaytara;San Antonio de Cusicancha;38.1
+90611;Huancavelica;Huaytara;San Francisco de Sangayaico;9.8
+90612;Huancavelica;Huaytara;San Isidro;16.4
+90613;Huancavelica;Huaytara;Santiago de Chocorvos;28.4
+90614;Huancavelica;Huaytara;Santiago de Quirahuara;21.2
+90615;Huancavelica;Huaytara;Santo Domingo de Capillas;15.3
+90616;Huancavelica;Huaytara;Tambo;17.9
+90701;Huancavelica;Tayacaja;Pampas;11
+90702;Huancavelica;Tayacaja;Acostambo;16.4
+90703;Huancavelica;Tayacaja;Acraquia;13.4
+90704;Huancavelica;Tayacaja;Ahuaycha;21.6
+90705;Huancavelica;Tayacaja;Colcabamba;15.6
+90706;Huancavelica;Tayacaja;Daniel Hernández;6.9
+90707;Huancavelica;Tayacaja;Huachocolpa;18.5
+90709;Huancavelica;Tayacaja;Huaribamba;17.8
+90710;Huancavelica;Tayacaja;Ñahuimpuquio;11.1
+90711;Huancavelica;Tayacaja;Pazos;16.3
+90713;Huancavelica;Tayacaja;Quishuar;14.1
+90714;Huancavelica;Tayacaja;Salcabamba;26.6
+90715;Huancavelica;Tayacaja;Salcahuasi;24.1
+90716;Huancavelica;Tayacaja;San Marcos de Rocchac;23.3
+90717;Huancavelica;Tayacaja;Surcubamba;21.6
+90718;Huancavelica;Tayacaja;Tintay Puncu;23.9
+90719;Huancavelica;Tayacaja;Quichuas 3/;29
+90720;Huancavelica;Tayacaja;Andaymarca 5/;26
+90721;Huancavelica;Tayacaja;Roble 18/;23.9
+90722;Huancavelica;Tayacaja;Pichos 19/;16.3
+90723;Huancavelica;Tayacaja;Santiago de Tucuma 23/;6.9
+100101;Huánuco;Huanuco;Huánuco;6.6
+100102;Huánuco;Huanuco;Amarilis;3.5
+100103;Huánuco;Huanuco;Chinchao;21.4
+100104;Huánuco;Huanuco;Churubamba;37.6
+100105;Huánuco;Huanuco;Margos;32.7
+100106;Huánuco;Huanuco;Quisqui;16.4
+100107;Huánuco;Huanuco;San Francisco de Cayrán;11.4
+100108;Huánuco;Huanuco;San Pedro de Chaulan;35.4
+100109;Huánuco;Huanuco;Santa María del Valle;28.5
+100110;Huánuco;Huanuco;Yarumayo;17.4
+100111;Huánuco;Huanuco;Pillco Marca;2.2
+100112;Huánuco;Huanuco;Yacus;30.7
+100113;Huánuco;Huanuco;San Pablo de Pillao 16/;21.4
+100201;Huánuco;Ambo;Ambo;19.4
+100202;Huánuco;Ambo;Cayna;25.6
+100203;Huánuco;Ambo;Colpas;22
+100204;Huánuco;Ambo;Conchamarca;12.6
+100205;Huánuco;Ambo;Huacar;19.1
+100206;Huánuco;Ambo;San Francisco;33.1
+100207;Huánuco;Ambo;San Rafael;36.2
+100208;Huánuco;Ambo;Tomay Kichwa;9.7
+100301;Huánuco;Dos De Mayo;La Unión;5.7
+100307;Huánuco;Dos De Mayo;Chuquis;24.6
+100311;Huánuco;Dos De Mayo;Marías;46.2
+100313;Huánuco;Dos De Mayo;Pachas;9
+100316;Huánuco;Dos De Mayo;Quivilla;8.7
+100317;Huánuco;Dos De Mayo;Ripan;17.4
+100321;Huánuco;Dos De Mayo;Shunqui;28.3
+100322;Huánuco;Dos De Mayo;Sillapata;18.8
+100323;Huánuco;Dos De Mayo;Yanas;24.3
+100401;Huánuco;Huacaybamba;Huacaybamba;36.9
+100402;Huánuco;Huacaybamba;Canchabamba;27.8
+100403;Huánuco;Huacaybamba;Cochabamba;34.5
+100404;Huánuco;Huacaybamba;Pinra;31.1
+100501;Huánuco;Huamalies;Llata;18.8
+100502;Huánuco;Huamalies;Arancay;22.2
+100503;Huánuco;Huamalies;Chavín de Pariarca;20.1
+100504;Huánuco;Huamalies;Jacas Grande;31.6
+100505;Huánuco;Huamalies;Jircan;35.9
+100506;Huánuco;Huamalies;Miraflores;38.3
+100507;Huánuco;Huamalies;Monzón;8.7
+100508;Huánuco;Huamalies;Punchao;23.9
+100509;Huánuco;Huamalies;Puños;20.4
+100510;Huánuco;Huamalies;Singa;29.5
+100511;Huánuco;Huamalies;Tantamayo;29.8
+100601;Huánuco;Leoncio Prado;Rupa-Rupa;5.3
+100602;Huánuco;Leoncio Prado;Daniel Alomias Robles;15.6
+100603;Huánuco;Leoncio Prado;Hermilio Valdizán;31.9
+100604;Huánuco;Leoncio Prado;José Crespo y Castillo;15.5
+100605;Huánuco;Leoncio Prado;Luyando;2.7
+100606;Huánuco;Leoncio Prado;Mariano Damaso Beraun;11.7
+100607;Huánuco;Leoncio Prado;Pucayacu 13/;15.5
+100608;Huánuco;Leoncio Prado;Castillo Grande 14/;5.3
+100609;Huánuco;Leoncio Prado;Pueblo Nuevo 22/;15.5
+100610;Huánuco;Leoncio Prado;Santo Domingo de Anda 27/;15.5
+100701;Huánuco;Marañon;Huacrachuco;27.6
+100702;Huánuco;Marañon;Cholón;28.8
+100703;Huánuco;Marañon;San Buenaventura;30.4
+100704;Huánuco;Marañon;La Morada 12/;28.8
+100705;Huánuco;Marañon;Santa Rosa de Alto Yanajanca 15/;28.8
+100801;Huánuco;Pachitea;Panao;27.6
+100802;Huánuco;Pachitea;Chaglla;21.7
+100803;Huánuco;Pachitea;Molino;28.5
+100804;Huánuco;Pachitea;Umari;42.6
+100901;Huánuco;Puerto Inca;Puerto Inca;13
+100902;Huánuco;Puerto Inca;Codo del Pozuzo;11.4
+100903;Huánuco;Puerto Inca;Honoria;4.8
+100904;Huánuco;Puerto Inca;Tournavista;5.5
+100905;Huánuco;Puerto Inca;Yuyapichis;8.8
+101001;Huánuco;Lauricocha;Jesús;16.1
+101002;Huánuco;Lauricocha;Baños;12
+101003;Huánuco;Lauricocha;Jivia;16.7
+101004;Huánuco;Lauricocha;Queropalca;5.6
+101005;Huánuco;Lauricocha;Rondos;12.6
+101006;Huánuco;Lauricocha;San Francisco de Asís;20.9
+101007;Huánuco;Lauricocha;San Miguel de Cauri;25.1
+101101;Huánuco;Yarowilca;Chavinillo;26.9
+101102;Huánuco;Yarowilca;Cahuac;8.5
+101103;Huánuco;Yarowilca;Chacabamba;13.6
+101104;Huánuco;Yarowilca;Aparicio Pomares;26
+101105;Huánuco;Yarowilca;Jacas Chico;25.9
+101106;Huánuco;Yarowilca;Obas;23.1
+101107;Huánuco;Yarowilca;Pampamarca;32.2
+101108;Huánuco;Yarowilca;Choras;23.5
+110101;Ica;Ica;Ica;0
+110102;Ica;Ica;La Tinguiña;0
+110103;Ica;Ica;Los Aquijes;0
+110104;Ica;Ica;Ocucaje;0
+110105;Ica;Ica;Pachacútec;0
+110106;Prov. Const. Del Callao;Ica;Parcona;0
+110107;Ica;Ica;Pueblo Nuevo;0
+110108;Ica;Ica;Salas;0.2
+110109;Ica;Ica;San José de Los Molinos;0.1
+110110;Ica;Ica;San Juan Bautista;0
+110111;Ica;Ica;Santiago;0
+110112;Ica;Ica;Subtanjalla;0
+110113;Ica;Ica;Tate;0
+110114;Ica;Ica;Yauca del Rosario;0.5
+110201;Ica;Chincha;Chincha Alta;0
+110202;Ica;Chincha;Alto Larán;0
+110203;Ica;Chincha;Chavín;0.6
+110204;Ica;Chincha;Chincha Baja;0
+110205;Ica;Chincha;El Carmen;0
+110206;Ica;Chincha;Grocio Prado;0
+110207;Ica;Chincha;Pueblo Nuevo;0
+110208;Ica;Chincha;San Juan de Yánac;0.1
+110209;Ica;Chincha;San Pedro de Huacarpana;0
+110210;Ica;Chincha;Sunampe;0
+110211;Ica;Chincha;Tambo de Mora;0
+110301;Ica;Nasca;Nasca;0
+110302;Ica;Nasca;Changuillo;0
+110303;Ica;Nasca;El Ingenio;0
+110304;Ica;Nasca;Marcona;0
+110305;Ica;Nasca;Vista Alegre;0
+110401;Ica;Palpa;Palpa;0
+110402;Ica;Palpa;Llipata;0
+110403;Ica;Palpa;Río Grande;0
+110404;Ica;Palpa;Santa Cruz;0
+110405;Ica;Palpa;Tibillo;0
+110501;Ica;Pisco;Pisco;0
+110502;Ica;Pisco;Huancano;32.7
+110503;Ica;Pisco;Humay;0
+110504;Ica;Pisco;Independencia;0
+110505;Ica;Pisco;Paracas;0
+110506;Ica;Pisco;San Andrés;0
+110507;Ica;Pisco;San Clemente;0
+110508;Ica;Pisco;Túpac Amaru Inca;0
+120101;Junín;Huancayo;Huancayo;0.4
+120104;Junín;Huancayo;Carhuacallanga;15.4
+120105;Junín;Huancayo;Chacapampa;21.3
+120106;Junín;Huancayo;Chicche;10.4
+120107;Junín;Huancayo;Chilca;0.6
+120108;Junín;Huancayo;Chongos Alto;11.9
+120111;Junín;Huancayo;Chupuro;7.1
+120112;Junín;Huancayo;Colca;10.8
+120113;Junín;Huancayo;Cullhuas;17
+120114;Junín;Huancayo;El Tambo;0.2
+120116;Junín;Huancayo;Huacrapuquio;8.9
+120117;Junín;Huancayo;Hualhuas;2
+120119;Junín;Huancayo;Huancán;1.3
+120120;Junín;Huancayo;Huasicancha;16.1
+120121;Junín;Huancayo;Huayucachi;2.1
+120122;Junín;Huancayo;Ingenio;8.9
+120124;Junín;Huancayo;Pariahuanca;28.8
+120125;Junín;Huancayo;Pilcomayo;1.1
+120126;Junín;Huancayo;Pucará;11.1
+120127;Junín;Huancayo;Quichuay;6.7
+120128;Junín;Huancayo;Quilcas;7.2
+120129;Junín;Huancayo;San Agustín;1
+120130;Junín;Huancayo;San Jerónimo de Tunán;2.2
+120132;Junín;Huancayo;Saño;2.2
+120133;Junín;Huancayo;Sapallanga;4
+120134;Junín;Huancayo;Sicaya;2.8
+120135;Junín;Huancayo;Santo Domingo de Acobamba;18.3
+120136;Junín;Huancayo;Viques;1.7
+120201;Junín;Concepcion;Concepción;1.5
+120202;Junín;Concepcion;Aco;11.5
+120203;Junín;Concepcion;Andamarca;25.1
+120204;Junín;Concepcion;Chambará;11.9
+120205;Junín;Concepcion;Cochas;19
+120206;Junín;Concepcion;Comas;18.3
+120207;Junín;Concepcion;Heroínas Toledo;13.4
+120208;Junín;Concepcion;Manzanares;2.1
+120209;Junín;Concepcion;Mariscal Castilla;17.5
+120210;Junín;Concepcion;Matahuasi;1.2
+120211;Junín;Concepcion;Mito;1.9
+120212;Junín;Concepcion;Nueve de Julio;1.5
+120213;Junín;Concepcion;Orcotuna;3.7
+120214;Junín;Concepcion;San José de Quero;9.2
+120215;Junín;Concepcion;Santa Rosa de Ocopa;2.5
+120301;Junín;Chanchamayo;Chanchamayo;1.5
+120302;Junín;Chanchamayo;Perené;5.6
+120303;Junín;Chanchamayo;Pichanaqui;3.9
+120304;Junín;Chanchamayo;San Luis de Shuaro;2.6
+120305;Junín;Chanchamayo;San Ramón;2.7
+120306;Junín;Chanchamayo;Vitoc;6.4
+120401;Junín;Jauja;Jauja;1
+120402;Junín;Jauja;Acolla;5.7
+120403;Junín;Jauja;Apata;9
+120404;Junín;Jauja;Ataura;2.1
+120405;Junín;Jauja;Canchayllo;6.7
+120406;Junín;Jauja;Curicaca;6.9
+120407;Junín;Jauja;El Mantaro;2.8
+120408;Junín;Jauja;Huamalí;5.9
+120409;Junín;Jauja;Huaripampa;1.7
+120410;Junín;Jauja;Huertas;2.4
+120411;Junín;Jauja;Janjaillo;19.6
+120412;Junín;Jauja;Julcán;10.5
+120413;Junín;Jauja;Leonor Ordóñez;3.7
+120414;Junín;Jauja;Llocllapampa;4.8
+120415;Junín;Jauja;Marco;9.8
+120416;Junín;Jauja;Masma;10.3
+120417;Junín;Jauja;Masma Chicche;21.2
+120418;Junín;Jauja;Molinos;12
+120419;Junín;Jauja;Monobamba;4.5
+120420;Junín;Jauja;Muqui;4.9
+120421;Junín;Jauja;Muquiyauyo;2.2
+120422;Junín;Jauja;Paca;13.3
+120423;Junín;Jauja;Paccha;11.7
+120424;Junín;Jauja;Pancán;3.8
+120425;Junín;Jauja;Parco;9.5
+120426;Junín;Jauja;Pomacancha;16.5
+120427;Junín;Jauja;Ricrán;18.1
+120428;Junín;Jauja;San Lorenzo;2.5
+120429;Junín;Jauja;San Pedro de Chunán;6.8
+120430;Junín;Jauja;Sausa;1.9
+120431;Junín;Jauja;Sincos;10.9
+120432;Junín;Jauja;Tunan Marca;11
+120433;Junín;Jauja;Yauli;6.4
+120434;Junín;Jauja;Yauyos;2.6
+120501;Junín;Junin;Junín;5.5
+120502;Junín;Junin;Carhuamayo;7
+120503;Junín;Junin;Ondores;9.8
+120504;Junín;Junin;Ulcumayo;27.1
+120601;Junín;Satipo;Satipo;2
+120602;Junín;Satipo;Coviriali;4.7
+120603;Junín;Satipo;Llaylla;5.6
+120604;Junín;Satipo;Mazamari;3.6
+120605;Junín;Satipo;Pampa Hermosa;5.3
+120606;Junín;Satipo;Pangoa;3.6
+120607;Junín;Satipo;Río Negro;6
+120608;Junín;Satipo;Río Tambo;9.2
+120609;Junín;Satipo;Vizcatan del Ene;3.6
+120701;Junín;Tarma;Tarma;2.1
+120702;Junín;Tarma;Acobamba;7.9
+120703;Junín;Tarma;Huaricolca;16.2
+120704;Junín;Tarma;Huasahuasi;11.1
+120705;Junín;Tarma;La Unión;3.6
+120706;Junín;Tarma;Palca;8
+120707;Junín;Tarma;Palcamayo;8.6
+120708;Junín;Tarma;San Pedro de Cajas;14.2
+120709;Junín;Tarma;Tapo;24.5
+120801;Junín;Yauli;La Oroya;0.9
+120802;Junín;Yauli;Chacapalpa;6.9
+120803;Junín;Yauli;Huay-Huay;0.4
+120804;Junín;Yauli;Marcapomacocha;2.1
+120805;Junín;Yauli;Morococha;5.8
+120806;Junín;Yauli;Paccha;1.3
+120807;Junín;Yauli;Santa Bárbara de Carhuacayán;6.9
+120808;Junín;Yauli;Santa Rosa de Sacco;1
+120809;Junín;Yauli;Suitucancha;4.2
+120810;Junín;Yauli;Yauli;0.4
+120901;Junín;Chupaca;Chupaca;1.9
+120902;Junín;Chupaca;Ahuac;6.3
+120903;Junín;Chupaca;Chongos Bajo;4.5
+120904;Junín;Chupaca;Huáchac;3.5
+120905;Junín;Chupaca;Huamancaca Chico;1.4
+120906;Junín;Chupaca;San Juan de Yscos;8
+120907;Junín;Chupaca;San Juan de Jarpa;15.7
+120908;Junín;Chupaca;Tres de Diciembre;2
+120909;Junín;Chupaca;Yanacancha;9.4
+130101;La Libertad;Trujillo;Trujillo;0.1
+130102;La Libertad;Trujillo;El Porvenir;1.9
+130103;La Libertad;Trujillo;Florencia de Mora;1.2
+130104;La Libertad;Trujillo;Huanchaco;1.2
+130105;La Libertad;Trujillo;La Esperanza;1.2
+130106;La Libertad;Trujillo;Laredo;1.9
+130107;La Libertad;Trujillo;Moche;1.8
+130108;La Libertad;Trujillo;Poroto;11.1
+130109;La Libertad;Trujillo;Salaverry;4.1
+130110;La Libertad;Trujillo;Simbal;15.7
+130111;La Libertad;Trujillo;Victor Larco Herrera;0.1
+130201;La Libertad;Ascope;Ascope;3.7
+130202;La Libertad;Ascope;Chicama;2.8
+130203;La Libertad;Ascope;Chocope;0.9
+130204;La Libertad;Ascope;Magdalena de Cao;0.9
+130205;La Libertad;Ascope;Paiján;2.8
+130206;La Libertad;Ascope;Rázuri;2
+130207;La Libertad;Ascope;Santiago de Cao;1.2
+130208;La Libertad;Ascope;Casa Grande;1
+130301;La Libertad;Bolivar;Bolívar;23.6
+130302;La Libertad;Bolivar;Bambamarca;60.8
+130303;La Libertad;Bolivar;Condormarca;72.1
+130304;La Libertad;Bolivar;Longotea;36.8
+130305;La Libertad;Bolivar;Uchumarca;19.8
+130306;La Libertad;Bolivar;Ucuncha;63.2
+130401;La Libertad;Chepen;Chepén;2.2
+130402;La Libertad;Chepen;Pacanga;6.4
+130403;La Libertad;Chepen;Pueblo Nuevo;3.2
+130501;La Libertad;Julcan;Julcán;45.3
+130502;La Libertad;Julcan;Calamarca;52.6
+130503;La Libertad;Julcan;Carabamba;30.2
+130504;La Libertad;Julcan;Huaso;67.2
+130601;La Libertad;Otuzco;Otuzco;20.8
+130602;La Libertad;Otuzco;Agallpampa;37.8
+130604;La Libertad;Otuzco;Charat;30.5
+130605;La Libertad;Otuzco;Huaranchal;45.6
+130606;La Libertad;Otuzco;La Cuesta;28.6
+130608;La Libertad;Otuzco;Mache;27.1
+130610;La Libertad;Otuzco;Paranday;39.6
+130611;La Libertad;Otuzco;Salpo;33.3
+130613;La Libertad;Otuzco;Sinsicap;32.5
+130614;La Libertad;Otuzco;Usquil;24.4
+130701;La Libertad;Pacasmayo;San Pedro de Lloc;1.6
+130702;La Libertad;Pacasmayo;Guadalupe;2.5
+130703;La Libertad;Pacasmayo;Jequetepeque;3
+130704;La Libertad;Pacasmayo;Pacasmayo;1.4
+130705;La Libertad;Pacasmayo;San José;6.6
+130801;La Libertad;Pataz;Tayabamba;26.9
+130802;La Libertad;Pataz;Buldibuyo;26.9
+130803;La Libertad;Pataz;Chillia;31.7
+130804;La Libertad;Pataz;Huancaspata;52.9
+130805;La Libertad;Pataz;Huaylillas;36.9
+130806;La Libertad;Pataz;Huayo;42.7
+130807;La Libertad;Pataz;Ongón;26.5
+130808;La Libertad;Pataz;Parcoy;24.1
+130809;La Libertad;Pataz;Pataz;20
+130810;La Libertad;Pataz;Pias;48
+130811;La Libertad;Pataz;Santiago de Challas;50.7
+130812;La Libertad;Pataz;Taurija;62.7
+130813;La Libertad;Pataz;Urpay;44.4
+130901;La Libertad;Sanchez Carrión;Huamachuco;6.6
+130902;La Libertad;Sanchez Carrión;Chugay;32.2
+130903;La Libertad;Sanchez Carrión;Cochorco;42.5
+130904;La Libertad;Sanchez Carrión;Curgos;86.7
+130905;La Libertad;Sanchez Carrión;Marcabal;27.2
+130906;La Libertad;Sanchez Carrión;Sanagoran;52.7
+130907;La Libertad;Sanchez Carrión;Sarín;39.8
+130908;La Libertad;Sanchez Carrión;Sartimbamba;37.2
+131001;La Libertad;Santiago De Chuco;Santiago de Chuco;22.2
+131002;La Libertad;Santiago De Chuco;Angasmarca;24
+131003;La Libertad;Santiago De Chuco;Cachicadan;32.4
+131004;La Libertad;Santiago De Chuco;Mollebamba;28.8
+131005;La Libertad;Santiago De Chuco;Mollepata;30.9
+131006;La Libertad;Santiago De Chuco;Quiruvilca;14.9
+131007;La Libertad;Santiago De Chuco;Santa Cruz de Chuca;38.5
+131008;La Libertad;Santiago De Chuco;Sitabamba;53.8
+131101;La Libertad;Gran Chimú;Cascas;9
+131102;La Libertad;Gran Chimú;Lucma;40.4
+131103;La Libertad;Gran Chimú;Compin (Marmot);25.5
+131104;La Libertad;Gran Chimú;Sayapullo;44.2
+131201;La Libertad;Virú;Virú;1.9
+131202;La Libertad;Virú;Chao;4.3
+131203;La Libertad;Virú;Guadalupito;2.3
+140101;Lambayeque;Chiclayo;Chiclayo;0.4
+140102;Lambayeque;Chiclayo;Chongoyape;0.8
+140103;Lambayeque;Chiclayo;Etén;1.3
+140104;Lambayeque;Chiclayo;Etén Puerto;0.2
+140105;Lambayeque;Chiclayo;José Leonardo Ortiz;0.7
+140106;Lambayeque;Chiclayo;La Victoria;0.4
+140107;Lambayeque;Chiclayo;Lagunas;1.1
+140108;Lambayeque;Chiclayo;Monsefú;2.5
+140109;Lambayeque;Chiclayo;Nueva Arica;0.4
+140110;Lambayeque;Chiclayo;Oyotún;1.2
+140111;Lambayeque;Chiclayo;Picsi;1.1
+140112;Lambayeque;Chiclayo;Pimentel;0.5
+140113;Lambayeque;Chiclayo;Reque;0.7
+140114;Lambayeque;Chiclayo;Santa Rosa;2.5
+140115;Lambayeque;Chiclayo;Saña;2.6
+140116;Lambayeque;Chiclayo;Cayaltí;0.6
+140117;Lambayeque;Chiclayo;Patapo;1
+140118;Lambayeque;Chiclayo;Pomalca;0.6
+140119;Lambayeque;Chiclayo;Pucala;0.3
+140120;Lambayeque;Chiclayo;Tumán;0.4
+140201;Lambayeque;Ferreñafe;Ferreñafe;2.1
+140202;Lambayeque;Ferreñafe;Cañaris;60.5
+140203;Lambayeque;Ferreñafe;Incahuasi;47.6
+140204;Lambayeque;Ferreñafe;Manuel Antonio Mesones Muro;1.4
+140205;Lambayeque;Ferreñafe;Pitipo;1.5
+140206;Lambayeque;Ferreñafe;Pueblo Nuevo;2.6
+140301;Lambayeque;Lambayeque;Lambayeque;0.9
+140302;Lambayeque;Lambayeque;Chochope;2.8
+140303;Lambayeque;Lambayeque;Illimo;1.1
+140304;Lambayeque;Lambayeque;Jayanca;1.4
+140305;Lambayeque;Lambayeque;Mochumi;1.3
+140306;Lambayeque;Lambayeque;Mórrope;2.7
+140307;Lambayeque;Lambayeque;Motupe;3.9
+140308;Lambayeque;Lambayeque;Olmos;1.8
+140309;Lambayeque;Lambayeque;Pacora;2.3
+140310;Lambayeque;Lambayeque;Salas;19.6
+140311;Lambayeque;Lambayeque;San José;1.2
+140312;Lambayeque;Lambayeque;Túcume;1.5
+150101;Lima;Lima;Lima;0.3
+150102;Lima;Lima;Ancón;1.4
+150103;Lima;Lima;Ate;0.6
+150104;Lima;Lima;Barranco;0.2
+150105;Lima;Lima;Breña;0.1
+150106;Lima;Lima;Carabayllo;1.2
+150107;Lima;Lima;Chaclacayo;0.3
+150108;Lima;Lima;Chorrillos;0.5
+150109;Lima;Lima;Cieneguilla;1.3
+150110;Lima;Lima;Comas;0.6
+150111;Lima;Lima;El Agustino;0.6
+150112;Lima;Lima;Independencia;0.6
+150113;Lima;Lima;Jesús María;0
+150114;Lima;Lima;La Molina;0
+150115;Lima;Lima;La Victoria;0.3
+150116;Lima;Lima;Lince;0.1
+150117;Lima;Lima;Los Olivos;0.3
+150118;Lima;Lima;Lurigancho;1.4
+150119;Lima;Lima;Lurín;1.5
+150120;Lima;Lima;Magdalena del Mar;0
+150121;Lima;Lima;Pueblo Libre;0
+150122;Lima;Lima;Miraflores;0
+150123;Lima;Lima;Pachacámac;1.1
+150124;Lima;Lima;Pucusana;1.6
+150125;Lima;Lima;Puente Piedra;1.6
+150126;Lima;Lima;Punta Hermosa;1.7
+150127;Lima;Lima;Punta Negra;0.6
+150128;Lima;Lima;Rímac;0.5
+150129;Lima;Lima;San Bartolo;0.7
+150130;Lima;Lima;San Borja;0
+150131;Lima;Lima;San Isidro;0
+150132;Lima;Lima;San Juan de Lurigancho;1.1
+150133;Lima;Lima;San Juan de Miraflores;0.7
+150134;Lima;Lima;San Luis;0.1
+150135;Lima;Lima;San Martín de Porres;0.3
+150136;Lima;Lima;San Miguel;0
+150137;Lima;Lima;Santa Anita;0.3
+150138;Lima;Lima;Santa María del Mar;0.4
+150139;Lima;Lima;Santa Rosa;2
+150140;Lima;Lima;Santiago de Surco;0
+150141;Lima;Lima;Surquillo;0.2
+150142;Lima;Lima;Villa El Salvador;1
+150143;Lima;Lima;Villa María del Triunfo;0.9
+150201;Lima;Barranca;Barranca;0.6
+150202;Lima;Barranca;Paramonga;0.4
+150203;Lima;Barranca;Pativilca;1.1
+150204;Lima;Barranca;Supe;1.4
+150205;Lima;Barranca;Supe Puerto;0.8
+150301;Lima;Cajatambo;Cajatambo;13.9
+150302;Lima;Cajatambo;Copa;17.8
+150303;Lima;Cajatambo;Gorgor;17.1
+150304;Lima;Cajatambo;Huancapón;21.8
+150305;Lima;Cajatambo;Manas;13.6
+150401;Lima;Canta;Canta;4.1
+150402;Lima;Canta;Arahuay;6.5
+150403;Lima;Canta;Huamantanga;8
+150404;Lima;Canta;Huaros;3.4
+150405;Lima;Canta;Lachaqui;6
+150406;Lima;Canta;San Buenaventura;6.6
+150407;Lima;Canta;Santa Rosa de Quives;1.4
+150501;Lima;Cañete;San Vicente de Cañete;1
+150502;Lima;Cañete;Asia;0.4
+150503;Lima;Cañete;Calango;1.2
+150504;Lima;Cañete;Cerro Azul;0.3
+150505;Lima;Cañete;Chilca;0.3
+150506;Lima;Cañete;Coayllo;1.3
+150507;Lima;Cañete;Imperial;0.7
+150508;Lima;Cañete;Lunahuana;1.7
+150509;Lima;Cañete;Mala;0.3
+150510;Lima;Cañete;Nuevo Imperial;1.7
+150511;Lima;Cañete;Pacarán;1.7
+150512;Lima;Cañete;Quilmana;1.5
+150513;Lima;Cañete;San Antonio;0.1
+150514;Lima;Cañete;San Luis;0.8
+150515;Lima;Cañete;Santa Cruz de Flores;0.4
+150516;Lima;Cañete;Zuñiga;2.2
+150601;Lima;Huaral;Huaral;0.8
+150602;Lima;Huaral;Atavillos Alto;4.6
+150603;Lima;Huaral;Atavillos Bajo;1.7
+150604;Lima;Huaral;Aucallama;1.6
+150605;Lima;Huaral;Chancay;0.6
+150606;Lima;Huaral;Ihuari;11.8
+150607;Lima;Huaral;Lampián;10.7
+150608;Lima;Huaral;Pacaraos;9.3
+150609;Lima;Huaral;San Miguel de Acos;1.6
+150610;Lima;Huaral;Santa Cruz de Andamarca;3.7
+150611;Lima;Huaral;Sumbilca;10.2
+150612;Lima;Huaral;Veintisiete de Noviembre;7.3
+150701;Lima;Huarochiri;Matucana;2.4
+150702;Lima;Huarochiri;Antioquía;2.3
+150703;Lima;Huarochiri;Callahuanca;0.6
+150704;Lima;Huarochiri;Carampoma;4
+150705;Lima;Huarochiri;Chicla;0.5
+150706;Lima;Huarochiri;Cuenca;12.5
+150707;Lima;Huarochiri;Huachupampa;6.9
+150708;Lima;Huarochiri;Huanza;3.6
+150709;Lima;Huarochiri;Huarochirí;5.4
+150710;Lima;Huarochiri;Lahuaytambo;7.7
+150711;Lima;Huarochiri;Langa;13.6
+150712;Lima;Huarochiri;Laraos;5.7
+150713;Lima;Huarochiri;Mariatana;9
+150714;Lima;Huarochiri;Ricardo Palma;0.3
+150715;Lima;Huarochiri;San Andrés de Tupicocha;12.9
+150716;Lima;Huarochiri;San Antonio;3.4
+150717;Lima;Huarochiri;San Bartolomé;0.8
+150718;Lima;Huarochiri;San Damián;14.2
+150719;Lima;Huarochiri;San Juan de Iris;7.4
+150720;Lima;Huarochiri;San Juan de Tantaranche;7.2
+150721;Lima;Huarochiri;San Lorenzo de Quinti;10.7
+150722;Lima;Huarochiri;San Mateo;1.7
+150723;Lima;Huarochiri;San Mateo de Otao;3.3
+150724;Lima;Huarochiri;San Pedro de Casta;2.9
+150725;Lima;Huarochiri;San Pedro de Huancayre;5.1
+150726;Lima;Huarochiri;Sangallaya;13.5
+150727;Lima;Huarochiri;Santa Cruz de Cocachacra;0.9
+150728;Lima;Huarochiri;Santa Eulalia;0.6
+150729;Lima;Huarochiri;Santiago de Anchucaya;5.3
+150730;Lima;Huarochiri;Santiago de Tuna;16.5
+150731;Lima;Huarochiri;Santo Domingo de los Olleros;2.4
+150732;Lima;Huarochiri;Surco;3.8
+150801;Lima;Huaura;Huacho;0.2
+150802;Lima;Huaura;Ambar;13.5
+150803;Lima;Huaura;Caleta de Carquín;0.4
+150804;Lima;Huaura;Checras;13.7
+150805;Lima;Huaura;Hualmay;0.3
+150806;Lima;Huaura;Huaura;1.2
+150807;Lima;Huaura;Leoncio Prado;9.1
+150808;Lima;Huaura;Paccho;11.7
+150809;Lima;Huaura;Santa Leonor;6.1
+150810;Lima;Huaura;Santa María;0.7
+150811;Lima;Huaura;Sayán;1.5
+150812;Lima;Huaura;Vegueta;1.8
+150901;Lima;Oyon;Oyón;2.5
+150902;Lima;Oyon;Andajes;8.8
+150903;Lima;Oyon;Caujul;6.1
+150904;Lima;Oyon;Cochamarca;4.5
+150905;Lima;Oyon;Navan;7.1
+150906;Lima;Oyon;Pachangara;4
+151001;Lima;Yauyos;Yauyos;4.1
+151002;Lima;Yauyos;Alis;5.9
+151003;Lima;Yauyos;Allauca;9
+151004;Lima;Yauyos;Ayaviri;7.1
+151005;Lima;Yauyos;Azángaro;28.1
+151006;Lima;Yauyos;Cacra;5.8
+151007;Lima;Yauyos;Carania;8.6
+151008;Lima;Yauyos;Catahuasi;3.2
+151009;Lima;Yauyos;Chocos;23.1
+151010;Lima;Yauyos;Cochas;7.1
+151011;Lima;Yauyos;Colonia;12.9
+151012;Lima;Yauyos;Hongos;15.5
+151013;Lima;Yauyos;Huampara;4.1
+151014;Lima;Yauyos;Huancaya;7.9
+151015;Lima;Yauyos;Huangascar;16.3
+151016;Lima;Yauyos;Huantan;13.1
+151017;Lima;Yauyos;Huañec;5.5
+151018;Lima;Yauyos;Laraos;3.6
+151019;Lima;Yauyos;Lincha;23
+151020;Lima;Yauyos;Madean;15.6
+151021;Lima;Yauyos;Miraflores;10.9
+151022;Lima;Yauyos;Omas;3.3
+151023;Lima;Yauyos;Putinza;3.2
+151024;Lima;Yauyos;Quinches;12.4
+151025;Lima;Yauyos;Quinocay;3.4
+151026;Lima;Yauyos;San Joaquín;4.4
+151027;Lima;Yauyos;San Pedro de Pilas;6.2
+151028;Lima;Yauyos;Tanta;6.8
+151029;Lima;Yauyos;Tauripampa;9.8
+151030;Lima;Yauyos;Tomás;4.3
+151031;Lima;Yauyos;Tupe;23.8
+151032;Lima;Yauyos;Viñac;17.8
+151033;Lima;Yauyos;Vitis;12.7
+160101;Loreto;Maynas;Iquitos;0.9
+160102;Loreto;Maynas;Alto Nanay;13.2
+160103;Loreto;Maynas;Fernando Lores;19.4
+160104;Loreto;Maynas;Indiana;15.4
+160105;Loreto;Maynas;Las Amazonas;19.3
+160106;Loreto;Maynas;Mazan;11.9
+160107;Loreto;Maynas;Napo;17
+160108;Loreto;Maynas;Punchana;2.7
+160110;Loreto;Maynas;Torres Causana;21.8
+160112;Loreto;Maynas;Belén;6.2
+160113;Loreto;Maynas;San Juan Bautista;3.2
+160201;Loreto;Alto Amazonas;Yurimaguas;13.3
+160202;Loreto;Alto Amazonas;Balsapuerto;33.6
+160205;Loreto;Alto Amazonas;Jeberos;17.7
+160206;Loreto;Alto Amazonas;Lagunas;45
+160210;Loreto;Alto Amazonas;Santa Cruz;25.7
+160211;Loreto;Alto Amazonas;Teniente César López Rojas;13.3
+160301;Loreto;Loreto;Nauta;12.1
+160302;Loreto;Loreto;Parinari;25.9
+160303;Loreto;Loreto;Tigre;13.6
+160304;Loreto;Loreto;Trompeteros;6.3
+160305;Loreto;Loreto;Urarinas;23.4
+160401;Loreto;Mariscal Ramon Castilla;Ramón Castilla;6.7
+160402;Loreto;Mariscal Ramon Castilla;Pebas;21.8
+160403;Loreto;Mariscal Ramon Castilla;Yavari;7.9
+160404;Loreto;Mariscal Ramon Castilla;San Pablo;14.6
+160501;Loreto;Requena;Requena;11.1
+160502;Loreto;Requena;Alto Tapiche;3.7
+160503;Loreto;Requena;Capelo;6.5
+160504;Loreto;Requena;Emilio San Martín;26.4
+160505;Loreto;Requena;Maquia;17.2
+160506;Loreto;Requena;Puinahua;22.7
+160507;Loreto;Requena;Saquena;14.8
+160508;Loreto;Requena;Soplin;14.8
+160509;Loreto;Requena;Tapiche;4.8
+160510;Loreto;Requena;Jenaro Herrera;21.7
+160511;Loreto;Requena;Yaquerana;0.9
+160601;Loreto;Ucayali;Contamana;6
+160602;Loreto;Ucayali;Inahuaya;16.1
+160603;Loreto;Ucayali;Padre Márquez;20.4
+160604;Loreto;Ucayali;Pampa Hermosa;10.8
+160605;Loreto;Ucayali;Sarayacu;30.5
+160606;Loreto;Ucayali;Vargas Guerra;17.3
+160701;Loreto;Datem Del Marañon;Barranca;14.2
+160702;Loreto;Datem Del Marañon;Cahuapanas;20
+160703;Loreto;Datem Del Marañon;Manseriche;11.5
+160704;Loreto;Datem Del Marañon;Morona;19
+160705;Loreto;Datem Del Marañon;Pastaza;22.7
+160706;Loreto;Datem Del Marañon;Andoas;9.3
+160801;Loreto;Putumayo;Putumayo;6.8
+160802;Loreto;Putumayo;Rosa Panduro;26
+160803;Loreto;Putumayo;Teniente Manuel Clavero;23
+160804;Loreto;Putumayo;Yaguas;9.7
+170101;Madre De Dios;Tambopata;Tambopata;0.1
+170102;Madre De Dios;Tambopata;Inambari;0.2
+170103;Madre De Dios;Tambopata;Las Piedras;0.2
+170104;Madre De Dios;Tambopata;Laberinto;0.6
+170201;Madre De Dios;Manu;Manu;0.4
+170202;Madre De Dios;Manu;Fitzcarrald;0.1
+170203;Madre De Dios;Manu;Madre de Dios;0
+170204;Madre De Dios;Manu;Huepetuhe;0.1
+170301;Madre De Dios;Tahuamanu;Iñapari;0.1
+170302;Madre De Dios;Tahuamanu;Iberia;0.3
+170303;Madre De Dios;Tahuamanu;Tahuamanu;0.2
+180101;Moquegua;Mariscal Nieto;Moquegua;0.5
+180102;Moquegua;Mariscal Nieto;Carumas;9.7
+180103;Moquegua;Mariscal Nieto;Cuchumbaya;2.3
+180104;Moquegua;Mariscal Nieto;Samegua;0.4
+180105;Moquegua;Mariscal Nieto;San Cristóbal;7.6
+180106;Moquegua;Mariscal Nieto;Torata;1.9
+180201;Moquegua;General Sanchez Cerro;Omate;0.4
+180202;Moquegua;General Sanchez Cerro;Chojata;7.2
+180203;Moquegua;General Sanchez Cerro;Coalaque;2.2
+180204;Moquegua;General Sanchez Cerro;Ichuña;18.7
+180205;Moquegua;General Sanchez Cerro;La Capilla;1.6
+180206;Moquegua;General Sanchez Cerro;Lloque;3.6
+180207;Moquegua;General Sanchez Cerro;Matalaque;3.9
+180208;Moquegua;General Sanchez Cerro;Puquina;4.2
+180209;Moquegua;General Sanchez Cerro;Quinistaquillas;0.2
+180210;Moquegua;General Sanchez Cerro;Ubinas;8.6
+180211;Moquegua;General Sanchez Cerro;Yunga;10.9
+180301;Moquegua;Ilo;Ilo;0.3
+180302;Moquegua;Ilo;El Algarrobal;4.1
+180303;Moquegua;Ilo;Pacocha;0
+190101;Pasco;Pasco;Chaupimarca;2.9
+190102;Pasco;Pasco;Huachón;22.8
+190103;Pasco;Pasco;Huariaca;8.4
+190104;Pasco;Pasco;Huayllay;3.3
+190105;Pasco;Pasco;Ninacaca;21
+190106;Pasco;Pasco;Pallanchacra;26
+190107;Pasco;Pasco;Paucartambo;13.8
+190108;Pasco;Pasco;San Francisco de Asís de Yarusyacán;19.3
+190109;Pasco;Pasco;Simón Bolívar;7.2
+190110;Pasco;Pasco;Ticlacayan;48
+190111;Pasco;Pasco;Tinyahuarco;2.6
+190112;Pasco;Pasco;Vicco;14.9
+190113;Pasco;Pasco;Yanacancha;3.9
+190201;Pasco;Daniel Alcides Carrión;Yanahuanca;25.7
+190202;Pasco;Daniel Alcides Carrión;Chacayan;35.5
+190203;Pasco;Daniel Alcides Carrión;Goyllarisquizga;16.1
+190204;Pasco;Daniel Alcides Carrión;Paucar;39.5
+190205;Pasco;Daniel Alcides Carrión;San Pedro de Pillao;29
+190206;Pasco;Daniel Alcides Carrión;Santa Ana de Tusi;36.9
+190207;Pasco;Daniel Alcides Carrión;Tapuc;29.7
+190208;Pasco;Daniel Alcides Carrión;Vilcabamba;34.8
+190301;Pasco;Oxapampa;Oxapampa;9.2
+190302;Pasco;Oxapampa;Chontabamba;10.8
+190303;Pasco;Oxapampa;Huancabamba;20.5
+190304;Pasco;Oxapampa;Palcazu;30.5
+190305;Pasco;Oxapampa;Pozuzo;33.2
+190306;Pasco;Oxapampa;Puerto Bermúdez;35.9
+190307;Pasco;Oxapampa;Villa Rica;12.6
+190308;Pasco;Oxapampa;Constitución;22.7
+200101;Piura;Piura;Piura;0.3
+200104;Piura;Piura;Castilla;1.5
+200105;Piura;Piura;Catacaos;8.7
+200107;Piura;Piura;Cura Mori;19.8
+200108;Piura;Piura;El Tallán;10.4
+200109;Piura;Piura;La Arena;16.2
+200110;Piura;Piura;La Unión;9.2
+200111;Piura;Piura;Las Lomas;13.6
+200114;Piura;Piura;Tambo Grande;13.6
+200115;Piura;Piura;Veintiseis de Octubre;0.9
+200201;Piura;Ayabaca;Ayabaca;30.5
+200202;Piura;Ayabaca;Frías;28.6
+200203;Piura;Ayabaca;Jilili;28.7
+200204;Piura;Ayabaca;Lagunas;35.3
+200205;Piura;Ayabaca;Montero;28.3
+200206;Piura;Ayabaca;Pacaipampa;47.3
+200207;Piura;Ayabaca;Paimas;23.5
+200208;Piura;Ayabaca;Sapillica;15
+200209;Piura;Ayabaca;Sicchez;18.8
+200210;Piura;Ayabaca;Suyo;12.5
+200301;Piura;Huancabamba;Huancabamba;30.2
+200302;Piura;Huancabamba;Canchaque;17.9
+200303;Piura;Huancabamba;El Carmen de la Frontera;45.3
+200304;Piura;Huancabamba;Huarmaca;39
+200305;Piura;Huancabamba;Lalaquiz;22.7
+200306;Piura;Huancabamba;San Miguel de El Faique;17.9
+200307;Piura;Huancabamba;Sondor;46.6
+200308;Piura;Huancabamba;Sondorillo;29.9
+200401;Piura;Morropón;Chulucanas;9.2
+200402;Piura;Morropón;Buenos Aires;9.9
+200403;Piura;Morropón;Chalaco;25.7
+200404;Piura;Morropón;La Matanza;14.5
+200405;Piura;Morropón;Morropón;8.8
+200406;Piura;Morropón;Salitral;14.4
+200407;Piura;Morropón;San Juan de Bigote;19.4
+200408;Piura;Morropón;Santa Catalina de Mossa;8.9
+200409;Piura;Morropón;Santo Domingo;15.3
+200410;Piura;Morropón;Yamango;30.1
+200501;Piura;Paita;Paita;2.7
+200502;Piura;Paita;Amotape;3
+200503;Piura;Paita;Arenal;0.6
+200504;Piura;Paita;Colan;6.7
+200505;Piura;Paita;La Huaca;1.4
+200506;Piura;Paita;Tamarindo;10.9
+200507;Piura;Paita;Vichayal;8.1
+200601;Piura;Sullana;Sullana;1.9
+200602;Piura;Sullana;Bellavista;2.4
+200603;Piura;Sullana;Ignacio Escudero;3.7
+200604;Piura;Sullana;Lancones;15.1
+200605;Piura;Sullana;Marcavelica;2.3
+200606;Piura;Sullana;Miguel Checa;15.4
+200607;Piura;Sullana;Querecotillo;5.4
+200608;Piura;Sullana;Salitral;0.7
+200701;Piura;Talara;Pariñas;1.9
+200702;Piura;Talara;El Alto;1.3
+200703;Piura;Talara;La Brea;0.8
+200704;Piura;Talara;Lobitos;0.8
+200705;Piura;Talara;Los Órganos;0.8
+200706;Piura;Talara;Máncora;2
+200801;Piura;Sechura;Sechura;1.2
+200802;Piura;Sechura;Bellavista de la Unión;5.9
+200803;Piura;Sechura;Bernal;5.9
+200804;Piura;Sechura;Cristo Nos Valga;5.3
+200805;Piura;Sechura;Vice;6.8
+200806;Piura;Sechura;Rinconada Llicuar;1.4
+210101;Puno;Puno;Puno;1.4
+210102;Puno;Puno;Acora;11.3
+210103;Puno;Puno;Amantani;32.7
+210104;Puno;Puno;Atuncolla;16.2
+210105;Puno;Puno;Capachica;22.8
+210106;Puno;Puno;Chucuito;13.8
+210107;Puno;Puno;Coata;19.4
+210108;Puno;Puno;Huata;20.1
+210109;Puno;Puno;Mañazo;19.9
+210110;Puno;Puno;Paucarcolla;22.9
+210111;Puno;Puno;Pichacani;22.1
+210112;Puno;Puno;Platería;15.4
+210113;Puno;Puno;San Antonio;20.8
+210114;Puno;Puno;Tiquillaca;27.7
+210115;Puno;Puno;Vilque;9.9
+210201;Puno;Azángaro;Azángaro;14.8
+210202;Puno;Azángaro;Achaya;20.4
+210203;Puno;Azángaro;Arapa;17.6
+210204;Puno;Azángaro;Asillo;16.7
+210205;Puno;Azángaro;Caminaca;21.6
+210206;Puno;Azángaro;Chupa;21.4
+210207;Puno;Azángaro;José Domingo Choquehuanca;21.3
+210208;Puno;Azángaro;Muñani;20.7
+210209;Puno;Azángaro;Potoni;18
+210210;Puno;Azángaro;Saman;21.5
+210211;Puno;Azángaro;San Antón;12.5
+210212;Puno;Azángaro;San José;33
+210213;Puno;Azángaro;San Juan de Salinas;23.7
+210214;Puno;Azángaro;Santiago de Pupuja;18.1
+210215;Puno;Azángaro;Tirapata;20.5
+210301;Puno;Carabaya;Macusani;7.5
+210302;Puno;Carabaya;Ajoyani;15.1
+210303;Puno;Carabaya;Ayapata;19.3
+210304;Puno;Carabaya;Coasa;18.5
+210305;Puno;Carabaya;Corani;38.3
+210306;Puno;Carabaya;Crucero;10.9
+210307;Puno;Carabaya;Ituata;31.2
+210308;Puno;Carabaya;Ollachea;30.9
+210309;Puno;Carabaya;San Gabán;3.9
+210310;Puno;Carabaya;Usicayos;7.4
+210401;Puno;Chucuito;Juli;8.3
+210402;Puno;Chucuito;Desaguadero;9
+210403;Puno;Chucuito;Huacullani;23.3
+210404;Puno;Chucuito;Kelluyo;17.7
+210405;Puno;Chucuito;Pisacoma;12.2
+210406;Puno;Chucuito;Pomata;16.8
+210407;Puno;Chucuito;Zepita;34
+210501;Puno;El Collao;Ilave;10.3
+210502;Puno;El Collao;Capazo;19.4
+210503;Puno;El Collao;Pilcuyo;18.5
+210504;Puno;El Collao;Santa Rosa;28.8
+210505;Puno;El Collao;Conduriri;21.1
+210601;Puno;Huancane;Huancané;12.2
+210602;Puno;Huancane;Cojata;23.3
+210603;Puno;Huancane;Huatasani;11.8
+210604;Puno;Huancane;Inchupalla;25.4
+210605;Puno;Huancane;Pusi;15.6
+210606;Puno;Huancane;Rosaspata;23.9
+210607;Puno;Huancane;Taraco;22.1
+210608;Puno;Huancane;Vilque Chico;20.2
+210701;Puno;Lampa;Lampa;8
+210702;Puno;Lampa;Cabanilla;6.9
+210703;Puno;Lampa;Calapuja;23.6
+210704;Puno;Lampa;Nicasio;14.8
+210705;Puno;Lampa;Ocuviri;18.1
+210706;Puno;Lampa;Palca;15.9
+210707;Puno;Lampa;Paratia;20.4
+210708;Puno;Lampa;Pucará;9.7
+210709;Puno;Lampa;Santa Lucía;13.3
+210710;Puno;Lampa;Vilavila;8.8
+210801;Puno;Melgar;Ayaviri;6.4
+210802;Puno;Melgar;Antauta;18.3
+210803;Puno;Melgar;Cupi;12.6
+210804;Puno;Melgar;Llalli;15.4
+210805;Puno;Melgar;Macari;24.3
+210806;Puno;Melgar;Nuñoa;21.7
+210807;Puno;Melgar;Orurillo;17.8
+210808;Puno;Melgar;Santa Rosa;24.8
+210809;Puno;Melgar;Umachiri;8.8
+210901;Puno;Moho;Moho;23.4
+210902;Puno;Moho;Conima;35.1
+210903;Puno;Moho;Huayrapata;27.5
+210904;Puno;Moho;Tilali;28
+211001;Puno;San Antonio De Putina;Putina;9.5
+211002;Puno;San Antonio De Putina;Ananea;5.3
+211003;Puno;San Antonio De Putina;Pedro Vilca Apaza;13.2
+211004;Puno;San Antonio De Putina;Quilcapuncu;25.5
+211005;Puno;San Antonio De Putina;Sina;25.2
+211101;Puno;San Roman;Juliaca;1.7
+211102;Puno;San Roman;Cabana;9.6
+211103;Puno;San Roman;Cabanillas;7.6
+211104;Puno;San Roman;Caracoto;17
+211105;Puno;San Roman;San Miguel /28;17
+211201;Puno;Sandia;Sandia;11
+211202;Puno;Sandia;Cuyocuyo;19.3
+211203;Puno;Sandia;Limbani;5.2
+211204;Puno;Sandia;Patambuco;31.2
+211205;Puno;Sandia;Phara;9.5
+211206;Puno;Sandia;Quiaca;23.1
+211207;Puno;Sandia;San Juan del Oro;9.7
+211208;Puno;Sandia;Yanahuaya;6.3
+211209;Puno;Sandia;Alto Inambari;6.7
+211210;Puno;Sandia;San Pedro de Putina Punco;7.6
+211301;Puno;Yunguyo;Yunguyo;12.1
+211302;Puno;Yunguyo;Anapia;18.3
+211303;Puno;Yunguyo;Copani;25.6
+211304;Puno;Yunguyo;Cuturapi;13.9
+211305;Puno;Yunguyo;Ollaraya;15.1
+211306;Puno;Yunguyo;Tinicachi;19.9
+211307;Puno;Yunguyo;Unicachi;16
+220101;San Martín;Moyobamba;Moyobamba;5.8
+220102;San Martín;Moyobamba;Calzada;4.4
+220103;San Martín;Moyobamba;Habana;0.9
+220104;San Martín;Moyobamba;Jepelacio;8.7
+220105;San Martín;Moyobamba;Soritor;3.2
+220106;San Martín;Moyobamba;Yantalo;6.1
+220201;San Martín;Bellavista;Bellavista;3.7
+220202;San Martín;Bellavista;Alto Biavo;11
+220203;San Martín;Bellavista;Bajo Biavo;7.1
+220204;San Martín;Bellavista;Huallaga;6.5
+220205;San Martín;Bellavista;San Pablo;7.3
+220206;San Martín;Bellavista;San Rafael;6.1
+220301;San Martín;El Dorado;San José de Sisa;16.7
+220302;San Martín;El Dorado;Agua Blanca;4.4
+220303;San Martín;El Dorado;San Martín;13.7
+220304;San Martín;El Dorado;Santa Rosa;17
+220305;San Martín;El Dorado;Shatoja;10.1
+220401;San Martín;Huallaga;Saposoa;6.9
+220402;San Martín;Huallaga;Alto Saposoa;29.2
+220403;San Martín;Huallaga;El Eslabón;8.3
+220404;San Martín;Huallaga;Piscoyacu;4
+220405;San Martín;Huallaga;Sacanche;9.4
+220406;San Martín;Huallaga;Tingo de Saposoa;3.2
+220501;San Martín;Lamas;Lamas;7.4
+220502;San Martín;Lamas;Alonso de Alvarado;19.9
+220503;San Martín;Lamas;Barranquita;22.3
+220504;San Martín;Lamas;Caynarachi;11.3
+220505;San Martín;Lamas;Cuñumbuqui;6.6
+220506;San Martín;Lamas;Pinto Recodo;25.5
+220507;San Martín;Lamas;Rumisapa;20.3
+220508;San Martín;Lamas;San Roque de Cumbaza;14.3
+220509;San Martín;Lamas;Shanao;10.9
+220510;San Martín;Lamas;Tabalosos;15.7
+220511;San Martín;Lamas;Zapatero;17.5
+220601;San Martín;Mariscal Caceres;Juanjui;5.1
+220602;San Martín;Mariscal Caceres;Campanilla;6.6
+220603;San Martín;Mariscal Caceres;Huicungo;5.7
+220604;San Martín;Mariscal Caceres;Pachiza;4.1
+220605;San Martín;Mariscal Caceres;Pajarillo;2.1
+220701;San Martín;Picota;Picota;6.2
+220702;San Martín;Picota;Buenos Aires;14.3
+220703;San Martín;Picota;Caspisapa;1.8
+220704;San Martín;Picota;Pilluana;7.4
+220705;San Martín;Picota;Pucacaca;5.3
+220706;San Martín;Picota;San Cristóbal;6.1
+220707;San Martín;Picota;San Hilarión;0.9
+220708;San Martín;Picota;Shamboyacu;15
+220709;San Martín;Picota;Tingo de Ponasa;13.4
+220710;San Martín;Picota;Tres Unidos;8.6
+220801;San Martín;Rioja;Rioja;1.8
+220802;San Martín;Rioja;Awajun;8.2
+220803;San Martín;Rioja;Elias Soplín Vargas;6.1
+220804;San Martín;Rioja;Nueva Cajamarca;1.8
+220805;San Martín;Rioja;Pardo Miguel;6.4
+220806;San Martín;Rioja;Posic;4.8
+220807;San Martín;Rioja;San Fernando;6.4
+220808;San Martín;Rioja;Yorongos;2.7
+220809;San Martín;Rioja;Yuracyacu;1.8
+220901;San Martín;San Martín;Tarapoto;0.8
+220902;San Martín;San Martín;Alberto Leveau;8.2
+220903;San Martín;San Martín;Cacatachi;4.4
+220904;San Martín;San Martín;Chazuta;26.6
+220905;San Martín;San Martín;Chipurana;11.4
+220906;San Martín;San Martín;El Porvenir;26.5
+220907;San Martín;San Martín;Huimbayoc;13.3
+220908;San Martín;San Martín;Juan Guerra;27.8
+220909;San Martín;San Martín;La Banda de Shilcayo;4.9
+220910;San Martín;San Martín;Morales;3.8
+220911;San Martín;San Martín;Papaplaya;16.1
+220912;San Martín;San Martín;San Antonio;11.7
+220913;San Martín;San Martín;Sauce;27.6
+220914;San Martín;San Martín;Shapaja;5.3
+221001;San Martín;Tocache;Tocache;2.8
+221002;San Martín;Tocache;Nuevo Progreso;8.6
+221003;San Martín;Tocache;Pólvora;10
+221004;San Martín;Tocache;Shunte;10.1
+221005;San Martín;Tocache;Uchiza;8.3
+230101;Tacna;Tacna;Tacna;0.2
+230102;Tacna;Tacna;Alto de la Alianza;1
+230103;Tacna;Tacna;Calana;0.4
+230104;Tacna;Tacna;Ciudad Nueva;1.3
+230105;Tacna;Tacna;Inclán;2.2
+230106;Tacna;Tacna;Pachia;1.5
+230107;Tacna;Tacna;Palca;17
+230108;Tacna;Tacna;Pocollay;0.9
+230109;Tacna;Tacna;Sama;1.1
+230110;Tacna;Tacna;Coronel Gregorio Albarracín Lanchipa;1.6
+230111;Tacna;Tacna;La Yarada Los Palos 11/;0.2
+230201;Tacna;Candarave;Candarave;13.9
+230202;Tacna;Candarave;Cairani;10.2
+230203;Tacna;Candarave;Camilaca;10.2
+230204;Tacna;Candarave;Curibaya;3.1
+230205;Tacna;Candarave;Huanuara;27
+230206;Tacna;Candarave;Quilahuani;15.6
+230301;Tacna;Jorge Basadre;Locumba;1
+230302;Tacna;Jorge Basadre;Ilabaya;0.1
+230303;Tacna;Jorge Basadre;Ite;0.5
+230401;Tacna;Tarata;Tarata;18.3
+230402;Tacna;Tarata;Héroes Albarracín;21.5
+230403;Tacna;Tarata;Estique;13.7
+230404;Tacna;Tarata;Estique-Pampa;2.4
+230405;Tacna;Tarata;Sitajara;17.5
+230406;Tacna;Tarata;Susapaya;24.5
+230407;Tacna;Tarata;Tarucachi;5.7
+230408;Tacna;Tarata;Ticaco;16.9
+240101;Tumbes;Tumbes;Tumbes;0.4
+240102;Tumbes;Tumbes;Corrales;0.3
+240103;Tumbes;Tumbes;La Cruz;0.2
+240104;Tumbes;Tumbes;Pampas de Hospital;0.4
+240105;Tumbes;Tumbes;San Jacinto;0.4
+240106;Tumbes;Tumbes;San Juan de la Virgen;0
+240201;Tumbes;Contralmirante Villar;Zorritos;0.1
+240202;Tumbes;Contralmirante Villar;Casitas;1.2
+240203;Tumbes;Contralmirante Villar;Canoas de Punta Sal;0.1
+240301;Tumbes;Zarumilla;Zarumilla;0.3
+240302;Tumbes;Zarumilla;Aguas Verdes;0.1
+240303;Tumbes;Zarumilla;Matapalo;0.6
+240304;Tumbes;Zarumilla;Papayal;0.5
+250101;Ucayali;Coronel Portillo;Callería;0.2
+250102;Ucayali;Coronel Portillo;Campoverde;0.3
+250103;Ucayali;Coronel Portillo;Iparia;5
+250104;Ucayali;Coronel Portillo;Masisea;2.2
+250105;Ucayali;Coronel Portillo;Yarinacocha;0.2
+250106;Ucayali;Coronel Portillo;Nueva Requena;2.5
+250107;Ucayali;Coronel Portillo;Manantay;0.4
+250201;Ucayali;Atalaya;Raymondi;7.2
+250202;Ucayali;Atalaya;Sepahua;2.2
+250203;Ucayali;Atalaya;Tahuania;7
+250204;Ucayali;Atalaya;Yurua;4.2
+250301;Ucayali;Padre Abad;Padre Abad;1.1
+250302;Ucayali;Padre Abad;Irazola;2
+250303;Ucayali;Padre Abad;Curimaná;0.9
+250304;Ucayali;Padre Abad;Neshuya 7/;0.5
+250305;Ucayali;Padre Abad;Alexander Von Humboldt 7/;0.6
+250401;Ucayali;Purus;Purús;1.6
+;;;;

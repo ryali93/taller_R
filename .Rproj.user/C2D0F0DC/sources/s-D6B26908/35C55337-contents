@@ -1,0 +1,499 @@
+---
+output: 
+  revealjs::revealjs_presentation:
+    self_contained: false
+    reveal_plugins: ["search", "zoom", "notes", "chalkboard", "menu"]
+    reveal_options:
+      chalkboard: 
+          theme: chalkboard
+          toggleNotesButton: true
+      menu:
+        numbers: true
+    theme: white
+    transition: convex
+    css: styles.css
+---
+```{r setup, include=FALSE, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
+```
+
+# TALLER DE PROGRAMACIÓN EN R
+Lección `r emo::ji("one")`
+<br>
+![rlogo](fig/r_logo.png)
+![rstudiologo](fig/rstudio_logo.png)
+<br>
+Roy Yali Samaniego `r emo::ji("smile")`
+<br>
+<i class="fab fa-github"></i>[https://github.com/ryali93](https://github.com/ryali93)
+<br>
+`r emo::ji("email")` [ryali93@gmail.com](ryali93@gmail.com)
+<br>
+UNMSM - Ingeniería Geográfica
+<br>
+2020 - 02 - 21
+
+# INTRODUCCIÓN
+
+
+## YO
+
+- Antecedentes
+- Experiencia en computación
+
+## ¿Qué es R?
+
+- Lenguaje
+- Aplicación
+- “Do it all”
+
+## ¿Qué es R?
+<ul style="font-size:22px">
+- Proporciona un amplio abanico de herramientas estadísticas (modelos lineales y no lineales, tests estadísticos, análisis de series temporales, algoritmos de clasificación y agrupamiento, etc.).
+- Permite definir funciones propias. De hecho, gran parte de las funciones de R están escritas en el mismo R, aunque para algoritmos computacionalmente exigentes es posible desarrollar bibliotecas en C, C++ o Fortran que se cargan dinámicamente.
+- R hereda de S su orientación a objetos.
+- R puede integrarse con distintas bases de datos y existen bibliotecas que facilitan su utilización desde lenguajes de programación interpretados como Python (PythonInR) `r emo::ji("heart")`.
+- Otra de las características de R es su capacidad gráfica, que permite generar gráficos con alta calidad (ggplot). R posee su propio formato para la documentación basado en LaTeX.
+</ul>
+![gdallogo](fig/r_logo.png)
+
+
+## ¿Qué podemos hacer en R?
+
+- Estadísticas avanzadas (o no tan avanzadas)
+- Potencia en gráficos
+- Leer casi cualquier tipo de archivo
+- Escribir casi cualquier tipo de archivo
+
+## Razones para usar R
+
+- Programático
+- Reproducible
+- Multiplataforma: Windows, Mac y Linux!
+- Nivel de complejidad bajo
+- Código abierto y dirigido por la comunidad
+- Gratis
+- Gratis
+
+## Razones para usar R
+
+<ul style="font-size:22px">
+- Es libre: lo cual significa que lo puedes utilizar y ¡mejorar!
+- Es multiplataforma, hay versiones para Linux, Windows, Mac… ¡web! 
+- Se puede analizar en R cualquier tipo de datos.
+- Es muy potente tiene excelentes ambientes de desarrollo.
+- Su capacidad gráfica difícilmente es superada por ningún otro paquete estadístico. 
+- Es compatible con “todos” los formatos de datos (.csv, .xls, .sav, .sas…)
+- Es ampliable, si quieres añadir algo: ¡empaquétalo!
+- Hay miles de técnicas estadísticas implementadas, cada día hay más (>10 000 paquetes)
+- Una extensa comunidad de usuarios : > 2 millones
+- Amplio desarrollo en análisis espacial. 
+</ul>
+![gdallogo](fig/r_logo.png)
+
+
+## Advertencia
+
+![gdallogo](fig/error.png)
+
+- Curva de aprendizaje elevada
+
+R no reemplazará las plataformas de análisis espacial como ArcGIS o QGIS, sin embargo, su formato de "lenguaje" permitirá realizar tareas de geoprocesamiento increíblemente potentes, complejas y personalizadas.
+
+## ¿Cómo se ve R?
+
+```{r}
+head(mtcars)
+```
+
+## 
+
+```{r}
+model<-lm(mpg~wt,data=mtcars)
+summary(model)
+```
+
+```{r show=FALSE}
+rsqared<-summary(model)$adj.r.squared
+```
+
+##
+```{r}
+plot(mpg~wt,data=mtcars)
+abline(model,col="red",lwd=2)
+text(4,26,paste0("R-squared: ",round(rsqared,4)))
+```
+
+##
+```{r warning=FALSE}
+par(mfrow=c(2,2))
+hist(mtcars$mpg,breaks=10)
+plot(density(mtcars$mpg,breaks=10))
+boxplot(mtcars)
+plot(mtcars[,1])
+```
+
+## 
+R también se usa mucho en el análisis de datos, por lo que es excelente para manipular datos. Aquí hay un subconjunto:
+
+```{r warning=FALSE}
+kable(table(iris[seq(1,150,by=25),c("Petal.Width","Species")]))
+```
+
+# PRIMEROS PASOS EN R
+
+## Distribución e instalación
+
+- Para instalar R hay que bajar un fichero ejecutable de la página web  del proyecto R: 
+ [http://www.r-project.org/](http://www.r-project.org/)
+- Actualmente (febrero 2020), la versión más reciente de R para el entorno Windows es la 3.6.2 y el ejecutable de tamaño aproximadamente 83Mb tiene el nombre R-3.6.2-win.exe 
+- Una vez bajado este ejecutable, hay que ejecutarlo y seguir las  instrucciones del programa de instalación.
+
+## RSTUDIO
+
+<ul style="font-size:24px">
+- RStudio es un editor para scripts disponible para usuarios de R en  todos los sistemas operativos.
+- Es considerado como un **<u>entorno de desarrollo integrado (GUI)</u>** `r emo::ji("clock")`  que combina un interfaz muy intuitiva con herramientas de código muy  potentes que permiten sacar el máximo provecho a R. 
+- La versión en pruebas es gratuita y está disponible en  [http://www.rstudio.org/](http://www.rstudio.org/)
+- La ventaja de este editor es que ofrece una serie de opciones no  existentes en R, entre otras, por ejemplo, comprobar rápidamente que ningún paréntesis queda sin cerrarse o marcar, copiar y pegar columnas. 
+- Pero además nos da un listado de las variables y nos da una descripción de los bancos de datos que hemos introducido. También tiene una lista de los paquetes instalados y los gráficos realizados. 
+</ul>
+![rstudiologo](fig/rstudio_logo.png)
+
+## IDE RSTUDIO
+
+![](fig/rstudio_ide.PNG)
+
+## EMPEZANDO A CODEAR `r emo::ji("chick")`
+
+Espacio y directorio de trabajo
+
+| FUNCIÓN | ACCIÓN |
+|:----------:|:-----------------------------------:|
+| `getwd()`	| Muestra el wd: working directory |
+| `setwd("midirectorio")`	| Ajusta el wd al especificado |
+| `ls()  o dir()`	| Lista lo que hay en el wd  |
+| `history()`	| Muestra los últimos comandos  ejecutados |
+| `savehistory()`	| Guarda el historial de comandos, por defecto en .Rhistory |
+| `loadhistory()`	| Carga el historial de comandos |
+| `save.image("mywspace.R")`	| Guarda los objetos del workspace, por defecto en .Rdata |
+| `load("mywspace.R")`	| Carga el workspace mywspace.R |
+
+
+## EMPEZANDO A CODEAR `r emo::ji("cool")`
+
+Algunas funciones útiles
+
+| Función	| Acción |
+|:---------:|:-----------:|
+| `length(obj)` |	Números de componentes, elementos |
+| `dim(obj)` |	Dimensión de un objeto |
+| `str(obj)` |	Estructura de un objeto |
+| `class(obj)` |	Clase(class) o tipo de objeto |
+| `names(obj)` |	Nombres de los componentes de un objeto |
+| `c(obj, obj,…)` |	Combina objetos en un vector |
+| `head(obj)` |	Lista los 10 primeros elementos de un objeto |
+
+
+# SINTAXIS DE R
+
+## TIPOS DE DATOS
+
+| Tipos de Datos |	Información |
+|:---:|:-----:|
+| `Lógico` |	Son datos que sólo permite los valores lógicos de verdadero (T) o falso (F) |
+| `Numérico` |	Son datos que pueden contener números reales |
+| `Complejo` |	Son datos que pueden contener números complejos |
+| `Carácter` |	Son datos que permiten números y cualquier tipo caracter |
+
+## ESTRUCTURAS DE DATOS
+
+| Objetos | Tipos | ¿Soporta varios tipos de datos en el mismo objeto? |
+|:---:|:-----:|:----:|
+| `Vector` |	Numérico, carácter, complejo o lógico	| No |
+| `Factor` |	Numérico o lógico	| No |
+| `Arreglo` |	Numérico, carácter, complejo o lógico	| No |
+| `Matriz` |	Numérico, carácter, complejo o lógico	| No |
+| `Data frame` |	Numérico, carácter, complejo o lógico	| Sí |
+| `ts` |	Numérico, carácter, complejo o lógico	| Sí |
+| `Lista` |	Numérico, carácter, complejo, lógico, función, expresión, …	| Sí |
+
+## SINTAXIS
+
+<p style="font-size:22px">
+Un objeto puede ser creado con el operador ***"assignar"*** el cual se denota como una flecha con el signo menos y el símbolo **">"** o **"<"** dependiendo de la dirección en el que asigna el objeto:
+<p>
+
+```{r}
+n <- 15
+n
+```
+```{r}
+6 -> n
+n
+```
+```{r}
+x  <− 1
+X  <− 10
+x
+```
+```{r}
+X
+```
+
+## VECTOR
+```{r}
+numeros <- c(1,2,4,7,10,11,12,19,26)
+letras <- c("a","b","d","g","j","k","l","s","z")
+numeros
+```
+
+```{r}
+letras
+```
+
+## DATA FRAME
+```{r}
+n_y_l <- data.frame(numeros=numeros, letras=letras)
+n_y_l
+```
+
+## MATRIX
+```{r}
+n_matrix <- matrix(numeros, nrow=3, ncol=3, byrow=T)
+n_matrix
+```
+
+## MANIPULACIÓN DE DATOS
+
+Subsetting data (Consultas)
+```{r}
+n_y_l[1,2]
+```
+
+```{r}
+n_y_l$numeros
+```
+
+## MANIPULACIÓN DE DATOS
+
+Agregando data
+```{r}
+colnames(n_y_l)
+```
+
+```{r}
+n_y_l$cuadrados <- n_y_l$numeros^2
+n_y_l
+```
+
+## LEYENDO DATA EXTERNA
+
+```{r}
+data_terremotos <- read.csv("data/earthquakes.csv")
+head(data_terremotos)
+```
+
+## LLAMANDO A LA LINEA DE COMANDOS
+
+- Python (utilidades, servicios, ArcPy)
+- LASTools (Herramienta de clasificaciòn Lidar)
+<br>
+```{r results=FALSE}
+system('python creardir.py')
+```
+
+##
+
+[Operaciones básicas](https://fhernanb.github.io/Manual-de-R/funbas.html)
+
+[Estadísticos básicos](https://rpubs.com/osoramirez/93049)
+
+# DATOS ESPACIALES EN R
+
+## GDAL / OGR
+
+- Geospatial Data Abstraction Library / OGR Simple Features Library
+- Con la versión GDAL 2.0, se integraron los componentes GDAL y OGR.
+- Es un software libre de código abierto, licenciado bajo una licencia de estilo MIT/X.
+- Compatible con sistemas operativos como Windows, IOS y UNIX.
+
+![gdallogo](fig/gdal_logo.png)
+
+
+## GDAL / OGR
+
+<ul style="font-size:24px">
+- Proporciona utilidades de línea de comandos para traducir y procesar distintos formatos de datos geoespaciales ráster y vectoriales
+- Acceso a datos ráster altamente eficiente.
+- Soporte para archivos de gran tamaño más de 4 GB
+- Accesible como biblioteca desde Python, R, Java, C#, Ruby y VB6
+- Motor de sistema de coordenadas basado en PROJ.4.
+- Proporciona el motor principal de acceso a datos para muchas aplicaciones como: MapServer, GRASS, QGIS y OpenEV.
+</ul>
+
+![gdallogo](fig/gdal_logo.png)
+
+## Tipos de datos espaciales
+
+- Puntos espaciales 
+- Líneas espaciales 
+- Polígonos espaciales 
+- Raster
+- Tipos de datos especiales (Ej., Datacubes, redes, etc.)
+
+## Algunas librerías espaciales
+
+raster, shapefile, ModisTsp, sf, velox, Rstoolbox, rgdal, Landsat, sp, gdalutils, reshape, ncdf4, gdalcubes, stars
+
+Otros:
+
+ggplot2, ggmap, randomforest, caret, dplyr, signal, devtools, parallel, foreach, snow
+
+## Breve historia sobre el análisis de datos espaciales en R:
+
+<ul style="font-size:22px">
+- Paquetes espaciales ya disponibles en el lenguaje S desde la década de 1990 (Bivand and Gebhardt, 2000) 
+- En 2000, las modificaciones de estos se convirtieron en paquetes R para el análisis de patrones de puntos, geoestadística, análisis de datos espaciales exploratorios y econometría espacial (aún mucho paquetes dispersos). 
+- R-GIS bridges (Bivand, 2000) 
+- Bivand (2003) propuso un sistema de clase de datos espaciales para R que eventualmente condujo a los paquetes rgdal (first - released in 2003; Bivand, Keitt, and Rowlingson, 2018) y sp (first released in 2005; Bivand, Pebesma, and Gomez-Rubio, 2013) 
+- 2008: Análisis aplicado de datos espaciales con R(Bivand, Pebesma, and Gomez-Rubio, 2013) 
+- 2010: paquete raster (Hijmans, 2017) 
+- 2011: paquete rgeos (Bivand and Rundel, 2017) 
+- 2016-17: sf - simple features para R (Pebesma, 2018a)
+- 2017 : paquete RStoolbox (Leutner, 2018)
+- 2017-18: paquete stars - spatiotemporal tidy arrays para R (Pebesma, 2018b)
+- 2019: paquete gdalcubes (Appel y Pebesma 2019) 
+</ul>
+
+Puede leer más en este [link](https://geocompr.robinlovelace.net/intro.html#the-history-of-r-spatial)
+
+## Datos Vector
+  
+<img src="fig/vector_data.png" style="background:none; border:none; box-shadow:none;height:500px;">
+
+## Datos Vector
+
+```{r eval=FALSE}
+library(maptools)
+paises <- readShapePoly('data/paises.shp')
+```
+<br>
+```{r eval=FALSE}
+library(rgdal)
+paises <- readOGR(dsn="data", layer="paises")
+```
+<br>
+```{r eval=FALSE}
+library(raster)
+paises <- shapefile('data/paises.shp')
+```
+<br>
+```{r eval=FALSE}
+library(sf)
+paises <- st_read('data/paises.shp')
+```
+
+## Datos Raster
+
+<img src="fig/raster_data.jpg" style="background:none; border:none; box-shadow:none;width:800px;">
+
+## Datos Raster
+
+```{r eval=FALSE}
+library(tiff)
+landsat <- readTIFF("data/landsat8_test_b4.tiff", as.is=TRUE)
+```
+<br>
+```{r eval=FALSE}
+library(raster)
+landsat <- raster("data/landsat8_test_b4.tiff")
+```
+<br>
+```{r eval=FALSE}
+library(ncdf4)
+data_nc <- nc_open('data/dato.nc')
+```
+<br>
+```{r eval=FALSE}
+library(stars)
+tif <- system.file("data/landsat8_test_b4.tiff", package = "stars")
+read_stars(tif)
+```
+
+## Datos Raster
+
+```{r out.width = "50%"}
+library(raster)
+m <- matrix(nrow = 4, ncol=4, c(1:9, 1:7))
+matrix_raster <- raster(m)
+plot(matrix_raster)
+```
+
+## Datos LIDAR Clasificados
+
+![](fig/lasTools.gif)
+
+
+# A practicar 
+
+<img src="fig/vamoacalmarno.jpg" style="background:none; border:none; box-shadow:none;height:500px;">
+
+[http://datosabiertos.oefa.gob.pe/home](http://datosabiertos.oefa.gob.pe/home)
+
+## Ejercicio 1
+
+<ul style="font-size:24px;">
+Nota 1: Recuerden cargar todas las librerias necesarias si no lo hicieron.
+
+Nota 2: Fijense en su directorio de trabajo (working directory)
+</ul>
+<br>
+
+
+<ul style="font-size:26px">
+- Cargar el set de datos "data/earthquakes.csv" (ojo con el separador!). 
+- Cuantos registros y columnas tiene?
+- Imprimir la columna Magnitude y luego el registro numero 10 de esa columna
+</ul>
+
+## Ejercicio 2
+
+<ul style="font-size:24px;">
+Nota 1: Recuerden cargar todas las librerias necesarias si no lo hicieron.
+
+Nota 2: Fijense en su directorio de trabajo (working directory)
+
+Nota 3: Copia para no perder los datos originales (buena practica)
+</ul>
+<br>
+
+
+<ul style="font-size:26px">
+- Obtener un dataset con todos las peliculas que tienen 0 en la columna `Incidencia`. (tener cargado el dataset data/pobreza_extrema.csv)
+- Convertir al distrito "Los Olivos" en el de más extrema pobreza la variable `Incidencia`. Luego explorar los datos.
+- Crear un data frame que tenga todos los distritos de la región Ancash e Ica sin población en extrema pobreza
+</ul>
+
+
+## Ejercicio 3
+
+<ul style="font-size:24px;">
+Nota 1: Recuerden cargar todas las librerias necesarias si no lo hicieron.
+
+Nota 2: Fijense en su directorio de trabajo (working directory)
+</ul>
+<br>
+
+
+<ul style="font-size:26px">
+- Cargar el set de datos "data/earthquakes.csv".
+  - Los datos historicos reprentan la ubicación de los terremotos. 
+
+- Hacer una descripcion visual y numérica de la variable `Magnitude`. 
+  - ¿Se observa algo raro?, ¿Qué variables parecen tener valores extremos o outliers?
+  - ¿Hay nulos (NA)?
+  - Quedarse con los datos con valores extremos (superior a la media mas 3 veces la desviación estandar). 
+  - Calcular percentil 98
+</ul>

@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>clase_01.utf8</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="clase_01_files/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="clase_01_files/reveal.js-3.3.0.1/css/theme/white.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal .slide-menu-button {
+      left: 105px !important;
+    }
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+    <link rel="stylesheet" href="styles.css"/>
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+    <link href="clase_01_files/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+    <link href="clase_01_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="taller-de-programación-en-r" class="title-slide slide level1"><h1>TALLER DE PROGRAMACIÓN EN R</h1><p>Lección 1️⃣ <br> <img data-src="fig/r_logo.png" alt="rlogo" /> <img data-src="fig/rstudio_logo.png" alt="rstudiologo" /> <br> Roy Yali Samaniego 😄 <br> <i class="fab fa-github"></i><a href="https://github.com/ryali93">https://github.com/ryali93</a> <br> ✉️ <a href="ryali93@gmail.com">ryali93@gmail.com</a> <br> UNMSM - Ingeniería Geográfica <br> 2020 - 02 - 21</p></section>
+<section><section id="introducción" class="title-slide slide level1"><h1>INTRODUCCIÓN</h1></section><section id="yo" class="slide level2">
+<h2>YO</h2>
+<ul>
+<li>Antecedentes</li>
+<li>Experiencia en computación</li>
+</ul>
+</section><section id="qué-es-r" class="slide level2">
+<h2>¿Qué es R?</h2>
+<ul>
+<li>Lenguaje</li>
+<li>Aplicación</li>
+<li>“Do it all”</li>
+</ul>
+</section><section id="qué-es-r-1" class="slide level2">
+<h2>¿Qué es R?</h2>
+<ul style="font-size:22px">
+<ul>
+<li>Proporciona un amplio abanico de herramientas estadísticas (modelos lineales y no lineales, tests estadísticos, análisis de series temporales, algoritmos de clasificación y agrupamiento, etc.).</li>
+<li>Permite definir funciones propias. De hecho, gran parte de las funciones de R están escritas en el mismo R, aunque para algoritmos computacionalmente exigentes es posible desarrollar bibliotecas en C, C++ o Fortran que se cargan dinámicamente.</li>
+<li>R hereda de S su orientación a objetos.</li>
+<li>R puede integrarse con distintas bases de datos y existen bibliotecas que facilitan su utilización desde lenguajes de programación interpretados como Python (PythonInR) ❤️.</li>
+<li>Otra de las características de R es su capacidad gráfica, que permite generar gráficos con alta calidad (ggplot). R posee su propio formato para la documentación basado en LaTeX.</li>
+</ul>
+</ul>
+<p><img data-src="fig/r_logo.png" alt="gdallogo" /></p>
+</section><section id="qué-podemos-hacer-en-r" class="slide level2">
+<h2>¿Qué podemos hacer en R?</h2>
+<ul>
+<li>Estadísticas avanzadas (o no tan avanzadas)</li>
+<li>Potencia en gráficos</li>
+<li>Leer casi cualquier tipo de archivo</li>
+<li>Escribir casi cualquier tipo de archivo</li>
+</ul>
+</section><section id="razones-para-usar-r" class="slide level2">
+<h2>Razones para usar R</h2>
+<ul>
+<li>Programático</li>
+<li>Reproducible</li>
+<li>Multiplataforma: Windows, Mac y Linux!</li>
+<li>Nivel de complejidad bajo</li>
+<li>Código abierto y dirigido por la comunidad</li>
+<li>Gratis</li>
+<li>Gratis</li>
+</ul>
+</section><section id="razones-para-usar-r-1" class="slide level2">
+<h2>Razones para usar R</h2>
+<ul style="font-size:22px">
+<ul>
+<li>Es libre: lo cual significa que lo puedes utilizar y ¡mejorar!</li>
+<li>Es multiplataforma, hay versiones para Linux, Windows, Mac… ¡web!</li>
+<li>Se puede analizar en R cualquier tipo de datos.</li>
+<li>Es muy potente tiene excelentes ambientes de desarrollo.</li>
+<li>Su capacidad gráfica difícilmente es superada por ningún otro paquete estadístico.</li>
+<li>Es compatible con “todos” los formatos de datos (.csv, .xls, .sav, .sas…)</li>
+<li>Es ampliable, si quieres añadir algo: ¡empaquétalo!</li>
+<li>Hay miles de técnicas estadísticas implementadas, cada día hay más (&gt;10 000 paquetes)</li>
+<li>Una extensa comunidad de usuarios : &gt; 2 millones</li>
+<li>Amplio desarrollo en análisis espacial.</li>
+</ul>
+</ul>
+<p><img data-src="fig/r_logo.png" alt="gdallogo" /></p>
+</section><section id="advertencia" class="slide level2">
+<h2>Advertencia</h2>
+<p><img data-src="fig/error.png" alt="gdallogo" /></p>
+<ul>
+<li>Curva de aprendizaje elevada</li>
+</ul>
+<p>R no reemplazará las plataformas de análisis espacial como ArcGIS o QGIS, sin embargo, su formato de “lenguaje” permitirá realizar tareas de geoprocesamiento increíblemente potentes, complejas y personalizadas.</p>
+</section><section id="cómo-se-ve-r" class="slide level2">
+<h2>¿Cómo se ve R?</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">head</span>(mtcars)</a></code></pre></div>
+<pre><code>##                    mpg cyl disp  hp drat    wt  qsec vs am gear carb
+## Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+## Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+## Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+## Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+## Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+## Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre>
+</section><section id="section" class="slide level2">
+<h2></h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1">model&lt;-<span class="kw">lm</span>(mpg<span class="op">~</span>wt,<span class="dt">data=</span>mtcars)</a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="kw">summary</span>(model)</a></code></pre></div>
+<pre><code>## 
+## Call:
+## lm(formula = mpg ~ wt, data = mtcars)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -4.5432 -2.3647 -0.1252  1.4096  6.8727 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  37.2851     1.8776  19.858  &lt; 2e-16 ***
+## wt           -5.3445     0.5591  -9.559 1.29e-10 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 3.046 on 30 degrees of freedom
+## Multiple R-squared:  0.7528, Adjusted R-squared:  0.7446 
+## F-statistic: 91.38 on 1 and 30 DF,  p-value: 1.294e-10</code></pre>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" title="1">rsqared&lt;-<span class="kw">summary</span>(model)<span class="op">$</span>adj.r.squared</a></code></pre></div>
+</section><section id="section-1" class="slide level2">
+<h2></h2>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">plot</span>(mpg<span class="op">~</span>wt,<span class="dt">data=</span>mtcars)</a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="kw">abline</span>(model,<span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">lwd=</span><span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb6-3" title="3"><span class="kw">text</span>(<span class="dv">4</span>,<span class="dv">26</span>,<span class="kw">paste0</span>(<span class="st">&quot;R-squared: &quot;</span>,<span class="kw">round</span>(rsqared,<span class="dv">4</span>)))</a></code></pre></div>
+<p><img src="clase_01_files/figure-revealjs/unnamed-chunk-4-1.png" width="768" /></p>
+</section><section id="section-2" class="slide level2">
+<h2></h2>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">par</span>(<span class="dt">mfrow=</span><span class="kw">c</span>(<span class="dv">2</span>,<span class="dv">2</span>))</a>
+<a class="sourceLine" id="cb7-2" title="2"><span class="kw">hist</span>(mtcars<span class="op">$</span>mpg,<span class="dt">breaks=</span><span class="dv">10</span>)</a>
+<a class="sourceLine" id="cb7-3" title="3"><span class="kw">plot</span>(<span class="kw">density</span>(mtcars<span class="op">$</span>mpg,<span class="dt">breaks=</span><span class="dv">10</span>))</a>
+<a class="sourceLine" id="cb7-4" title="4"><span class="kw">boxplot</span>(mtcars)</a>
+<a class="sourceLine" id="cb7-5" title="5"><span class="kw">plot</span>(mtcars[,<span class="dv">1</span>])</a></code></pre></div>
+<p><img src="clase_01_files/figure-revealjs/unnamed-chunk-5-1.png" width="768" /></p>
+</section><section id="section-3" class="slide level2">
+<h2></h2>
+<p>R también se usa mucho en el análisis de datos, por lo que es excelente para manipular datos. Aquí hay un subconjunto:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" title="1"><span class="kw">kable</span>(<span class="kw">table</span>(iris[<span class="kw">seq</span>(<span class="dv">1</span>,<span class="dv">150</span>,<span class="dt">by=</span><span class="dv">25</span>),<span class="kw">c</span>(<span class="st">&quot;Petal.Width&quot;</span>,<span class="st">&quot;Species&quot;</span>)]))</a></code></pre></div>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: right;">setosa</th>
+<th style="text-align: right;">versicolor</th>
+<th style="text-align: right;">virginica</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0.2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td>1.4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td>1.8</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td>2.5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+</section></section>
+<section><section id="primeros-pasos-en-r" class="title-slide slide level1"><h1>PRIMEROS PASOS EN R</h1></section><section id="distribución-e-instalación" class="slide level2">
+<h2>Distribución e instalación</h2>
+<ul>
+<li>Para instalar R hay que bajar un fichero ejecutable de la página web del proyecto R: <a href="http://www.r-project.org/">http://www.r-project.org/</a></li>
+<li>Actualmente (febrero 2020), la versión más reciente de R para el entorno Windows es la 3.6.2 y el ejecutable de tamaño aproximadamente 83Mb tiene el nombre R-3.6.2-win.exe</li>
+<li>Una vez bajado este ejecutable, hay que ejecutarlo y seguir las instrucciones del programa de instalación.</li>
+</ul>
+</section><section id="rstudio" class="slide level2">
+<h2>RSTUDIO</h2>
+<ul style="font-size:24px">
+<ul>
+<li>RStudio es un editor para scripts disponible para usuarios de R en todos los sistemas operativos.</li>
+<li>Es considerado como un <strong><u>entorno de desarrollo integrado (GUI)</u></strong> 🕟 que combina un interfaz muy intuitiva con herramientas de código muy potentes que permiten sacar el máximo provecho a R.</li>
+<li>La versión en pruebas es gratuita y está disponible en <a href="http://www.rstudio.org/">http://www.rstudio.org/</a></li>
+<li>La ventaja de este editor es que ofrece una serie de opciones no existentes en R, entre otras, por ejemplo, comprobar rápidamente que ningún paréntesis queda sin cerrarse o marcar, copiar y pegar columnas.</li>
+<li>Pero además nos da un listado de las variables y nos da una descripción de los bancos de datos que hemos introducido. También tiene una lista de los paquetes instalados y los gráficos realizados.</li>
+</ul>
+</ul>
+<p><img data-src="fig/rstudio_logo.png" alt="rstudiologo" /></p>
+</section><section id="ide-rstudio" class="slide level2">
+<h2>IDE RSTUDIO</h2>
+<p><img data-src="fig/rstudio_ide.PNG" /></p>
+</section><section id="empezando-a-codear" class="slide level2">
+<h2>EMPEZANDO A CODEAR 🐥</h2>
+<p>Espacio y directorio de trabajo</p>
+<table>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 75%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">FUNCIÓN</th>
+<th style="text-align: center;">ACCIÓN</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>getwd()</code></td>
+<td style="text-align: center;">Muestra el wd: working directory</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>setwd("midirectorio")</code></td>
+<td style="text-align: center;">Ajusta el wd al especificado</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>ls()  o dir()</code></td>
+<td style="text-align: center;">Lista lo que hay en el wd</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>history()</code></td>
+<td style="text-align: center;">Muestra los últimos comandos ejecutados</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>savehistory()</code></td>
+<td style="text-align: center;">Guarda el historial de comandos, por defecto en .Rhistory</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>loadhistory()</code></td>
+<td style="text-align: center;">Carga el historial de comandos</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>save.image("mywspace.R")</code></td>
+<td style="text-align: center;">Guarda los objetos del workspace, por defecto en .Rdata</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>load("mywspace.R")</code></td>
+<td style="text-align: center;">Carga el workspace mywspace.R</td>
+</tr>
+</tbody>
+</table>
+</section><section id="empezando-a-codear-1" class="slide level2">
+<h2>EMPEZANDO A CODEAR 🆒</h2>
+<p>Algunas funciones útiles</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Función</th>
+<th style="text-align: center;">Acción</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>length(obj)</code></td>
+<td style="text-align: center;">Números de componentes, elementos</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>dim(obj)</code></td>
+<td style="text-align: center;">Dimensión de un objeto</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>str(obj)</code></td>
+<td style="text-align: center;">Estructura de un objeto</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>class(obj)</code></td>
+<td style="text-align: center;">Clase(class) o tipo de objeto</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>names(obj)</code></td>
+<td style="text-align: center;">Nombres de los componentes de un objeto</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>c(obj, obj,…)</code></td>
+<td style="text-align: center;">Combina objetos en un vector</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>head(obj)</code></td>
+<td style="text-align: center;">Lista los 10 primeros elementos de un objeto</td>
+</tr>
+</tbody>
+</table>
+</section></section>
+<section><section id="sintaxis-de-r" class="title-slide slide level1"><h1>SINTAXIS DE R</h1></section><section id="tipos-de-datos" class="slide level2">
+<h2>TIPOS DE DATOS</h2>
+<table>
+<colgroup>
+<col style="width: 41%" />
+<col style="width: 58%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Tipos de Datos</th>
+<th style="text-align: center;">Información</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>Lógico</code></td>
+<td style="text-align: center;">Son datos que sólo permite los valores lógicos de verdadero (T) o falso (F)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>Numérico</code></td>
+<td style="text-align: center;">Son datos que pueden contener números reales</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>Complejo</code></td>
+<td style="text-align: center;">Son datos que pueden contener números complejos</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>Carácter</code></td>
+<td style="text-align: center;">Son datos que permiten números y cualquier tipo caracter</td>
+</tr>
+</tbody>
+</table>
+</section><section id="estructuras-de-datos" class="slide level2">
+<h2>ESTRUCTURAS DE DATOS</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Objetos</th>
+<th style="text-align: center;">Tipos</th>
+<th style="text-align: center;">¿Soporta varios tipos de datos en el mismo objeto?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>Vector</code></td>
+<td style="text-align: center;">Numérico, carácter, complejo o lógico</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>Factor</code></td>
+<td style="text-align: center;">Numérico o lógico</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>Arreglo</code></td>
+<td style="text-align: center;">Numérico, carácter, complejo o lógico</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>Matriz</code></td>
+<td style="text-align: center;">Numérico, carácter, complejo o lógico</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>Data frame</code></td>
+<td style="text-align: center;">Numérico, carácter, complejo o lógico</td>
+<td style="text-align: center;">Sí</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>ts</code></td>
+<td style="text-align: center;">Numérico, carácter, complejo o lógico</td>
+<td style="text-align: center;">Sí</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>Lista</code></td>
+<td style="text-align: center;">Numérico, carácter, complejo, lógico, función, expresión, …</td>
+<td style="text-align: center;">Sí</td>
+</tr>
+</tbody>
+</table>
+</section><section id="sintaxis" class="slide level2">
+<h2>SINTAXIS</h2>
+<p style="font-size:22px">
+Un objeto puede ser creado con el operador <strong><em>“assignar”</em></strong> el cual se denota como una flecha con el signo menos y el símbolo <strong>“&gt;”</strong> o <strong>“&lt;”</strong> dependiendo de la dirección en el que asigna el objeto:
+<p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" title="1">n &lt;-<span class="st"> </span><span class="dv">15</span></a>
+<a class="sourceLine" id="cb9-2" title="2">n</a></code></pre></div>
+<pre><code>## [1] 15</code></pre>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" title="1"><span class="dv">6</span> -&gt;<span class="st"> </span>n</a>
+<a class="sourceLine" id="cb11-2" title="2">n</a></code></pre></div>
+<pre><code>## [1] 6</code></pre>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb13-1" title="1">x  <span class="op">&lt;</span>− <span class="dv">1</span></a>
+<a class="sourceLine" id="cb13-2" title="2">X  <span class="op">&lt;</span>− <span class="dv">10</span></a>
+<a class="sourceLine" id="cb13-3" title="3">x</a></code></pre></div>
+<pre><code>## [1] 1</code></pre>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb15-1" title="1">X</a></code></pre></div>
+<pre><code>## [1] 10</code></pre>
+</section><section id="vector" class="slide level2">
+<h2>VECTOR</h2>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb17-1" title="1">numeros &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">7</span>,<span class="dv">10</span>,<span class="dv">11</span>,<span class="dv">12</span>,<span class="dv">19</span>,<span class="dv">26</span>)</a>
+<a class="sourceLine" id="cb17-2" title="2">letras &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;a&quot;</span>,<span class="st">&quot;b&quot;</span>,<span class="st">&quot;d&quot;</span>,<span class="st">&quot;g&quot;</span>,<span class="st">&quot;j&quot;</span>,<span class="st">&quot;k&quot;</span>,<span class="st">&quot;l&quot;</span>,<span class="st">&quot;s&quot;</span>,<span class="st">&quot;z&quot;</span>)</a>
+<a class="sourceLine" id="cb17-3" title="3">numeros</a></code></pre></div>
+<pre><code>## [1]  1  2  4  7 10 11 12 19 26</code></pre>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb19-1" title="1">letras</a></code></pre></div>
+<pre><code>## [1] &quot;a&quot; &quot;b&quot; &quot;d&quot; &quot;g&quot; &quot;j&quot; &quot;k&quot; &quot;l&quot; &quot;s&quot; &quot;z&quot;</code></pre>
+</section><section id="data-frame" class="slide level2">
+<h2>DATA FRAME</h2>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb21-1" title="1">n_y_l &lt;-<span class="st"> </span><span class="kw">data.frame</span>(<span class="dt">numeros=</span>numeros, <span class="dt">letras=</span>letras)</a>
+<a class="sourceLine" id="cb21-2" title="2">n_y_l</a></code></pre></div>
+<pre><code>##   numeros letras
+## 1       1      a
+## 2       2      b
+## 3       4      d
+## 4       7      g
+## 5      10      j
+## 6      11      k
+## 7      12      l
+## 8      19      s
+## 9      26      z</code></pre>
+</section><section id="matrix" class="slide level2">
+<h2>MATRIX</h2>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb23-1" title="1">n_matrix &lt;-<span class="st"> </span><span class="kw">matrix</span>(numeros, <span class="dt">nrow=</span><span class="dv">3</span>, <span class="dt">ncol=</span><span class="dv">3</span>, <span class="dt">byrow=</span>T)</a>
+<a class="sourceLine" id="cb23-2" title="2">n_matrix</a></code></pre></div>
+<pre><code>##      [,1] [,2] [,3]
+## [1,]    1    2    4
+## [2,]    7   10   11
+## [3,]   12   19   26</code></pre>
+</section><section id="manipulación-de-datos" class="slide level2">
+<h2>MANIPULACIÓN DE DATOS</h2>
+<p>Subsetting data (Consultas)</p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb25-1" title="1">n_y_l[<span class="dv">1</span>,<span class="dv">2</span>]</a></code></pre></div>
+<pre><code>## [1] a
+## Levels: a b d g j k l s z</code></pre>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb27-1" title="1">n_y_l<span class="op">$</span>numeros</a></code></pre></div>
+<pre><code>## [1]  1  2  4  7 10 11 12 19 26</code></pre>
+</section><section id="manipulación-de-datos-1" class="slide level2">
+<h2>MANIPULACIÓN DE DATOS</h2>
+<p>Agregando data</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb29-1" title="1"><span class="kw">colnames</span>(n_y_l)</a></code></pre></div>
+<pre><code>## [1] &quot;numeros&quot; &quot;letras&quot;</code></pre>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb31-1" title="1">n_y_l<span class="op">$</span>cuadrados &lt;-<span class="st"> </span>n_y_l<span class="op">$</span>numeros<span class="op">^</span><span class="dv">2</span></a>
+<a class="sourceLine" id="cb31-2" title="2">n_y_l</a></code></pre></div>
+<pre><code>##   numeros letras cuadrados
+## 1       1      a         1
+## 2       2      b         4
+## 3       4      d        16
+## 4       7      g        49
+## 5      10      j       100
+## 6      11      k       121
+## 7      12      l       144
+## 8      19      s       361
+## 9      26      z       676</code></pre>
+</section><section id="leyendo-data-externa" class="slide level2">
+<h2>LEYENDO DATA EXTERNA</h2>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb33-1" title="1">data_terremotos &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/earthquakes.csv&quot;</span>)</a>
+<a class="sourceLine" id="cb33-2" title="2"><span class="kw">head</span>(data_terremotos)</a></code></pre></div>
+<pre><code>##                 DateTime Latitude Longitude Depth Magnitude MagType NbStations
+## 1 2002/01/01 10:39:06.82  -55.214  -129.000  10.0       6.0      Mw         78
+## 2 2002/01/01 11:29:22.73    6.303   125.650 138.1       6.3      Mw        236
+## 3 2002/01/02 14:50:33.49  -17.983   178.744 665.8       6.2      Mw        215
+## 4 2002/01/02 17:22:48.76  -17.600   167.856  21.0       7.2      Mw        427
+## 5 2002/01/03 07:05:27.67   36.088    70.687 129.3       6.2      Mw        431
+## 6 2002/01/03 10:17:36.30  -17.664   168.004  10.0       6.6      Mw        386
+##   Gap Distance  RMS Source     EventID
+## 1  NA       NA 1.07    NEI 2.00201e+11
+## 2  NA       NA 0.90    NEI 2.00201e+11
+## 3  NA       NA 1.08    NEI 2.00201e+11
+## 4  NA       NA 0.90    NEI 2.00201e+11
+## 5  NA       NA 0.87    NEI 2.00201e+11
+## 6  NA       NA 1.14    NEI 2.00201e+11</code></pre>
+</section><section id="llamando-a-la-linea-de-comandos" class="slide level2">
+<h2>LLAMANDO A LA LINEA DE COMANDOS</h2>
+<ul>
+<li>Python (utilidades, servicios, ArcPy)</li>
+<li>LASTools (Herramienta de clasificaciòn Lidar) <br></li>
+</ul>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb35-1" title="1"><span class="kw">system</span>(<span class="st">&#39;python creardir.py&#39;</span>)</a></code></pre></div>
+</section><section id="section-4" class="slide level2">
+<h2></h2>
+<p><a href="https://fhernanb.github.io/Manual-de-R/funbas.html">Operaciones básicas</a></p>
+<p><a href="https://rpubs.com/osoramirez/93049">Estadísticos básicos</a></p>
+</section></section>
+<section><section id="datos-espaciales-en-r" class="title-slide slide level1"><h1>DATOS ESPACIALES EN R</h1></section><section id="gdal-ogr" class="slide level2">
+<h2>GDAL / OGR</h2>
+<ul>
+<li>Geospatial Data Abstraction Library / OGR Simple Features Library</li>
+<li>Con la versión GDAL 2.0, se integraron los componentes GDAL y OGR.</li>
+<li>Es un software libre de código abierto, licenciado bajo una licencia de estilo MIT/X.</li>
+<li>Compatible con sistemas operativos como Windows, IOS y UNIX.</li>
+</ul>
+<p><img data-src="fig/gdal_logo.png" alt="gdallogo" /></p>
+</section><section id="gdal-ogr-1" class="slide level2">
+<h2>GDAL / OGR</h2>
+<ul style="font-size:24px">
+<ul>
+<li>Proporciona utilidades de línea de comandos para traducir y procesar distintos formatos de datos geoespaciales ráster y vectoriales</li>
+<li>Acceso a datos ráster altamente eficiente.</li>
+<li>Soporte para archivos de gran tamaño más de 4 GB</li>
+<li>Accesible como biblioteca desde Python, R, Java, C#, Ruby y VB6</li>
+<li>Motor de sistema de coordenadas basado en PROJ.4.</li>
+<li>Proporciona el motor principal de acceso a datos para muchas aplicaciones como: MapServer, GRASS, QGIS y OpenEV.</li>
+</ul>
+</ul>
+<p><img data-src="fig/gdal_logo.png" alt="gdallogo" /></p>
+</section><section id="tipos-de-datos-espaciales" class="slide level2">
+<h2>Tipos de datos espaciales</h2>
+<ul>
+<li>Puntos espaciales</li>
+<li>Líneas espaciales</li>
+<li>Polígonos espaciales</li>
+<li>Raster</li>
+<li>Tipos de datos especiales (Ej., Datacubes, redes, etc.)</li>
+</ul>
+</section><section id="algunas-librerías-espaciales" class="slide level2">
+<h2>Algunas librerías espaciales</h2>
+<p>raster, shapefile, ModisTsp, sf, velox, Rstoolbox, rgdal, Landsat, sp, gdalutils, reshape, ncdf4, gdalcubes, stars</p>
+<p>Otros:</p>
+<p>ggplot2, ggmap, randomforest, caret, dplyr, signal, devtools, parallel, foreach, snow</p>
+</section><section id="breve-historia-sobre-el-análisis-de-datos-espaciales-en-r" class="slide level2">
+<h2>Breve historia sobre el análisis de datos espaciales en R:</h2>
+<ul style="font-size:22px">
+<ul>
+<li>Paquetes espaciales ya disponibles en el lenguaje S desde la década de 1990 (Bivand and Gebhardt, 2000)</li>
+<li>En 2000, las modificaciones de estos se convirtieron en paquetes R para el análisis de patrones de puntos, geoestadística, análisis de datos espaciales exploratorios y econometría espacial (aún mucho paquetes dispersos).</li>
+<li>R-GIS bridges (Bivand, 2000)</li>
+<li>Bivand (2003) propuso un sistema de clase de datos espaciales para R que eventualmente condujo a los paquetes rgdal (first - released in 2003; Bivand, Keitt, and Rowlingson, 2018) y sp (first released in 2005; Bivand, Pebesma, and Gomez-Rubio, 2013)</li>
+<li>2008: Análisis aplicado de datos espaciales con R(Bivand, Pebesma, and Gomez-Rubio, 2013)</li>
+<li>2010: paquete raster (Hijmans, 2017)</li>
+<li>2011: paquete rgeos (Bivand and Rundel, 2017)</li>
+<li>2016-17: sf - simple features para R (Pebesma, 2018a)</li>
+<li>2017 : paquete RStoolbox (Leutner, 2018)</li>
+<li>2017-18: paquete stars - spatiotemporal tidy arrays para R (Pebesma, 2018b)</li>
+<li>2019: paquete gdalcubes (Appel y Pebesma 2019)</li>
+</ul>
+</ul>
+<p>Puede leer más en este <a href="https://geocompr.robinlovelace.net/intro.html#the-history-of-r-spatial">link</a></p>
+</section><section id="datos-vector" class="slide level2">
+<h2>Datos Vector</h2>
+<p><img src="fig/vector_data.png" style="background:none; border:none; box-shadow:none;height:500px;"></p>
+</section><section id="datos-vector-1" class="slide level2">
+<h2>Datos Vector</h2>
+<div class="sourceCode" id="cb36"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb36-1" title="1"><span class="kw">library</span>(maptools)</a>
+<a class="sourceLine" id="cb36-2" title="2">paises &lt;-<span class="st"> </span><span class="kw">readShapePoly</span>(<span class="st">&#39;data/paises.shp&#39;</span>)</a></code></pre></div>
+<p><br></p>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb37-1" title="1"><span class="kw">library</span>(rgdal)</a>
+<a class="sourceLine" id="cb37-2" title="2">paises &lt;-<span class="st"> </span><span class="kw">readOGR</span>(<span class="dt">dsn=</span><span class="st">&quot;data&quot;</span>, <span class="dt">layer=</span><span class="st">&quot;paises&quot;</span>)</a></code></pre></div>
+<p><br></p>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb38-1" title="1"><span class="kw">library</span>(raster)</a>
+<a class="sourceLine" id="cb38-2" title="2">paises &lt;-<span class="st"> </span><span class="kw">shapefile</span>(<span class="st">&#39;data/paises.shp&#39;</span>)</a></code></pre></div>
+<p><br></p>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb39-1" title="1"><span class="kw">library</span>(sf)</a>
+<a class="sourceLine" id="cb39-2" title="2">paises &lt;-<span class="st"> </span><span class="kw">st_read</span>(<span class="st">&#39;data/paises.shp&#39;</span>)</a></code></pre></div>
+</section><section id="datos-raster" class="slide level2">
+<h2>Datos Raster</h2>
+<p><img src="fig/raster_data.jpg" style="background:none; border:none; box-shadow:none;width:800px;"></p>
+</section><section id="datos-raster-1" class="slide level2">
+<h2>Datos Raster</h2>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb40-1" title="1"><span class="kw">library</span>(tiff)</a>
+<a class="sourceLine" id="cb40-2" title="2">landsat &lt;-<span class="st"> </span><span class="kw">readTIFF</span>(<span class="st">&quot;data/landsat8_test_b4.tiff&quot;</span>, <span class="dt">as.is=</span><span class="ot">TRUE</span>)</a></code></pre></div>
+<p><br></p>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb41-1" title="1"><span class="kw">library</span>(raster)</a>
+<a class="sourceLine" id="cb41-2" title="2">landsat &lt;-<span class="st"> </span><span class="kw">raster</span>(<span class="st">&quot;data/landsat8_test_b4.tiff&quot;</span>)</a></code></pre></div>
+<p><br></p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb42-1" title="1"><span class="kw">library</span>(ncdf4)</a>
+<a class="sourceLine" id="cb42-2" title="2">data_nc &lt;-<span class="st"> </span><span class="kw">nc_open</span>(<span class="st">&#39;data/dato.nc&#39;</span>)</a></code></pre></div>
+<p><br></p>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb43-1" title="1"><span class="kw">library</span>(stars)</a>
+<a class="sourceLine" id="cb43-2" title="2">tif &lt;-<span class="st"> </span><span class="kw">system.file</span>(<span class="st">&quot;data/landsat8_test_b4.tiff&quot;</span>, <span class="dt">package =</span> <span class="st">&quot;stars&quot;</span>)</a>
+<a class="sourceLine" id="cb43-3" title="3"><span class="kw">read_stars</span>(tif)</a></code></pre></div>
+</section><section id="datos-raster-2" class="slide level2">
+<h2>Datos Raster</h2>
+<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb44-1" title="1"><span class="kw">library</span>(raster)</a></code></pre></div>
+<pre><code>## Loading required package: sp</code></pre>
+<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb46-1" title="1">m &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="dt">nrow =</span> <span class="dv">4</span>, <span class="dt">ncol=</span><span class="dv">4</span>, <span class="kw">c</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">9</span>, <span class="dv">1</span><span class="op">:</span><span class="dv">7</span>))</a>
+<a class="sourceLine" id="cb46-2" title="2">matrix_raster &lt;-<span class="st"> </span><span class="kw">raster</span>(m)</a>
+<a class="sourceLine" id="cb46-3" title="3"><span class="kw">plot</span>(matrix_raster)</a></code></pre></div>
+<p><img src="clase_01_files/figure-revealjs/unnamed-chunk-29-1.png" width="50%" /></p>
+</section><section id="datos-lidar-clasificados" class="slide level2">
+<h2>Datos LIDAR Clasificados</h2>
+<p><img data-src="fig/lasTools.gif" /></p>
+</section></section>
+<section><section id="a-practicar" class="title-slide slide level1"><h1>A practicar</h1><p><img src="fig/vamoacalmarno.jpg" style="background:none; border:none; box-shadow:none;height:500px;"></p>
+<p><a href="http://datosabiertos.oefa.gob.pe/home">http://datosabiertos.oefa.gob.pe/home</a></p></section><section id="ejercicio-1" class="slide level2">
+<h2>Ejercicio 1</h2>
+<ul style="font-size:24px;">
+<p>Nota 1: Recuerden cargar todas las librerias necesarias si no lo hicieron.</p>
+Nota 2: Fijense en su directorio de trabajo (working directory)
+</ul>
+<p><br></p>
+<ul style="font-size:26px">
+<ul>
+<li>Cargar el set de datos “data/earthquakes.csv” (ojo con el separador!).</li>
+<li>Cuantos registros y columnas tiene?</li>
+<li>Imprimir la columna Magnitude y luego el registro numero 10 de esa columna</li>
+</ul>
+</ul>
+</section><section id="ejercicio-2" class="slide level2">
+<h2>Ejercicio 2</h2>
+<ul style="font-size:24px;">
+<p>Nota 1: Recuerden cargar todas las librerias necesarias si no lo hicieron.</p>
+<p>Nota 2: Fijense en su directorio de trabajo (working directory)</p>
+Nota 3: Copia para no perder los datos originales (buena practica)
+</ul>
+<p><br></p>
+<ul style="font-size:26px">
+<ul>
+<li>Obtener un dataset con todos las peliculas que tienen 0 en la columna <code>Incidencia</code>. (tener cargado el dataset data/pobreza_extrema.csv)</li>
+<li>Convertir al distrito “Los Olivos” en el de más extrema pobreza la variable <code>Incidencia</code>. Luego explorar los datos.</li>
+<li>Crear un data frame que tenga todos los distritos de la región Ancash e Ica sin población en extrema pobreza</li>
+</ul>
+</ul>
+</section><section id="ejercicio-3" class="slide level2">
+<h2>Ejercicio 3</h2>
+<ul style="font-size:24px;">
+<p>Nota 1: Recuerden cargar todas las librerias necesarias si no lo hicieron.</p>
+Nota 2: Fijense en su directorio de trabajo (working directory)
+</ul>
+<p><br></p>
+<ul style="font-size:26px">
+<ul>
+<li>Cargar el set de datos “data/earthquakes.csv”.
+<ul>
+<li>Los datos historicos reprentan la ubicación de los terremotos.</li>
+</ul></li>
+<li>Hacer una descripcion visual y numérica de la variable <code>Magnitude</code>.
+<ul>
+<li>¿Se observa algo raro?, ¿Qué variables parecen tener valores extremos o outliers?</li>
+<li>¿Hay nulos (NA)?</li>
+<li>Quedarse con los datos con valores extremos (superior a la media mas 3 veces la desviación estandar).</li>
+<li>Calcular percentil 98</li>
+</ul></li>
+</ul>
+</ul>
+</section></section>
+    </div>
+  </div>
+
+  <script src="clase_01_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="clase_01_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: false,
+        // Transition style
+        transition: 'convex', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+        menu: {
+          numbers: true,
+          custom: false,
+          themes: false,
+          transitions: false
+        },
+
+
+
+        chalkboard: {
+          toggleNotesButton: true,
+          theme: 'chalkboard',
+        },
+
+        keyboard: {
+          67: function() { RevealChalkboard.toggleNotesCanvas() },    // toggle notes canvas when 'c' is pressed
+          66: function() { RevealChalkboard.toggleChalkboard() }, // toggle chalkboard when 'b' is pressed
+          46: function() { RevealChalkboard.clear() },    // clear chalkboard when 'DEL' is pressed
+           8: function() { RevealChalkboard.reset() },    // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+          68: function() { RevealChalkboard.download() }, // downlad recorded chalkboard drawing when 'd' is pressed
+        },
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'clase_01_files/reveal.js-3.3.0.1/plugin/notes/notes.js', async: true },
+          { src: 'clase_01_files/reveal.js-3.3.0.1/plugin/search/search.js', async: true },
+          { src: 'clase_01_files/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
+          { src: 'clase_01_files/reveal.js-3.3.0.1/plugin/chalkboard/chalkboard.js', async: true },
+          { src: 'clase_01_files/reveal.js-3.3.0.1/plugin/menu/menu.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>
