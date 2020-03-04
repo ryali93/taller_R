@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>clase_02.utf8</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="clase_02_files/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+<style type="text/css">
+a.sourceLine { display: inline-block; line-height: 1.25; }
+a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
+a.sourceLine:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+a.sourceLine { text-indent: -1em; padding-left: 1em; }
+}
+pre.numberSource a.sourceLine
+  { position: relative; left: -4em; }
+pre.numberSource a.sourceLine::before
+  { content: attr(title);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  }
+@media screen {
+a.sourceLine::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="clase_02_files/reveal.js-3.3.0.1/css/theme/white.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal .slide-menu-button {
+      left: 105px !important;
+    }
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+    <link rel="stylesheet" href="styles.css"/>
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+    <link href="clase_02_files/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+    <link href="clase_02_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="taller-de-programación-en-r" class="title-slide slide level1"><h1>TALLER DE PROGRAMACIÓN EN R</h1><p>Lección 2️⃣ <br> <img data-src="fig/r_logo.png" alt="rlogo" /> <img data-src="fig/rstudio_logo.png" alt="rstudiologo" /> <br> Roy Yali Samaniego 😄 <br> <i class="fab fa-github"></i><a href="https://github.com/ryali93">https://github.com/ryali93</a> <br> ✉️ <a href="ryali93@gmail.com">ryali93@gmail.com</a> <br> UNMSM - Ingeniería Geográfica <br> 2020 - 02 - 28</p></section>
+<section><section id="no-olvidar" class="title-slide slide level1"><h1>NO OLVIDAR</h1></section><section id="nombres-de-variables" class="slide level2">
+<h2>Nombres de variables</h2>
+<ul>
+<li>Los nombres no pueden empezar con números</li>
+<li>Evitar nombres en uso</li>
+</ul>
+</section><section id="ahora-tú" class="slide level2">
+<h2>Ahora tú</h2>
+<p>Cómo lo resolvería en R</p>
+<p>5! = 5 x 4 x 3 x 2 x 1</p>
+<p>Guardar en una nueva variable el quinto elemento del siguiente vector, cambiar el cuarto elemento por 0</p>
+<p>x &lt;- c(0, 0, 1, 3, 5, 1)</p>
+</section><section id="sigues-tú" class="slide level2">
+<h2>Sigues tú</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1">vec &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">6</span>, <span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">6</span>, <span class="dv">10</span>, <span class="dv">5</span>)</a>
+<a class="sourceLine" id="cb1-2" title="2">df &lt;-<span class="st"> </span><span class="kw">data.frame</span>(</a>
+<a class="sourceLine" id="cb1-3" title="3">  <span class="dt">name =</span> <span class="kw">c</span>(<span class="st">&quot;John&quot;</span>, <span class="st">&quot;Paul&quot;</span>, <span class="st">&quot;George&quot;</span>, <span class="st">&quot;Ringo&quot;</span>),</a>
+<a class="sourceLine" id="cb1-4" title="4">  <span class="dt">birth =</span> <span class="kw">c</span>(<span class="dv">1940</span>, <span class="dv">1942</span>, <span class="dv">1943</span>, <span class="dv">1940</span>),</a>
+<a class="sourceLine" id="cb1-5" title="5">  <span class="dt">instrument =</span> <span class="kw">c</span>(<span class="st">&quot;guitar&quot;</span>, <span class="st">&quot;bass&quot;</span>, <span class="st">&quot;guitar&quot;</span>, <span class="st">&quot;drums&quot;</span>)</a>
+<a class="sourceLine" id="cb1-6" title="6">)</a></code></pre></div>
+<p>Predecir qué hacen las siguientes líneas</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1">vec[<span class="dv">2</span>]</a>
+<a class="sourceLine" id="cb2-2" title="2">vec[<span class="kw">c</span>(<span class="dv">5</span>, <span class="dv">6</span>)]</a>
+<a class="sourceLine" id="cb2-3" title="3">vec[<span class="op">-</span><span class="kw">c</span>(<span class="dv">5</span>, <span class="dv">6</span>)]</a>
+<a class="sourceLine" id="cb2-4" title="4">vec[vec <span class="op">&gt;</span><span class="st"> </span><span class="dv">5</span>]</a>
+<a class="sourceLine" id="cb2-5" title="5"></a>
+<a class="sourceLine" id="cb2-6" title="6">df[<span class="kw">c</span>(<span class="dv">2</span>, <span class="dv">4</span>), <span class="dv">3</span>]</a>
+<a class="sourceLine" id="cb2-7" title="7">df[, <span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb2-8" title="8">df[, <span class="st">&quot;instrument&quot;</span>]</a>
+<a class="sourceLine" id="cb2-9" title="9">df<span class="op">$</span>instrument</a></code></pre></div>
+</section><section id="instalación-de-librerías" class="slide level2">
+<h2>Instalación de librerías</h2>
+<p><a href="https://github.com/rstudio/Intro/tree/master/slides">https://github.com/rstudio/Intro/tree/master/slides</a> (página 98)</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">library</span>(<span class="st">&quot;ggplot2&quot;</span>)</a>
+<a class="sourceLine" id="cb3-2" title="2"><span class="kw">library</span>(<span class="st">&quot;raster&quot;</span>)</a>
+<a class="sourceLine" id="cb3-3" title="3"><span class="kw">library</span>(<span class="st">&quot;dplyr&quot;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">install.packages</span>(<span class="kw">c</span>(<span class="st">&quot;ggplot2&quot;</span>, <span class="st">&quot;raster&quot;</span>, <span class="st">&quot;dplyr&quot;</span>))</a></code></pre></div>
+</section><section id="manipular-datos" class="slide level2">
+<h2>Manipular datos</h2>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" title="1"><span class="kw">print</span>(diamonds)</a></code></pre></div>
+<pre><code>## # A tibble: 53,940 x 10
+##    carat cut       color clarity depth table price     x     y     z
+##    &lt;dbl&gt; &lt;ord&gt;     &lt;ord&gt; &lt;ord&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+##  1 0.23  Ideal     E     SI2      61.5    55   326  3.95  3.98  2.43
+##  2 0.21  Premium   E     SI1      59.8    61   326  3.89  3.84  2.31
+##  3 0.23  Good      E     VS1      56.9    65   327  4.05  4.07  2.31
+##  4 0.290 Premium   I     VS2      62.4    58   334  4.2   4.23  2.63
+##  5 0.31  Good      J     SI2      63.3    58   335  4.34  4.35  2.75
+##  6 0.24  Very Good J     VVS2     62.8    57   336  3.94  3.96  2.48
+##  7 0.24  Very Good I     VVS1     62.3    57   336  3.95  3.98  2.47
+##  8 0.26  Very Good H     SI1      61.9    55   337  4.07  4.11  2.53
+##  9 0.22  Fair      E     VS2      65.1    61   337  3.87  3.78  2.49
+## 10 0.23  Very Good H     VS1      59.4    61   338  4     4.05  2.39
+## # ... with 53,930 more rows</code></pre>
+</section><section id="manipular-datos-1" class="slide level2">
+<h2>Manipular datos</h2>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" title="1"><span class="kw">qplot</span>(x, y, <span class="dt">data =</span> diamonds)</a></code></pre></div>
+<p><img src="clase_02_files/figure-revealjs/unnamed-chunk-6-1.png" width="768" /></p>
+</section><section id="comparaciones-lógicas" class="slide level2">
+<h2>Comparaciones lógicas</h2>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" title="1">x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>)</a></code></pre></div>
+<p><br></p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Operador</th>
+<th style="text-align: center;">Resultado</th>
+<th style="text-align: center;">Comparación</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>x &gt; 3</code></td>
+<td style="text-align: center;"><code>c(F, F, F, T, T)</code></td>
+<td style="text-align: center;">Mayor que</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>x &gt;= 3</code></td>
+<td style="text-align: center;"><code>c(F, F, T, T, T)</code></td>
+<td style="text-align: center;">Mayor o igual que</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>x &lt; 3</code></td>
+<td style="text-align: center;"><code>c(T, T, F, F, F)</code></td>
+<td style="text-align: center;">Menor que</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>x &lt;= 3</code></td>
+<td style="text-align: center;"><code>c(T, T, T, F, F)</code></td>
+<td style="text-align: center;">Menor o igual que</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>x == 3</code></td>
+<td style="text-align: center;"><code>c(F, F, T, F, F)</code></td>
+<td style="text-align: center;">Igual a</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>x != 3</code></td>
+<td style="text-align: center;"><code>c(T, T, F, T, T)</code></td>
+<td style="text-align: center;">Diferente de</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>x = 3</code></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Igual que &lt;-</td>
+</tr>
+</tbody>
+</table>
+</section><section id="in" class="slide level2">
+<h2>%in%</h2>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" title="1"><span class="dv">1</span> <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>) </a></code></pre></div>
+<pre><code>## [1] TRUE</code></pre>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" title="1"><span class="dv">1</span> <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>)</a></code></pre></div>
+<pre><code>## [1] FALSE</code></pre>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb13-1" title="1"><span class="kw">c</span>(<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>) <span class="op">%in%</span><span class="st"> </span><span class="kw">c</span>(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>) </a></code></pre></div>
+<pre><code>## [1]  TRUE  TRUE FALSE FALSE</code></pre>
+</section><section id="operaciones-lógicas" class="slide level2">
+<h2>Operaciones lógicas</h2>
+<p>Puedes combinar evaluaciones lógicas con <strong>&amp;</strong>, <strong>|</strong>, <strong>xor</strong>, <strong>!</strong>, <strong>any</strong>, y <strong>all</strong></p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb15-1" title="1">x <span class="op">&gt;</span><span class="st"> </span><span class="dv">2</span> <span class="op">&amp;</span><span class="st"> </span>x <span class="op">&lt;</span><span class="st"> </span><span class="dv">9</span></a></code></pre></div>
+<pre><code>## [1] FALSE FALSE  TRUE  TRUE</code></pre>
+</section><section id="operaciones-lógicas-1" class="slide level2">
+<h2>Operaciones lógicas</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Operador</th>
+<th style="text-align: center;">Evaluación</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>a &amp; b</code></td>
+<td style="text-align: center;">Tanto a como b son VERDADEROS</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>a | b</code></td>
+<td style="text-align: center;">Al menos uno de a y b es VERDADERO (o)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>xor(a, b)</code></td>
+<td style="text-align: center;">a es VERDADERO o b es VERDADERO, pero no ambos</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>!a</code></td>
+<td style="text-align: center;">No a (VERDADERO va a FALSO, FALSO va a VERDADERO)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>any(a, b, c)</code></td>
+<td style="text-align: center;">Al menos uno de a, b o c es VERDADERO</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>all(a, b, c)</code></td>
+<td style="text-align: center;">Cada uno de a, b y c es VERDADERO</td>
+</tr>
+</tbody>
+</table>
+</section><section id="ejercicio" class="slide level2">
+<h2>Ejercicio</h2>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb17-1" title="1">w &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="op">-</span><span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>)</a>
+<a class="sourceLine" id="cb17-2" title="2">x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">5</span>, <span class="dv">15</span>)</a>
+<a class="sourceLine" id="cb17-3" title="3">y &lt;-<span class="st"> &quot;Febrero&quot;</span></a>
+<a class="sourceLine" id="cb17-4" title="4">z &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;Lunes&quot;</span>, <span class="st">&quot;Martes&quot;</span>, <span class="st">&quot;Viernes&quot;</span>)</a></code></pre></div>
+<ul>
+<li>Convierta estas oraciones en pruebas lógicas en R</li>
+<li>¿<strong>w</strong> es positivo?</li>
+<li>¿<strong>x</strong> es mayor que 10 y menor que 20?</li>
+<li>¿El objeto <strong>y</strong> es la palabra <code>"febrero"</code>?</li>
+<li>¿Cada valor de <strong>z</strong> es un día de la semana?</li>
+</ul>
+</section><section id="consultas-lógicas" class="slide level2">
+<h2>Consultas lógicas</h2>
+<p>Combinar pruebas lógicas con subconjuntos es una práctica común</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb18-1" title="1">x_ceros &lt;-<span class="st"> </span>diamonds<span class="op">$</span>x <span class="op">==</span><span class="st"> </span><span class="dv">0</span></a>
+<a class="sourceLine" id="cb18-2" title="2">diamonds[x_ceros,]</a></code></pre></div>
+<pre><code>## # A tibble: 8 x 10
+##   carat cut       color clarity depth table price     x     y     z
+##   &lt;dbl&gt; &lt;ord&gt;     &lt;ord&gt; &lt;ord&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1  1.07 Ideal     F     SI2      61.6    56  4954     0  6.62     0
+## 2  1    Very Good H     VS2      63.3    53  5139     0  0        0
+## 3  1.14 Fair      G     VS1      57.5    67  6381     0  0        0
+## 4  1.56 Ideal     G     VS2      62.2    54 12800     0  0        0
+## 5  1.2  Premium   D     VVS1     62.1    59 15686     0  0        0
+## 6  2.25 Premium   H     SI2      62.8    59 18034     0  0        0
+## 7  0.71 Good      F     SI2      64.1    60  2130     0  0        0
+## 8  0.71 Good      F     SI2      64.1    60  2130     0  0        0</code></pre>
+</section><section id="guardar-resultados" class="slide level2">
+<h2>Guardar resultados</h2>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb20-1" title="1"><span class="co"># Ver resultados</span></a>
+<a class="sourceLine" id="cb20-2" title="2">diamonds[diamonds<span class="op">$</span>x <span class="op">&gt;</span><span class="st"> </span><span class="dv">10</span>, ]</a></code></pre></div>
+<pre><code>## # A tibble: 5 x 10
+##   carat cut       color clarity depth table price     x     y     z
+##   &lt;dbl&gt; &lt;ord&gt;     &lt;ord&gt; &lt;ord&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;int&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
+## 1  4.01 Premium   I     I1       61      61 15223  10.1 10.1   6.17
+## 2  4.01 Premium   J     I1       62.5    62 15223  10.0  9.94  6.24
+## 3  4    Very Good I     I1       63.3    58 15984  10.0  9.94  6.31
+## 4  5.01 Fair      J     I1       65.5    59 18018  10.7 10.5   6.98
+## 5  4.5  Fair      J     I1       65.8    58 18531  10.2 10.2   6.72</code></pre>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb22-1" title="1"><span class="co"># Guardar un nuevo data.frame</span></a>
+<a class="sourceLine" id="cb22-2" title="2">big &lt;-<span class="st"> </span>diamonds[diamonds<span class="op">$</span>x <span class="op">&gt;</span><span class="st"> </span><span class="dv">10</span>, ]</a>
+<a class="sourceLine" id="cb22-3" title="3"><span class="co"># Sobreescribir el dataset existente **Peligroso**</span></a>
+<a class="sourceLine" id="cb22-4" title="4">diamonds &lt;-<span class="st"> </span>diamonds[diamonds<span class="op">$</span>x <span class="op">&lt;</span><span class="st"> </span><span class="dv">10</span>,]</a></code></pre></div>
+</section><section id="valores-vacíos-o-nulos" class="slide level2">
+<h2>Valores vacíos o nulos</h2>
+<p>Por lo general, eliminar toda la fila debido a un error es exagerado. Es mejor reemplazar selectivamente los valores problemáticos con valores faltantes. En R, los valores faltantes se indican con NA</p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb23-1" title="1">a &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="ot">NA</span>) </a>
+<a class="sourceLine" id="cb23-2" title="2">a <span class="op">==</span><span class="st"> </span><span class="ot">NA</span></a></code></pre></div>
+<pre><code>## [1] NA NA</code></pre>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb25-1" title="1"><span class="kw">is.na</span>(a) </a></code></pre></div>
+<pre><code>## [1] FALSE  TRUE</code></pre>
+</section><section id="na.rm" class="slide level2">
+<h2>NA.rm</h2>
+<p>Muchas funciones (por ejemplo, suma y media) tienen el argumento <strong>na.rm</strong> para eliminar los valores faltantes antes del cálculo.</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb27-1" title="1">b &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="ot">NA</span>)</a>
+<a class="sourceLine" id="cb27-2" title="2"><span class="kw">sum</span>(b)</a></code></pre></div>
+<pre><code>## [1] NA</code></pre>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb29-1" title="1"><span class="kw">sum</span>(b, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>)</a></code></pre></div>
+<pre><code>## [1] 10</code></pre>
+</section><section id="asignación" class="slide level2">
+<h2>Asignación</h2>
+<p>Puede usar subconjuntos con &lt;- para cambiar valores individuales dentro de un objeto</p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb31-1" title="1"><span class="kw">summary</span>(diamonds<span class="op">$</span>x)</a></code></pre></div>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   0.000   4.710   5.700   5.731   6.540   9.860</code></pre>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb33-1" title="1">diamonds<span class="op">$</span>x[diamonds<span class="op">$</span>x <span class="op">==</span><span class="st"> </span><span class="dv">0</span>]</a></code></pre></div>
+<pre><code>## [1] 0 0 0 0 0 0 0 0</code></pre>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb35-1" title="1">diamonds<span class="op">$</span>x[diamonds<span class="op">$</span>x <span class="op">==</span><span class="st"> </span><span class="dv">0</span>] &lt;-<span class="st"> </span><span class="ot">NA</span></a>
+<a class="sourceLine" id="cb35-2" title="2"><span class="kw">summary</span>(diamonds<span class="op">$</span>x)</a></code></pre></div>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA&#39;s 
+##   3.730   4.710   5.700   5.732   6.540   9.860       8</code></pre>
+</section><section id="asignación-1" class="slide level2">
+<h2>Asignación</h2>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb37-1" title="1"><span class="kw">summary</span>(diamonds<span class="op">$</span>y)</a></code></pre></div>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   0.000   4.720   5.710   5.734   6.540  58.900</code></pre>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb39-1" title="1">diamonds<span class="op">$</span>y[diamonds<span class="op">$</span>y <span class="op">==</span><span class="st"> </span><span class="dv">0</span>] &lt;-<span class="st"> </span><span class="ot">NA</span></a>
+<a class="sourceLine" id="cb39-2" title="2">y_big &lt;-<span class="st"> </span>diamonds<span class="op">$</span>y <span class="op">&gt;</span><span class="st"> </span><span class="dv">20</span></a>
+<a class="sourceLine" id="cb39-3" title="3">diamonds<span class="op">$</span>y[y_big] &lt;-<span class="st"> </span><span class="ot">NA</span></a>
+<a class="sourceLine" id="cb39-4" title="4"><span class="kw">summary</span>(diamonds<span class="op">$</span>y)</a></code></pre></div>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA&#39;s 
+##   3.680   4.720   5.710   5.733   6.540   9.810       9</code></pre>
+</section><section id="gráfico" class="slide level2">
+<h2>Gráfico</h2>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb41-1" title="1"><span class="kw">qplot</span>(x, y, <span class="dt">data =</span> diamonds)</a></code></pre></div>
+<pre><code>## Warning: Removed 10 rows containing missing values (geom_point).</code></pre>
+<p><img src="clase_02_files/figure-revealjs/unnamed-chunk-17-1.png" width="768" /></p>
+</section></section>
+<section><section id="visualización" class="title-slide slide level1"><h1>VISUALIZACIÓN</h1><p>El gráfico simple ha traído más información a la mente del analista de datos que cualquier otro dispositivo. – John Tukey</p></section><section id="plot" class="slide level2">
+<h2>plot</h2>
+<ul>
+<li>sencillo</li>
+<li>hace cosas diferentes en diferentes contextos (generalmente de una manera útil)</li>
+<li>difícil de personalizar</li>
+</ul>
+</section><section id="plot-1" class="slide level2">
+<h2>plot</h2>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb43-1" title="1"><span class="kw">plot</span>(iris<span class="op">$</span>Sepal.Width, iris<span class="op">$</span>Sepal.Length)</a></code></pre></div>
+<p><img src="clase_02_files/figure-revealjs/unnamed-chunk-18-1.png" width="768" /></p>
+</section><section id="ggplot2" class="slide level2">
+<h2>ggplot2</h2>
+<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb44-1" title="1"><span class="kw">ggplot</span>(iris, <span class="kw">aes</span>(<span class="dt">x=</span>Sepal.Width, <span class="dt">y=</span>Sepal.Length)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb44-2" title="2"><span class="st">  </span><span class="kw">geom_point</span>()</a></code></pre></div>
+<p><img src="clase_02_files/figure-revealjs/unnamed-chunk-19-1.png" width="768" /></p>
+</section><section id="ggplot2-1" class="slide level2">
+<h2>ggplot2</h2>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb45-1" title="1"><span class="kw">par</span>(<span class="dt">mfrow=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))</a>
+<a class="sourceLine" id="cb45-2" title="2">iris1 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(iris, <span class="kw">aes</span>(<span class="dt">x=</span>Sepal.Width, <span class="dt">y=</span>Sepal.Length, <span class="dt">shape =</span> Species)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb45-3" title="3"><span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">color =</span> Species))</a>
+<a class="sourceLine" id="cb45-4" title="4">iris2 &lt;-<span class="st"> </span><span class="kw">ggplot</span>(iris, <span class="kw">aes</span>(<span class="dt">x=</span>Sepal.Width, <span class="dt">y=</span>Sepal.Length, <span class="dt">shape =</span> Species)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb45-5" title="5"><span class="st">  </span><span class="kw">geom_point</span>(<span class="kw">aes</span>(<span class="dt">color =</span> Species)) <span class="op">+</span><span class="st"> </span><span class="kw">theme_bw</span>()</a>
+<a class="sourceLine" id="cb45-6" title="6"><span class="kw">plot_grid</span>(iris1, iris2, <span class="dt">labels =</span> <span class="st">&quot;AUTO&quot;</span>)</a></code></pre></div>
+<p><img src="clase_02_files/figure-revealjs/unnamed-chunk-20-1.png" width="768" /></p>
+</section></section>
+<section><section id="condicionales" class="title-slide slide level1"><h1>CONDICIONALES</h1><p>La toma de decisiones es una parte importante de la programación. Esto se puede lograr en la programación R usando la nomenclatura condicional <strong>if</strong> <strong>else</strong>.</p></section><section id="if" class="slide level2">
+<h2>If</h2>
+<div class="sourceCode" id="cb46"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb46-1" title="1"><span class="cf">if</span> (expresion) {</a>
+<a class="sourceLine" id="cb46-2" title="2">  declaracion</a>
+<a class="sourceLine" id="cb46-3" title="3">}</a></code></pre></div>
+<ul>
+<li>Si <strong>expresion</strong> es <strong>TRUE</strong>, la instrucción se ejecuta. Pero si es <strong>FALSO</strong>, no pasa nada.</li>
+<li>Aquí, <strong>expresion</strong> puede ser un vector lógico o numérico, pero solo se tiene en cuenta el primer elemento.</li>
+<li>En el caso del vector numérico, cero se toma como <strong>FALSO</strong>, el resto como <strong>VERDADERO</strong>.</li>
+</ul>
+</section><section id="ifelse" class="slide level2">
+<h2>If…Else</h2>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb47-1" title="1"><span class="cf">if</span> (expresion) {</a>
+<a class="sourceLine" id="cb47-2" title="2">    declaracion1</a>
+<a class="sourceLine" id="cb47-3" title="3">  }<span class="cf">else</span>{</a>
+<a class="sourceLine" id="cb47-4" title="4">    declaracion2</a>
+<a class="sourceLine" id="cb47-5" title="5">}</a></code></pre></div>
+<p>La parte <strong>else</strong> es opcional y solo se evalúa si <strong>expresion</strong> es <strong>FALSE</strong>. Es importante tener en cuenta que <strong>else</strong> debe estar en la misma línea que las llaves de cierre de la instrucción if.</p>
+</section><section id="condicionales-1" class="slide level2">
+<h2>Condicionales</h2>
+<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb48-1" title="1">x &lt;-<span class="st"> </span><span class="dv">0</span></a>
+<a class="sourceLine" id="cb48-2" title="2"><span class="cf">if</span> (x <span class="op">&lt;</span><span class="st"> </span><span class="dv">0</span>) {</a>
+<a class="sourceLine" id="cb48-3" title="3">  <span class="kw">print</span>(<span class="st">&quot;Numero negativo&quot;</span>)</a>
+<a class="sourceLine" id="cb48-4" title="4">}<span class="cf">else</span> <span class="cf">if</span> (x <span class="op">&gt;</span><span class="st"> </span><span class="dv">0</span>) {</a>
+<a class="sourceLine" id="cb48-5" title="5">  <span class="kw">print</span>(<span class="st">&quot;Numero positivo&quot;</span>)</a>
+<a class="sourceLine" id="cb48-6" title="6">} <span class="cf">else</span> {</a>
+<a class="sourceLine" id="cb48-7" title="7">  <span class="kw">print</span>(<span class="st">&quot;Cero&quot;</span>)</a>
+<a class="sourceLine" id="cb48-8" title="8">}</a></code></pre></div>
+<pre><code>## [1] &quot;Cero&quot;</code></pre>
+</section><section id="condicionales-2" class="slide level2">
+<h2>Condicionales</h2>
+<p>Python</p>
+<div class="sourceCode" id="cb50"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb50-1" title="1">temp <span class="op">=</span> [<span class="dv">15</span>, <span class="dv">22</span>, <span class="dv">30</span>]</a>
+<a class="sourceLine" id="cb50-2" title="2">suelo<span class="op">=</span> [<span class="st">&quot;seco&quot;</span>, <span class="st">&quot;humedo&quot;</span>, <span class="st">&quot;charcos&quot;</span>]</a>
+<a class="sourceLine" id="cb50-3" title="3"></a>
+<a class="sourceLine" id="cb50-4" title="4">valtemp <span class="op">=</span> temp[<span class="dv">0</span>]</a>
+<a class="sourceLine" id="cb50-5" title="5">valsuelo<span class="op">=</span> suelo[<span class="dv">2</span>]</a>
+<a class="sourceLine" id="cb50-6" title="6"></a>
+<a class="sourceLine" id="cb50-7" title="7"><span class="cf">if</span> <span class="dv">12</span><span class="op">&lt;=</span> valtemp <span class="op">&lt;</span> <span class="dv">22</span> <span class="kw">and</span> valsuelo <span class="op">==</span><span class="st">&quot;seco&quot;</span>: </a>
+<a class="sourceLine" id="cb50-8" title="8">    <span class="bu">print</span>(<span class="st">&quot;Cielo despejado&quot;</span>)</a>
+<a class="sourceLine" id="cb50-9" title="9">    </a>
+<a class="sourceLine" id="cb50-10" title="10"><span class="cf">elif</span> valtemp <span class="op">==</span> <span class="dv">22</span> <span class="kw">or</span> valsuelo <span class="op">==</span> <span class="st">&quot;humedo&quot;</span>:</a>
+<a class="sourceLine" id="cb50-11" title="11">    <span class="bu">print</span>(<span class="st">&quot;lluvia leve&quot;</span>)</a>
+<a class="sourceLine" id="cb50-12" title="12">    </a>
+<a class="sourceLine" id="cb50-13" title="13"><span class="cf">elif</span> valtemp <span class="op">&gt;</span> <span class="dv">22</span> <span class="kw">and</span> valsuelo<span class="op">==</span><span class="st">&quot;charcos&quot;</span>:</a>
+<a class="sourceLine" id="cb50-14" title="14">    <span class="bu">print</span>(<span class="st">&quot;lluvia severa&quot;</span>)</a>
+<a class="sourceLine" id="cb50-15" title="15">    </a>
+<a class="sourceLine" id="cb50-16" title="16"><span class="cf">else</span>: <span class="bu">print</span>(<span class="st">&quot; Faltan datos&quot;</span>)</a></code></pre></div>
+<pre><code>##  Faltan datos</code></pre>
+</section><section id="condicionales-3" class="slide level2">
+<h2>Condicionales</h2>
+<p>R</p>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb52-1" title="1">temp &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">15</span>, <span class="dv">22</span>, <span class="dv">30</span>)</a>
+<a class="sourceLine" id="cb52-2" title="2">suelo &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;seco&quot;</span>, <span class="st">&quot;humedo&quot;</span>, <span class="st">&quot;charcos&quot;</span>)</a>
+<a class="sourceLine" id="cb52-3" title="3"></a>
+<a class="sourceLine" id="cb52-4" title="4">valtemp &lt;-<span class="st"> </span>temp[<span class="dv">1</span>]</a>
+<a class="sourceLine" id="cb52-5" title="5">valsuelo &lt;-<span class="st"> </span>suelo[<span class="dv">3</span>]</a>
+<a class="sourceLine" id="cb52-6" title="6"></a>
+<a class="sourceLine" id="cb52-7" title="7"><span class="cf">if</span> (valtemp <span class="op">%in%</span><span class="st"> </span><span class="dv">12</span><span class="op">:</span><span class="dv">22</span> <span class="op">&amp;</span><span class="st"> </span>valsuelo <span class="op">==</span><span class="st">&quot;seco&quot;</span>) {</a>
+<a class="sourceLine" id="cb52-8" title="8">  <span class="kw">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Cielo despejado&quot;</span>)</a>
+<a class="sourceLine" id="cb52-9" title="9">} <span class="cf">else</span> <span class="cf">if</span> (valtemp <span class="op">==</span><span class="st"> </span><span class="dv">22</span> <span class="op">|</span><span class="st"> </span>valsuelo <span class="op">==</span><span class="st"> &quot;humedo&quot;</span>){</a>
+<a class="sourceLine" id="cb52-10" title="10">  <span class="kw">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">lluvia leve&quot;</span>)</a>
+<a class="sourceLine" id="cb52-11" title="11">} <span class="cf">else</span> <span class="cf">if</span> (valtemp <span class="op">&gt;</span><span class="st"> </span><span class="dv">22</span> <span class="op">&amp;</span><span class="st"> </span>valsuelo<span class="op">==</span><span class="st">&quot;charcos&quot;</span>){</a>
+<a class="sourceLine" id="cb52-12" title="12">  <span class="kw">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">lluvia severa&quot;</span>)</a>
+<a class="sourceLine" id="cb52-13" title="13">} <span class="cf">else</span> {</a>
+<a class="sourceLine" id="cb52-14" title="14">  <span class="kw">print</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">Faltan datos&quot;</span>)</a>
+<a class="sourceLine" id="cb52-15" title="15">  }</a></code></pre></div>
+<pre><code>## [1] &quot;\nFaltan datos&quot;</code></pre>
+</section><section id="ejercicios" class="slide level2">
+<h2>Ejercicios</h2>
+<ul>
+<li>Determinar la solución de una ecuación de segundo grado</li>
+<li>Realizar la ecuación del MRUV (Movimiento rectilinio uniforme variado)</li>
+</ul>
+</section></section>
+<section><section id="iteradores-bucles-o-loops" class="title-slide slide level1"><h1>ITERADORES, BUCLES O LOOPS</h1><p>Los bucles son una de las estructuras fundamentales en la programación. Los bucles permiten iterar sobre cada elemento en una secuencia, uno a la vez, y hacer algo con esos elementos.</p></section><section id="for" class="slide level2">
+<h2>FOR</h2>
+<p>Un bucle <strong>for</strong> es muy valioso cuando necesitamos iterar sobre una lista de elementos o un rango de números. Loop se puede usar para iterar sobre una lista, marco de datos, vector, matriz o cualquier otro objeto. Los tirantes y el corchete son obligatorios.</p>
+<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb54-1" title="1"><span class="cf">for</span> (valor <span class="cf">in</span> secuencia)</a>
+<a class="sourceLine" id="cb54-2" title="2">  {</a>
+<a class="sourceLine" id="cb54-3" title="3">    cuerpo</a>
+<a class="sourceLine" id="cb54-4" title="4">  }</a></code></pre></div>
+</section><section id="for-1" class="slide level2">
+<h2>FOR</h2>
+<div class="sourceCode" id="cb55"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb55-1" title="1"><span class="co"># Creando un vector de frutas</span></a>
+<a class="sourceLine" id="cb55-2" title="2">frutas &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="st">&#39;Apple&#39;</span>, <span class="st">&#39;Orange&#39;</span>, <span class="st">&#39;Passion fruit&#39;</span>, <span class="st">&#39;Banana&#39;</span>)</a>
+<a class="sourceLine" id="cb55-3" title="3"><span class="co"># Declarando el bucle for</span></a>
+<a class="sourceLine" id="cb55-4" title="4"><span class="cf">for</span> ( i <span class="cf">in</span> frutas){ </a>
+<a class="sourceLine" id="cb55-5" title="5"> <span class="kw">print</span>(i)</a>
+<a class="sourceLine" id="cb55-6" title="6">}</a></code></pre></div>
+<pre><code>## [1] &quot;Apple&quot;
+## [1] &quot;Orange&quot;
+## [1] &quot;Passion fruit&quot;
+## [1] &quot;Banana&quot;</code></pre>
+</section><section id="while" class="slide level2">
+<h2>WHILE</h2>
+<p>Un bucle es una declaración que continúa ejecutándose <strong>mientras</strong> se cumple una condición. La sintaxis para un ciclo while es la siguiente:</p>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb57-1" title="1"><span class="cf">while</span> (condición)</a>
+<a class="sourceLine" id="cb57-2" title="2">  {</a>
+<a class="sourceLine" id="cb57-3" title="3">    cuerpo</a>
+<a class="sourceLine" id="cb57-4" title="4">  }</a></code></pre></div>
+</section><section id="while-1" class="slide level2">
+<h2>WHILE</h2>
+<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb58-1" title="1"><span class="co"># creando la expresión con valor 1</span></a>
+<a class="sourceLine" id="cb58-2" title="2">inicio &lt;-<span class="st"> </span><span class="dv">1</span></a>
+<a class="sourceLine" id="cb58-3" title="3"></a>
+<a class="sourceLine" id="cb58-4" title="4"><span class="co"># Creando el loop</span></a>
+<a class="sourceLine" id="cb58-5" title="5"><span class="cf">while</span> (inicio <span class="op">&lt;=</span><span class="st"> </span><span class="dv">5</span>){</a>
+<a class="sourceLine" id="cb58-6" title="6">  <span class="co"># Ver donde estamos</span></a>
+<a class="sourceLine" id="cb58-7" title="7">  <span class="kw">cat</span>(<span class="st">&#39;Este es el ciclo número &#39;</span>, inicio)</a>
+<a class="sourceLine" id="cb58-8" title="8">  <span class="co"># Agregar 1 a la variable inicio despues de cada iteracion</span></a>
+<a class="sourceLine" id="cb58-9" title="9">  inicio &lt;-<span class="st"> </span>inicio <span class="op">+</span><span class="st"> </span><span class="dv">1</span></a>
+<a class="sourceLine" id="cb58-10" title="10">  <span class="kw">print</span>(inicio)</a>
+<a class="sourceLine" id="cb58-11" title="11">}</a></code></pre></div>
+<pre><code>## Este es el ciclo número  1[1] 2
+## Este es el ciclo número  2[1] 3
+## Este es el ciclo número  3[1] 4
+## Este es el ciclo número  4[1] 5
+## Este es el ciclo número  5[1] 6</code></pre>
+</section><section id="otros-iteradores" class="slide level2">
+<h2>Otros iteradores</h2>
+<ul>
+<li>repeat</li>
+<li>do-while (*otros leguajes)</li>
+</ul>
+<p>Control de flujo * break, next</p>
+</section><section id="ejercicios-1" class="slide level2">
+<h2>Ejercicios</h2>
+<ul>
+<li><p>Cree un script R que devuelva la cantidad de valores que son mayores que la media de un vector. Tienes permitido usar mean().</p></li>
+<li><p>Utilizando i &lt;- 1, escriba un bucle while() que imprima la variable <strong>i</strong>, (que se incrementa de 1 a 5), y se usa <strong>break</strong> para salir del bucle si <strong>i</strong> es igual 3.</p></li>
+<li><p>Escriba un bucle for() que imprima todos los valores excepto <strong>3</strong> en la siguiente variable: <strong>i &lt;- 1:5</strong></p></li>
+<li><p>Utilice un bucle for <strong>anidado</strong> (un bucle for dentro de un bucle for) que produce la siguiente matriz, preasigne la matriz con NA valores.</p></li>
+</ul>
+</section></section>
+<section><section id="funciones" class="title-slide slide level1"><h1>FUNCIONES</h1><p>Una función, en un entorno de programación, es un conjunto de instrucciones. Un programador crea una función para evitar repetir la misma tarea o reducir la complejidad.</p></section><section id="funciones-1" class="slide level2">
+<h2>FUNCIONES</h2>
+<p>Una función debería ser:</p>
+<ul>
+<li>Escrito para llevar a cabo una tarea específica</li>
+<li>Puede o no incluir argumentos</li>
+<li>Contener un cuerpo</li>
+<li>Puede o no devolver uno o más valores</li>
+</ul>
+<div class="sourceCode" id="cb60"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb60-1" title="1"><span class="cf">function</span> (argumentos)</a>
+<a class="sourceLine" id="cb60-2" title="2">  {</a>
+<a class="sourceLine" id="cb60-3" title="3">    <span class="co"># cuerpo de la funcion</span></a>
+<a class="sourceLine" id="cb60-4" title="4">    resultado &lt;-<span class="st"> </span>cuerpo</a>
+<a class="sourceLine" id="cb60-5" title="5">  </a>
+<a class="sourceLine" id="cb60-6" title="6">    <span class="kw">return</span>(resultado)</a>
+<a class="sourceLine" id="cb60-7" title="7">  }</a></code></pre></div>
+</section><section id="funciones-2" class="slide level2">
+<h2>FUNCIONES</h2>
+<p>Crear una función que simule una suma</p>
+<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb61-1" title="1">a &lt;-<span class="st"> </span><span class="dv">5</span></a>
+<a class="sourceLine" id="cb61-2" title="2">b &lt;-<span class="st"> </span><span class="dv">6</span></a>
+<a class="sourceLine" id="cb61-3" title="3"></a>
+<a class="sourceLine" id="cb61-4" title="4">suma &lt;-<span class="st"> </span><span class="cf">function</span>(valor1, valor2){</a>
+<a class="sourceLine" id="cb61-5" title="5">  resultado &lt;-<span class="st"> </span>valor1 <span class="op">+</span><span class="st"> </span>valor2</a>
+<a class="sourceLine" id="cb61-6" title="6">  <span class="kw">return</span>(resultado)</a>
+<a class="sourceLine" id="cb61-7" title="7">}</a>
+<a class="sourceLine" id="cb61-8" title="8"></a>
+<a class="sourceLine" id="cb61-9" title="9"><span class="kw">suma</span>(a, b)</a></code></pre></div>
+<pre><code>## [1] 11</code></pre>
+</section><section id="funciones-3" class="slide level2">
+<h2>FUNCIONES</h2>
+<p>Cree una función que, dado un vector, imprima por pantalla la media y la desviación estándar, opcionalmente también imprimirá la mediana.</p>
+<div class="sourceCode" id="cb63"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb63-1" title="1">vector &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">5</span>,<span class="dv">6</span>,<span class="dv">3</span>,<span class="dv">4</span>)</a>
+<a class="sourceLine" id="cb63-2" title="2">estadisticos &lt;-<span class="st"> </span><span class="cf">function</span>(entrada, <span class="dt">incluir_mediana =</span> <span class="ot">FALSE</span>)</a>
+<a class="sourceLine" id="cb63-3" title="3">  {</a>
+<a class="sourceLine" id="cb63-4" title="4">    media =<span class="st"> </span><span class="kw">mean</span>(entrada)</a>
+<a class="sourceLine" id="cb63-5" title="5">    desv_estandar =<span class="st"> </span><span class="kw">sd</span>(entrada)</a>
+<a class="sourceLine" id="cb63-6" title="6">    <span class="kw">cat</span>(<span class="st">&quot;media: &quot;</span>, media)</a>
+<a class="sourceLine" id="cb63-7" title="7">    <span class="kw">cat</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">desv. estandar: &quot;</span>, desv_estandar)</a>
+<a class="sourceLine" id="cb63-8" title="8">    </a>
+<a class="sourceLine" id="cb63-9" title="9">    <span class="cf">if</span> (incluir_mediana){</a>
+<a class="sourceLine" id="cb63-10" title="10">      mediana =<span class="st"> </span><span class="kw">median</span>(entrada)</a>
+<a class="sourceLine" id="cb63-11" title="11">      <span class="kw">cat</span>(<span class="st">&quot;</span><span class="ch">\n</span><span class="st">mediana: &quot;</span>, mediana)</a>
+<a class="sourceLine" id="cb63-12" title="12">    }</a>
+<a class="sourceLine" id="cb63-13" title="13">}</a>
+<a class="sourceLine" id="cb63-14" title="14"><span class="kw">estadisticos</span>(vector)</a></code></pre></div>
+<pre><code>## media:  3.8
+## desv. estandar:  1.923538</code></pre>
+</section><section id="ejercicios-2" class="slide level2">
+<h2>Ejercicios</h2>
+<ul>
+<li>Cree una función definida por el usuario para crear una matriz y devolver la misma.</li>
+<li>Cree una función que al darle una palabra, devuelva la posición de las letras de la palabra en el vector de letras. Por ejemplo, si la palabra es “abd”, la función devolverá 1 2 4.</li>
+<li><a href="https://www.w3resource.com/r-programming-exercises/">más ejercicios</a></li>
+</ul>
+</section></section>
+    </div>
+  </div>
+
+  <script src="clase_02_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="clase_02_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: false,
+        // Transition style
+        transition: 'convex', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+        menu: {
+          numbers: true,
+          custom: false,
+          themes: false,
+          transitions: false
+        },
+
+
+
+        chalkboard: {
+          toggleNotesButton: true,
+          theme: 'chalkboard',
+        },
+
+        keyboard: {
+          67: function() { RevealChalkboard.toggleNotesCanvas() },    // toggle notes canvas when 'c' is pressed
+          66: function() { RevealChalkboard.toggleChalkboard() }, // toggle chalkboard when 'b' is pressed
+          46: function() { RevealChalkboard.clear() },    // clear chalkboard when 'DEL' is pressed
+           8: function() { RevealChalkboard.reset() },    // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+          68: function() { RevealChalkboard.download() }, // downlad recorded chalkboard drawing when 'd' is pressed
+        },
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'clase_02_files/reveal.js-3.3.0.1/plugin/notes/notes.js', async: true },
+          { src: 'clase_02_files/reveal.js-3.3.0.1/plugin/search/search.js', async: true },
+          { src: 'clase_02_files/reveal.js-3.3.0.1/plugin/zoom-js/zoom.js', async: true },
+          { src: 'clase_02_files/reveal.js-3.3.0.1/plugin/chalkboard/chalkboard.js', async: true },
+          { src: 'clase_02_files/reveal.js-3.3.0.1/plugin/menu/menu.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>

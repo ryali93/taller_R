@@ -1,0 +1,504 @@
+---
+output: 
+  revealjs::revealjs_presentation:
+    self_contained: false
+    reveal_plugins: ["search", "zoom", "notes", "chalkboard", "menu"]
+    reveal_options:
+      chalkboard: 
+          theme: chalkboard
+          toggleNotesButton: true
+      menu:
+        numbers: true
+    theme: white
+    transition: convex
+    css: styles.css
+---
+```{r setup, include=FALSE, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
+library(cowplot)
+```
+
+# TALLER DE PROGRAMACIÓN EN R
+Lección `r emo::ji("two")`
+<br>
+![rlogo](fig/r_logo.png)
+![rstudiologo](fig/rstudio_logo.png)
+<br>
+Roy Yali Samaniego `r emo::ji("smile")`
+<br>
+<i class="fab fa-github"></i>[https://github.com/ryali93](https://github.com/ryali93)
+<br>
+`r emo::ji("email")` [ryali93@gmail.com](ryali93@gmail.com)
+<br>
+UNMSM - Ingeniería Geográfica
+<br>
+2020 - 02 - 28
+
+# NO OLVIDAR
+
+## Nombres de variables
+
+- Los nombres no pueden empezar con números
+- Evitar nombres en uso
+
+
+## Ahora tú
+
+Cómo lo resolvería en R
+
+5! = 5 x 4 x 3 x 2 x 1
+
+Guardar en una nueva variable el quinto elemento del siguiente vector, cambiar el cuarto elemento por 0
+
+x <- c(0, 0, 1, 3, 5, 1)
+
+## Sigues tú
+
+```{r}
+vec <- c(6, 1, 3, 6, 10, 5)
+df <- data.frame(
+  name = c("John", "Paul", "George", "Ringo"),
+  birth = c(1940, 1942, 1943, 1940),
+  instrument = c("guitar", "bass", "guitar", "drums")
+)
+```
+
+Predecir qué hacen las siguientes líneas
+
+```{r results=F}
+vec[2]
+vec[c(5, 6)]
+vec[-c(5, 6)]
+vec[vec > 5]
+
+df[c(2, 4), 3]
+df[, 1]
+df[, "instrument"]
+df$instrument
+```
+
+
+## Instalación de librerías
+
+[https://github.com/rstudio/Intro/tree/master/slides](https://github.com/rstudio/Intro/tree/master/slides)
+(página 98)
+
+```{r message=F, warning=F}
+library("ggplot2")
+library("raster")
+library("dplyr")
+```
+
+```{r eval=FALSE}
+install.packages(c("ggplot2", "raster", "dplyr"))
+```
+
+## Manipular datos
+
+```{r}
+print(diamonds)
+```
+
+## Manipular datos
+
+```{r}
+qplot(x, y, data = diamonds)
+```
+
+## Comparaciones lógicas
+
+```{r}
+x <- c(1, 2, 3, 4)
+```
+<br>
+
+| Operador | Resultado | Comparación |
+|:---:|:-----:|:----:|
+| `x > 3` |	`c(F, F, F, T, T)`	| Mayor que |
+| `x >= 3` |	`c(F, F, T, T, T)`	| Mayor o igual que |
+| `x < 3` |	`c(T, T, F, F, F)`	| Menor que |
+| `x <= 3` |	`c(T, T, T, F, F)`	| Menor o igual que |
+| `x == 3` |	`c(F, F, T, F, F)`	| Igual a |
+| `x != 3` |	`c(T, T, F, T, T)`	| Diferente de |
+| `x = 3` |		| Igual que <- |
+
+## %in%
+
+```{r}
+1 %in% c(1, 2, 3, 4) 
+1 %in% c(2, 3, 4)
+c(3,4,5,6) %in% c(2, 3, 4) 
+```
+
+## Operaciones lógicas
+
+Puedes combinar evaluaciones lógicas con **&**, **|**, **xor**, **!**, **any**, y
+**all**
+
+```{r}
+x > 2 & x < 9
+```
+
+## Operaciones lógicas
+
+| Operador | Evaluación |
+|:---:|:-----:
+| `a & b` | Tanto a como b son VERDADEROS |
+| `a | b` |	Al menos uno de a y b es VERDADERO (o) |
+| `xor(a, b)` |	a es VERDADERO o b es VERDADERO, pero no ambos |
+| `!a` |	No a (VERDADERO va a FALSO, FALSO va a VERDADERO) |
+| `any(a, b, c)` |	Al menos uno de a, b o c es VERDADERO |
+| `all(a, b, c)` |	Cada uno de a, b y c es VERDADERO |
+
+## Ejercicio
+
+```{r}
+w <- c(-1, 0, 1)
+x <- c(5, 15)
+y <- "Febrero"
+z <- c("Lunes", "Martes", "Viernes")
+```
+
+- Convierta estas oraciones en pruebas lógicas en R
+- ¿**w** es positivo?
+- ¿**x** es mayor que 10 y menor que 20?
+- ¿El objeto **y** es la palabra `"febrero"`?
+- ¿Cada valor de **z** es un día de la semana?
+
+
+## Consultas lógicas
+
+Combinar pruebas lógicas con subconjuntos es una práctica común
+
+```{r}
+x_ceros <- diamonds$x == 0
+diamonds[x_ceros,]
+```
+
+## Guardar resultados
+
+```{r}
+# Ver resultados
+diamonds[diamonds$x > 10, ]
+# Guardar un nuevo data.frame
+big <- diamonds[diamonds$x > 10, ]
+# Sobreescribir el dataset existente **Peligroso**
+diamonds <- diamonds[diamonds$x < 10,]
+```
+
+## Valores vacíos o nulos
+
+Por lo general, eliminar toda la fila debido a un error es exagerado. Es mejor reemplazar selectivamente los valores problemáticos con valores faltantes.
+En R, los valores faltantes se indican con NA
+
+```{r}
+a <- c(1, NA) 
+a == NA
+is.na(a) 
+```
+
+## NA.rm
+
+Muchas funciones (por ejemplo, suma y media) tienen el argumento **na.rm** para eliminar los valores faltantes antes del cálculo.
+
+```{r}
+b <- c(1, 2, 3, 4, NA)
+sum(b)
+sum(b, na.rm = TRUE)
+```
+
+## Asignación
+
+Puede usar subconjuntos con <- para cambiar valores individuales dentro de un objeto
+
+```{r}
+summary(diamonds$x)
+diamonds$x[diamonds$x == 0]
+diamonds$x[diamonds$x == 0] <- NA
+summary(diamonds$x)
+```
+
+## Asignación
+
+```{r}
+summary(diamonds$y)
+diamonds$y[diamonds$y == 0] <- NA
+y_big <- diamonds$y > 20
+diamonds$y[y_big] <- NA
+summary(diamonds$y)
+```
+
+## Gráfico
+
+```{r}
+qplot(x, y, data = diamonds)
+```
+
+
+# VISUALIZACIÓN
+
+El gráfico simple ha traído más información a la mente del analista de datos que cualquier otro dispositivo.
+– John Tukey
+
+## plot
+
+- sencillo
+- hace cosas diferentes en diferentes contextos (generalmente de una manera útil)
+- difícil de personalizar
+
+## plot
+
+```{r}
+plot(iris$Sepal.Width, iris$Sepal.Length)
+```
+
+## ggplot2
+
+```{r}
+ggplot(iris, aes(x=Sepal.Width, y=Sepal.Length)) +
+  geom_point()
+```
+
+## ggplot2
+
+```{r}
+par(mfrow=c(1,2))
+iris1 <- ggplot(iris, aes(x=Sepal.Width, y=Sepal.Length, shape = Species)) +
+  geom_point(aes(color = Species))
+iris2 <- ggplot(iris, aes(x=Sepal.Width, y=Sepal.Length, shape = Species)) +
+  geom_point(aes(color = Species)) + theme_bw()
+plot_grid(iris1, iris2, labels = "AUTO")
+```
+
+# CONDICIONALES
+
+La toma de decisiones es una parte importante de la programación. Esto se puede lograr en la programación R usando la nomenclatura condicional **if**  **else**.
+
+## If
+
+```{r eval=FALSE}
+if (expresion) {
+  declaracion
+}
+```
+
+- Si **expresion** es **TRUE**, la instrucción se ejecuta. Pero si es **FALSO**, no pasa nada.
+- Aquí, **expresion** puede ser un vector lógico o numérico, pero solo se tiene en cuenta el primer elemento.
+- En el caso del vector numérico, cero se toma como **FALSO**, el resto como **VERDADERO**.
+
+## If...Else
+
+```{r eval=FALSE}
+if (expresion) {
+    declaracion1
+  }else{
+    declaracion2
+}
+```
+
+La parte **else** es opcional y solo se evalúa si **expresion** es **FALSE**.
+Es importante tener en cuenta que **else** debe estar en la misma línea que las llaves de cierre de la instrucción if.
+
+## Condicionales
+
+```{r}
+x <- 0
+if (x < 0) {
+  print("Numero negativo")
+}else if (x > 0) {
+  print("Numero positivo")
+} else {
+  print("Cero")
+}
+```
+
+## Condicionales
+
+Python
+
+```{python}
+temp = [15, 22, 30]
+suelo= ["seco", "humedo", "charcos"]
+
+valtemp = temp[0]
+valsuelo= suelo[2]
+
+if 12<= valtemp < 22 and valsuelo =="seco": 
+    print("Cielo despejado")
+    
+elif valtemp == 22 or valsuelo == "humedo":
+    print("lluvia leve")
+    
+elif valtemp > 22 and valsuelo=="charcos":
+    print("lluvia severa")
+    
+else: print(" Faltan datos")
+```
+
+## Condicionales
+
+R
+
+```{r}
+temp <- c(15, 22, 30)
+suelo <- c("seco", "humedo", "charcos")
+
+valtemp <- temp[1]
+valsuelo <- suelo[3]
+
+if (valtemp %in% 12:22 & valsuelo =="seco") {
+  print("\nCielo despejado")
+} else if (valtemp == 22 | valsuelo == "humedo"){
+  print("\nlluvia leve")
+} else if (valtemp > 22 & valsuelo=="charcos"){
+  print("\nlluvia severa")
+} else {
+  print("\nFaltan datos")
+  }
+```
+
+
+## Ejercicios
+
+- Determinar la solución de una ecuación de segundo grado
+- Realizar la ecuación del MRUV (Movimiento rectilinio uniforme variado)
+
+# ITERADORES, BUCLES O LOOPS
+
+Los bucles son una de las estructuras fundamentales en la programación. Los bucles permiten iterar sobre cada elemento en una secuencia, uno a la vez, y hacer algo con esos elementos.
+
+## FOR 
+
+Un bucle **for** es muy valioso cuando necesitamos iterar sobre una lista de elementos o un rango de números. Loop se puede usar para iterar sobre una lista, marco de datos, vector, matriz o cualquier otro objeto. Los tirantes y el corchete son obligatorios.
+
+```{r eval=FALSE}
+for (valor in secuencia)
+  {
+    cuerpo
+  }
+```
+
+## FOR
+
+```{r}
+# Creando un vector de frutas
+frutas <- c('Apple', 'Orange', 'Passion fruit', 'Banana')
+# Declarando el bucle for
+for ( i in frutas){ 
+ print(i)
+}
+```
+
+## WHILE
+
+Un bucle es una declaración que continúa ejecutándose **mientras** se cumple una condición. La sintaxis para un ciclo while es la siguiente:
+
+```{r eval=FALSE}
+while (condición)
+  {
+    cuerpo
+  }
+```
+
+## WHILE
+
+```{r}
+# creando la expresión con valor 1
+inicio <- 1
+
+# Creando el loop
+while (inicio <= 5){
+  # Ver donde estamos
+  cat('Este es el ciclo número ', inicio)
+  # Agregar 1 a la variable inicio despues de cada iteracion
+  inicio <- inicio + 1
+  print(inicio)
+}
+```
+
+## Otros iteradores
+
+- repeat
+- do-while (*otros leguajes)
+
+Control de flujo
+* break, next
+
+## Ejercicios
+
+- Cree un script R que devuelva la cantidad de valores que son mayores que la media de un vector. Tienes permitido usar mean().
+
+- Utilizando i <- 1, escriba un bucle while() que imprima la variable **i**, (que se incrementa de 1 a 5), y se usa **break** para salir del bucle si **i** es igual 3.
+
+- Escriba un bucle for() que imprima todos los valores excepto **3** en la siguiente variable: **i <- 1:5**
+
+- Utilice un bucle for **anidado** (un bucle for dentro de un bucle for) que produce la siguiente matriz, preasigne la matriz con NA valores.
+
+
+# FUNCIONES
+
+Una función, en un entorno de programación, es un conjunto de instrucciones. Un programador crea una función para evitar repetir la misma tarea o reducir la complejidad.
+
+## FUNCIONES
+
+Una función debería ser:
+
+- Escrito para llevar a cabo una tarea específica
+- Puede o no incluir argumentos
+- Contener un cuerpo
+- Puede o no devolver uno o más valores
+
+
+```{r eval=FALSE}
+function (argumentos)
+  {
+    # cuerpo de la funcion
+    resultado <- cuerpo
+  
+    return(resultado)
+  }
+```
+
+## FUNCIONES
+
+Crear una función que simule una suma
+
+```{r}
+a <- 5
+b <- 6
+
+suma <- function(valor1, valor2){
+  resultado <- valor1 + valor2
+  return(resultado)
+}
+
+suma(a, b)
+```
+
+## FUNCIONES
+
+Cree una función que, dado un vector, imprima por pantalla la media y la desviación estándar, opcionalmente también imprimirá la mediana.
+
+```{r}
+vector <- c(1,5,6,3,4)
+estadisticos <- function(entrada, incluir_mediana = FALSE)
+  {
+    media = mean(entrada)
+    desv_estandar = sd(entrada)
+    cat("media: ", media)
+    cat("\ndesv. estandar: ", desv_estandar)
+    
+    if (incluir_mediana){
+      mediana = median(entrada)
+      cat("\nmediana: ", mediana)
+    }
+}
+estadisticos(vector)
+```
+
+## Ejercicios
+
+- Cree una función definida por el usuario para crear una matriz y devolver la misma.
+- Cree una función que al darle una palabra, devuelva la posición de las letras de la palabra en el vector de letras. Por ejemplo, si la palabra es "abd", la función devolverá 1 2 4.
+- [más ejercicios](https://www.w3resource.com/r-programming-exercises/)
