@@ -1,0 +1,144 @@
+---
+output: 
+  revealjs::revealjs_presentation:
+    self_contained: false
+    reveal_plugins: ["search", "zoom", "notes", "chalkboard", "menu"]
+    reveal_options:
+      chalkboard: 
+          theme: chalkboard
+          toggleNotesButton: true
+      menu:
+        numbers: true
+    theme: white
+    transition: convex
+    css: styles.css
+---
+```{r setup, include=FALSE, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
+library(cowplot)
+```
+
+# TALLER DE PROGRAMACIÓN EN R
+Lección `r emo::ji("three")`
+<br>
+![rlogo](fig/r_logo.png)
+![rstudiologo](fig/rstudio_logo.png)
+<br>
+Roy Yali Samaniego `r emo::ji("smile")`
+<br>
+<i class="fab fa-github"></i>[https://github.com/ryali93](https://github.com/ryali93)
+<br>
+`r emo::ji("email")` [ryali93@gmail.com](ryali93@gmail.com)
+<br>
+UNMSM - Ingeniería Geográfica
+<br>
+2020 - 04 - 01
+
+
+# INTRODUCCIÓN A SERIES DE TIEMPO
+
+## Entendiendo el tipo de dato *Date*
+
+```{r}
+# Tipo de dato Caracter
+fecha <- '01-01-2020'
+class(fecha)
+
+# Tipo de dato Date
+fecha <- as.Date('01-01-2020')
+class(fecha)
+```
+
+## Formato de fechas
+
+```{r}
+# Tipo de dato Date
+as.Date('01-01-2020') == as.Date('2020/01/01')
+```
+
+Por defecto:
+*yyyy-mm-dd*
+
+Vamos a leer como texto:
+<br>
+```{r}
+vector <- c('01-01-2020', '02-01-2020')
+fecha <- as.Date(vector, format="%d-%m-%Y")
+```
+
+```{r}
+class(vector)
+class(fecha)
+```
+
+## Formato de fechas
+
+| Símbolo	|	Descripción	|	Ejemplo |
+| :---:|:-----:|:----: |
+| %d	|	número de día (0-31	)|	01-31 |
+| %a  |	día de la semana abreviado	|	Mon |
+| %A	|	día de la semana no abreviado	|	Monday |
+| %m	|	mes (00-12)	|	00-12 |
+| %b  |	mes abreviado	|	Jan |
+| %B	|	mes no abreviado	|	January |
+| %y  |	2 dígitos de año	|	07 |
+| %Y	|	4 dígitos de año	|	2007 |
+
+## Algunas librerías
+
+- ts (function of stats)
+- zoo
+- xts
+- timeSeries (2020)
+
+## Revisando la librería ts
+ 
+- [Script](https://github.com/ryali93/taller_R/blob/master/scripts/ts_file.R)
+
+## Revisando la librería xts
+
+- [Script](https://github.com/ryali93/taller_R/blob/master/scripts/xts_file.R)
+- [Algo de documentación](https://www.datacamp.com/community/blog/r-xts-cheat-sheet)
+- [Cheatsheet](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/xts_Cheat_Sheet_R.pdf)
+
+## Series de tiempo climáticas
+
+- hydrotsm
+- [climatol](http://www.climatol.eu/)
+- [Script](https://github.com/ryali93/taller_R/blob/master/scripts/hydrotsm_file.R)
+
+# MANIPULACIÓN DE DATOS ESPACIALES
+
+## NOCIONES BÁSICAS DE GIS
+
+- [Cartografía automatizada - Antony Barja (2019)](https://barja8.github.io/OsgeoLiveUNMSM/Sesi%C3%B3n01/Slide.html#1)
+
+## Algunas librerías
+
+- rgdal
+- sp
+- sf
+- raster
+- stars
+
+## Algo de bibliografía y aplicaciones
+
+- [Remote Sensing Image Analysis with R](https://rspatial.org/rs/rs.pdf)
+- [Script](https://github.com/ryali93/taller_R/blob/master/scripts/spatial_file.R)
+
+# GENERACIÓN DE MAPAS
+
+## Algunas librerías
+
+- tmap
+- ggplot
+- rayshader
+
+## ALGUNAS FUENTES PARA REVISAR
+
+- [Applied Spatial Analysis for Public Health](https://hughst.github.io/)
+- [Rayshader](https://tylermw.com/presentations/rstudio2020/assets/player/KeynoteDHTMLPlayer.html)
+- [Rayshader - Twitter](https://twitter.com/i/status/1237727249341616128)
+
+# GRACIAS `r emo::ji("smile")`

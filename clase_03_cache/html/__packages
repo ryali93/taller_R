@@ -1,0 +1,16 @@
+base
+sp
+raster
+rgdal
+ggplot2
+ggmap
+dplyr
+tidyr
+maps
+scales
+rnoaa
+PCICt
+climdex.pcic
+zoo
+reshape2
+broom

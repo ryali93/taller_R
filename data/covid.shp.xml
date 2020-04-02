@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xml:lang="es"><Esri><CreaDate>20200402</CreaDate><CreaTime>09024200</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce><DataProperties><lineage><Process ToolSource="c:\program files (x86)\arcgis\desktop10.5\ArcToolbox\Toolboxes\Conversion Tools.tbx\JSONToFeatures" Date="20200402" Time="090242">JSONToFeatures E:\2020\unmsm\01_R_taller\R_taller\data\covid.json E:\2020\unmsm\01_R_taller\R_taller\data\covid.shp</Process></lineage></DataProperties></Esri></metadata>
