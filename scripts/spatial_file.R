@@ -56,7 +56,7 @@ crs(landsat_crs)
 distritos <- st_read("data/distritos.shp")
 covid <- st_read("data/covid.shp")
 dem <- raster("data/dem.tif")
-
+puntos = st_read("data/punto_prueba.shp")
 # dem_clip <- mask(crop(dem, distritos[32,]), distritos[32,])
 # plot(dem_clip)
 # dem_18s <- projectRaster(dem_clip, crs = "+proj=utm +zone=18 +datum=WGS84 +units=m +no_defs +ellps=WGS84 +towgs84=0,0,0")
@@ -64,18 +64,48 @@ dem <- raster("data/dem.tif")
 
 # Starting in tmap
 library(tmap)
+tmap_mode("plot")
 tm_shape(dem) + 
   tm_raster() + 
   tm_shape(distritos) + 
   tm_polygons(alpha = 0.5) +
-  tm_grid() +
+  tm_shape(puntos)+
+  tm_bubbles("value",
+             col ="#338BFF"
+             )+
+  tm_graticules(labels.cardinal = TRUE,
+                labels.rot=c(90,0)) +
   tm_layout(main.title = "Titulo",
             main.title.position = "center",
             main.title.color = "blue",
             title.color = "red",
-            legend.position = c("left","bottom"),
+            legend.outside=TRUE,
+            # legend.outside.position = c("left","bottom"),
+            legend.outside.position = "bottom",
             legend.bg.color = "white") +
-  tm_scale_bar(position=c("right", "bottom"))
+  tm_scale_bar(position=c("right", "bottom"))+
+  tm_compass(type="4star", position=c("RIGHT", "top"), 
+             show.labels = 2, size=2.5, text.size = 0.6)
+  # tm_add_legend(
+  #   type = c("fill", "symbol", "text", "line"),
+  #   labels = NULL,
+  #   col = NULL,
+  #   size = NULL,
+  #   shape = NULL,
+  #   lwd = NULL,
+  #   lty = NULL,
+  #   text = NULL,
+  #   alpha = NA,
+  #   border.col = "black",
+  #   border.lwd = 1,
+  #   border.alpha = NA,
+  #   title = "prueba",
+  #   is.portrait = TRUE,
+  #   legend.format = list(),
+  #   reverse = FALSE,
+  #   z = NA,
+  #   group = NULL
+  # )
 
 
 # Starting in rayshader

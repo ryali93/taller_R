@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xml:lang="es"><Esri><CreaDate>20200428</CreaDate><CreaTime>19091200</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce><DataProperties><lineage><Process ToolSource="c:\program files (x86)\arcgis\desktop10.3\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20200428" Time="190912">CalculateField punto_prueba value (!FID!+1)*2 PYTHON_9.3 #</Process></lineage></DataProperties></Esri></metadata>
