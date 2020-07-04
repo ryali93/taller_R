@@ -471,7 +471,7 @@ Nota 3: Copia para no perder los datos originales (buena practica)
 
 
 <ul style="font-size:26px">
-- Obtener un dataset con todos las peliculas que tienen 0 en la columna `Incidencia`. (tener cargado el dataset data/pobreza_extrema.csv)
+- Obtener un dataset con todos los distritos que tienen 0 en la columna `Incidencia`. (tener cargado el dataset data/pobreza_extrema.csv)
 - Convertir al distrito "Los Olivos" en el de más extrema pobreza la variable `Incidencia`. Luego explorar los datos.
 - Crear un data frame que tenga todos los distritos de la región Ancash e Ica sin población en extrema pobreza
 </ul>

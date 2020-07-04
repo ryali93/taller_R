@@ -686,7 +686,7 @@ document.getElementsByTagName('head')[0].appendChild(style);
 <ul style="font-size:24px">
 <ul>
 <li>RStudio es un editor para scripts disponible para usuarios de R en todos los sistemas operativos.</li>
-<li>Es considerado como un <strong><u>entorno de desarrollo integrado (GUI)</u></strong> 🕟 que combina un interfaz muy intuitiva con herramientas de código muy potentes que permiten sacar el máximo provecho a R.</li>
+<li>Es considerado como un <strong><u>entorno de desarrollo integrado (GUI)</u></strong> 🕛 que combina un interfaz muy intuitiva con herramientas de código muy potentes que permiten sacar el máximo provecho a R.</li>
 <li>La versión en pruebas es gratuita y está disponible en <a href="http://www.rstudio.org/">http://www.rstudio.org/</a></li>
 <li>La ventaja de este editor es que ofrece una serie de opciones no existentes en R, entre otras, por ejemplo, comprobar rápidamente que ningún paréntesis queda sin cerrarse o marcar, copiar y pegar columnas.</li>
 <li>Pero además nos da un listado de las variables y nos da una descripción de los bancos de datos que hemos introducido. También tiene una lista de los paquetes instalados y los gráficos realizados.</li>
@@ -918,8 +918,7 @@ Un objeto puede ser creado con el operador <strong><em>“assignar”</em></stro
 <h2>MANIPULACIÓN DE DATOS</h2>
 <p>Subsetting data (Consultas)</p>
 <div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb25-1" title="1">n_y_l[<span class="dv">1</span>,<span class="dv">2</span>]</a></code></pre></div>
-<pre><code>## [1] a
-## Levels: a b d g j k l s z</code></pre>
+<pre><code>## [1] &quot;a&quot;</code></pre>
 <div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb27-1" title="1">n_y_l<span class="op">$</span>numeros</a></code></pre></div>
 <pre><code>## [1]  1  2  4  7 10 11 12 19 26</code></pre>
 </section><section id="manipulación-de-datos-1" class="slide level2">
@@ -1093,7 +1092,7 @@ Nota 3: Copia para no perder los datos originales (buena practica)
 <p><br></p>
 <ul style="font-size:26px">
 <ul>
-<li>Obtener un dataset con todos las peliculas que tienen 0 en la columna <code>Incidencia</code>. (tener cargado el dataset data/pobreza_extrema.csv)</li>
+<li>Obtener un dataset con todos los distritos que tienen 0 en la columna <code>Incidencia</code>. (tener cargado el dataset data/pobreza_extrema.csv)</li>
 <li>Convertir al distrito “Los Olivos” en el de más extrema pobreza la variable <code>Incidencia</code>. Luego explorar los datos.</li>
 <li>Crear un data frame que tenga todos los distritos de la región Ancash e Ica sin población en extrema pobreza</li>
 </ul>
